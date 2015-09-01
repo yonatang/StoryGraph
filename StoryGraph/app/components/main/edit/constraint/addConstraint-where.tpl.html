@@ -1,0 +1,42 @@
+<div>
+    Location constraint
+</div>
+<div class="form-group">
+    <label>Select operator</label>
+    <select class="form-control"
+            ng-options="operator as operator.name for (id , operator) in ctrl.constraint.operators"
+            ng-model="ctrl.constraint.operator"></select>
+</div>
+<div class="checkbox">
+    <label>
+        <input type="checkbox" ng-model="ctrl.constraint.soft">
+        <span>Optional Constraint?</span>
+    </label>
+</div>
+
+<div class="form-group">
+    <label>Select value(s)</label>
+
+    <div class="input-group">
+        <input class="form-control"
+               ng-model="search"
+               ng-init="search=''"
+               placeholder="Filter options">
+
+        <div class="input-group-btn">
+            <button class="btn"
+                    type="button"
+                    ng-click="search=''">
+                <span class="glyphicon glyphicon-remove"></span>
+            </button>
+        </div>
+    </div>
+    <div class="scrollable-item-list">
+        <div class="checkbox" ng-repeat="option in ctrl.constraint.options | filter:{name:search}">
+            <label>
+                <input type="checkbox" checklist-model="ctrl.constraint.value" checklist-value="option">
+                <span>{{option.name}}</span>
+            </label>
+        </div>
+    </div>
+</div>

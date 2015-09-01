@@ -1,0 +1,128 @@
+<div class="modal-header">
+    <h3 class="modal-title">Edit Event</h3>
+</div>
+<div class="modal-body">
+    <form name="eventEditForm">
+        <div class="form-group">
+            <label>Event Name</label>
+            <input class="form-control" ng-model="ctrl.sgEvent.name" required>
+        </div>
+        <tabset>
+            <tab heading="Constraints">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Operator</th>
+                        <th>Value(s)</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="constraint in ctrl.sgEvent.constraints">
+                        <td>{{constraint.type}}{{constraint.soft ? ' (optional)':''}}</td>
+                        <td>{{constraint.operator.name}} {{constraint.operator.extraN ? '('+constraint.extraN+')' :
+                            ''}}
+                        </td>
+                        <td>{{constraint.valueNames.join(', ')}}</td>
+                        <td>
+                            <a href
+                               tooltip="Remove Constraint"
+                               ng-click="ctrl.removeConstraint(constraint)">
+                                <span class="glyphicon glyphicon-trash"></span>
+                            </a>
+                            <a href
+                               tooltip="Edit Constraint"
+                               ng-click="ctrl.editConstraint(constraint)">
+                                <span class="glyphicon glyphicon-edit"></span>
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <button class="btn btn-default"
+                        ng-click="ctrl.addConstraint()">
+                    <span>Add Constraint<span class="glyphicon glyphicon-plus"></span></span>
+                </button>
+            </tab>
+            <tab heading="Dependencies">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Operator</th>
+                        <th>Other Event</th>
+                        <th>Editional</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!--TODO instead of the confusing in/out dependencies - inverase the state of the
+                    inversiable dependencies (i.e. time dependency)-->
+                    <!--TODO resolve conflicts with uncomitted dependencies -->
+                    <tr ng-repeat="outDep in ctrl.outDeps"
+                        ng-if="!outDep.removed">
+                        <td>{{outDep.type}} (out)</td>
+                        <td>{{outDep.operator.name}}{{outDep.operator.extraN ? ' ('+outDep.extraN+')' :
+                            ''}}</td>
+                        <td>{{ctrl.getEventName(outDep.toEventId)}}</td>
+                        <td>{{outDep.valueNames.join(', ')}}</td>
+                        <td><a href
+                               ng-click="ctrl.removePersistedDependency(outDep)">
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </a>
+                        </td>
+                    </tr>
+                    <tr ng-repeat="outDep in ctrl.uncommittedDeps">
+                        <td>{{outDep.type}} (out)</td>
+                        <td>{{outDep.operator.name}}{{outDep.operator.extraN ? ' ('+outDep.extraN+')' :
+                            ''}}</td>
+                        <td>{{ctrl.getEventName(outDep.toEventId)}}</td>
+                        <td>{{outDep.valueNames.join(', ')}}</td>
+                        <td><a href
+                               ng-click="ctrl.removeUncomittedDep(outDep)">
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </a>
+                        </td>
+                    </tr>
+                    <tr ng-repeat="inDep in ctrl.inDeps"
+                        ng-if="!inDep.removed">
+                        <td>{{inDep.type}} (in)</td>
+                        <td>{{inDep.operator.name}}{{inDep.operator.extraN ? ' ('+inDep.extraN+')' :
+                            ''}}</td>
+                        <td>{{ctrl.getEventName(inDep.fromEventId)}}</td>
+                        <td>{{outDep.valueNames.join(', ')}}</td>
+                        <td><a href
+                               ng-click="ctrl.removePersistedDependency(inDep)">
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <button class="btn btn-default"
+                        ng-click="ctrl.addDependency()">
+                    <span>Add Dependency<span class="glyphicon glyphicon-plus"></span></span>
+                </button>
+            </tab>
+            <tab heading="Event Text">
+                <div class="form-group">
+                    <label>Event Text</label>
+                    <textarea class="form-control"
+                              msd-elastic
+                              ng-model="ctrl.sgEvent.text"></textarea>
+                </div>
+            </tab>
+        </tabset>
+        Event raw data:
+        <button class="btn btn-default"
+                ng-init="isCollapsed=true"
+                ng-click="isCollapsed=!isCollapsed">{{isCollapsed ? 'Show':'Hide'}}
+        </button>
+        <pre collapse="isCollapsed">{{ctrl.sgEvent | json}}</pre>
+    </form>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ctrl.ok()" ng-disabled="eventEditForm.$invalid">OK</button>
+    <button class="btn btn-warning" ng-click="ctrl.cancel()">Cancel</button>
+</div>

@@ -1,0 +1,73 @@
+<div shortcut="{right: ctrl.nextImage}">
+  <button
+    save-btn="ctrl.annotatedSet"
+    save-btn-filename="ctrl.albumId+'-annotatedSet.json'"
+    class="btn btn-info">Save Set</button>
+  <input ng-model="albumId">
+  <button ng-click="ctrl.loadAlbum(albumId)">Load</button>
+  <div class="page-header">
+    <h4>Image name {{ctrl.thisImage.imageFilename}} {{ctrl.idx+1}}/{{ctrl.annotatedSet.images.length}} (Album {{ctrl.albumId}})</h4>
+  </div>
+  <div class="row" style="background: {{ctrl.thisImage.locationId ? 'white':'gray' }}">
+    <div class="col-md-8">
+      <div class="form-inline" style="max-width: 580px;">
+        <label>Location</label>
+        <input
+            id="locationInput"
+          ng-keyup="ctrl.handleKeyup($event)"
+               tabindex="1"
+               ng-model="ctrl.thisImage.locationId"
+               typeahead="location.id for location in ctrl.locations | filter:{id:$viewValue} | limitTo:8"
+               class="form-control"
+              style="width: 350px">
+        <img ng-src="{{ctrl.getImageSrc()}}" style="max-height: 300px; max-width: 300px">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <ul class="list-group">
+        <li class="list-group-item"
+            ng-repeat="charachterId in ctrl.thisImage.characterIds track by $index">
+          <button
+            class="btn btn-danger"
+            ng-click="ctrl.removeCharachter($index)">Remove</button>
+          {{charachterId}}
+        </li>
+      </ul>
+      <ul class="list-group">
+        <li class="list-group-item"
+            ng-repeat="itemId in ctrl.thisImage.itemIds track by $index">
+          <button
+            class="btn btn-danger"
+            ng-click="ctrl.removeItem($index)">Remove</button>
+          {{itemId}}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div>
+    <label>Add a character</label>
+
+    <form ng-submit="ctrl.addCharacter()">
+      <input
+        tabindex="2"
+        ng-keyup="ctrl.handleKeyup($event)"
+        ng-model="ctrl.characterId"
+        typeahead="character.id for character in ctrl.characters | filter:{id:$viewValue} | limitTo:8"
+        class="form-control">
+    </form>
+
+    <label>Add an item</label>
+    <form ng-submit="ctrl.addItem()">
+      <input
+        tabindex="3"
+        ng-keyup="ctrl.handleKeyup($event)"
+        ng-model="ctrl.itemId"
+        typeahead="item for item in ctrl.items | filter:$viewValue | limitTo:8"
+        class="form-control">
+    </form>
+
+
+  </div>
+  <pre>{{ctrl.thisImage | json}}</pre>
+
+</div>

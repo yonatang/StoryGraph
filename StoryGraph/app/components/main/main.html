@@ -1,0 +1,66 @@
+<div class="full-height">
+    <div class="row full-height">
+
+        <div class="remote-col-md-9 canvas-tab full-height">
+            <div class="btn-toolbar">
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="button"
+                            class="btn btn-default"
+                            save-btn>Save</button>
+                    <button type="file"
+                            class="btn btn-default"
+                            accept=".json"
+                            ng-accept="'application/json'"
+                            ng-file-select
+                            ng-file-change="ctrl.fileSelected($files, $event)">Load</button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button"
+                            class="btn btn-default"
+                            ng-click="ctrl.addEvent()">
+                        <span class="glyphicon glyphicon-plus"></span>
+                        <span>Add Event</span>
+                    </button>
+                    <button type="button"
+                            class="btn btn-default"
+                            ng-disabled="!ctrl.canEdit()"
+                            ng-click="ctrl.edit()">
+                        <span class="glyphicon glyphicon-pencil"></span>
+                        <span>Edit</span>
+                    </button>
+                    <button type="button"
+                            class="btn "
+                            ng-class="{'btn-danger' : ctrl.canDelete(), 'btn-default': !ctrl.canDelete()}"
+                            ng-disabled="!ctrl.canDelete()"
+                            ng-click="ctrl.removeSelected()">
+                        <span class="glyphicon glyphicon-trash"></span>
+                        <span>Remove</span>
+                    </button>
+                    <button
+                        class="btn btn-default"
+                        tooltip-placement="bottom"
+                        tooltip-append-to-body="true"
+                        tooltip-Html-Unsafe="{{ctrl.helpText}}">
+                        <span class="glyphicon glyphicon-question-sign"></span>
+                    </button>
+
+                </div>
+                <span>Profile: {{ctrl.profile.name}}</span>
+
+                <div class="pull-right">
+                    <span>Build {{ctrl.buildData.commit}}, date {{ctrl.buildData.buildDate}}</span>
+                </div>
+            </div>
+
+
+            <div class="full-height"
+                 ng-file-drop
+                 drag-over-class="dragover"
+                 stop-propagation="true"
+                 ng-file-change="ctrl.fileSelected($files, $event)">
+                <sg-canvas></sg-canvas>
+            </div>
+        </div>
+    </div>
+
+</div>

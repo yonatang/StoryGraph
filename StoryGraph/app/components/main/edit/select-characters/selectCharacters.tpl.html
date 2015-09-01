@@ -1,0 +1,41 @@
+<div class="form-inline">
+    <div class="form-group"
+         ng-if="!ctrl.editMode">
+        <label>Select Group</label>
+        <!-- clear selections upon group change -->
+        <select class="form-control"
+                ng-change="value.splice(0)"
+                ng-options="group as group.name for group in profile.groups"
+                ng-model="container.group"></select>
+    </div>
+</div>
+
+<div class="input-group">
+    <input class="form-control"
+           ng-model="search"
+           ng-init="search=''"
+           placeholder="Filter options">
+
+    <div class="input-group-btn">
+        <button class="btn"
+                type="button"
+                ng-click="search=''">
+            <span class="glyphicon glyphicon-remove"></span>
+        </button>
+    </div>
+</div>
+
+<div class="scrollable-item-list">
+    <div class="input-group">
+        <a href ng-click="selectAllInGroup()">Select All</a>
+        /
+        <a href ng-click="deselectAllInGroup()">Deselect All</a>
+    </div>
+    <div class="checkbox"
+         ng-repeat="(id, option) in options | filter:groupFilter | filter:{name:search}">
+        <label>
+            <input type="checkbox" checklist-model="container.value" checklist-value="option">
+            <span>{{option.name}}</span>
+        </label>
+    </div>
+</div>

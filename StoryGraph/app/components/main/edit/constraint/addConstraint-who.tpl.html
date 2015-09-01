@@ -1,0 +1,40 @@
+<div>
+    Character constraint
+</div>
+<div class="form-group">
+    <label>Select operator</label>
+    <select class="form-control"
+            required
+            ng-options="operator as operator.name for (id , operator) in ctrl.constraint.operators"
+            ng-model="ctrl.constraint.operator"></select>
+</div>
+<div class="checkbox">
+    <label>
+        <input type="checkbox" ng-model="ctrl.constraint.soft">
+        <span>Optional Constraint?</span>
+    </label>
+</div>
+<div class="form-inline">
+    <div class="form-group"
+         ng-if="ctrl.constraint.operator.extraN">
+        <label>Size of N</label>
+        <input type="number"
+               required
+               class="form-control"
+               ng-model="ctrl.constraint.extraN">
+    </div>
+</div>
+<dic class="form-inline">
+    <div class="form-group"
+         ng-if="ctrl.constraint.operator.multiplier">
+        <label>Multiplier
+            <span tooltip="If more than one instance of the same id required">
+                <span class="glyphicon glyphicon-question-sign"></span>
+            </span>
+        </label>
+        <input type="number"
+               class="form-control"
+               ng-model="ctrl.constraint.multiplier">
+    </div>
+</dic>
+<select-characters container="ctrl.constraint"/>

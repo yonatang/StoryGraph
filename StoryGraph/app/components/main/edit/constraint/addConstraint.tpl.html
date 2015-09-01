@@ -1,0 +1,42 @@
+<div class="modal-header">
+    <h3 class="modal-title">{{ctrl.editMode ? 'Edit' : 'Add'}} Event</h3>
+</div>
+<div class="modal-body">
+    <form name="constraintEditForm">
+        <div ng-if="ctrl.page==1">
+            <div class="form-group">
+                <label>Type</label>
+                <select class="form-control"
+                        ng-model="ctrl.type">
+                    <option value="where">Where</option>
+                    <option value="when">When</option>
+                    <option value="who">Who</option>
+                    <option value="what">What</option>
+                </select>
+            </div>
+        </div>
+        <div ng-if="ctrl.page==2">
+            <ng-include src="'/components/main/edit/constraint/addConstraint-'+ctrl.type+'.tpl.html'"></ng-include>
+        </div>
+    </form>
+
+</div>
+<div class="modal-footer">
+    <button class="btn btn-info"
+            ng-click="ctrl.next()"
+            ng-disabled="!ctrl.type"
+            ng-if="ctrl.page==1">Next
+    </button>
+    <button class="btn btn-info"
+            ng-click="ctrl.back()"
+            ng-if="ctrl.page==2 && !ctrl.editMode">Back
+    </button>
+    <button class="btn btn-primary"
+            ng-if="ctrl.page==2"
+            ng-click="ctrl.ok()"
+            ng-disabled="constraintEditForm.$invalid || !ctrl.constraint.valid">OK
+    </button>
+    <button class="btn btn-warning"
+            ng-click="ctrl.cancel()">Cancel
+    </button>
+</div>

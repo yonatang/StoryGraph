@@ -1,0 +1,90 @@
+<div class="row full-height">
+    <div class="col-md-10 full-height">
+        <svg class="full-height main-canvas"
+             ng-dblclick="addNewEvent($event)"
+             ng-mousedown="deselectAll()">
+            <sg-event-shape ng-repeat="event in events" sg-event="event"></sg-event-shape>
+            <sg-event-dependency ng-repeat="dependency in dependencies"
+                                 sg-dependency="dependency"></sg-event-dependency>
+        </svg>
+    </div>
+    <div class="col-md-2">
+        <div ng-if="state.numSelected==1">
+            <div ng-if="state.selectedDependencies.length==1">
+                <label>Dependency Details:</label>
+
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label">Type</label>
+
+                        <p class="form-control-static">{{getDependency().type}} - {{getDependency().operator.name}}</p>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">From</label>
+
+                        <p class="form-control-static">{{getDependency().fromEventId}}</p>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">To</label>
+
+                        <p class="form-control-static">{{getDependency().toEventId}}</p>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">More data</label>
+                        <pre>{{getDependency() | json}}</pre>
+                    </div>
+
+                </div>
+                <!--{"fromEventId":2,"toEventId":1,"type":"when","operator":{"id":"decrease","name":"Decrease"},"value":null,"selected":true} -->
+            </div>
+            <div ng-if="state.selectedEvents.length==1">
+                <label>Event Details:</label>
+
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label">Name</label>
+
+                        <p class="form-control-static">{{getSgEvent().name}}</p>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">ID</label>
+
+                        <p class="form-control-static">{{getSgEvent().id}}</p>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Constraints</label>
+                        <ui>
+                            <li ng-repeat="constraint in getSgEvent().constraints">{{constraint}}</li>
+                        </ui>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Dependencies</label>
+                        <ui>
+                            <li ng-repeat="inDep in eventDeps[getSgEvent().id].inDeps">{{inDep}}</li>
+                            <li ng-repeat="outDep in eventDeps[getSgEvent().id].outDeps">{{outDep}}</li>
+                        </ui>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ng-if="state.numSelected>1">
+            <div ng-if="state.selectedEvents.length > 0">
+                <label>Selected Events:</label>
+                <ul>
+                    <li ng-repeat="sgEvent in state.selectedEvents">{{sgEvent.id}}: {{sgEvent.name}}</li>
+                </ul>
+            </div>
+            <div ng-if="state.selectedDependencies.length > 0">
+                <label>Selected Dependencies:</label>
+                <ul>
+                    <li ng-repeat="dependency in state.selectedDependencies">
+                        {{dependency.fromEventId}}
+                        <span class="glyphicon glyphicon-arrow-right"></span>
+                        {{dependency.toEventId}}: {{dependency.type}} - {{dependency.operator.name}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+

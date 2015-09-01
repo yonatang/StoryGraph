@@ -1,0 +1,16 @@
+<svg
+    ng-dblclick="dblClick($event,sgEvent)"
+    ng-mousedown="nodeMouseDown($event, sgEvent)"
+    ng-attr-x="{{sgEvent.x}}"
+    ng-attr-y="{{sgEvent.y}}"
+    ng-attr-width="{{radius*3}}" ng-attr-height="{{radius*2}}">
+
+    <rect
+        ng-class="{ selected : sgEvent.selected }"
+        ng-attr-x="0" ng-attr-y="0" rx="10" ry="10" ng-attr-width="{{radius*3}}"
+        ng-attr-height="{{radius*2}}"
+          style="stroke:black;stroke-width:5;opacity:0.5" />
+    <foreignObject x="2" y="2" ng-attr-width="{{radius*3-2}}" ng-attr-height="{{radius*2-2}}">
+        <span style="color:red">{{sgEvent.id}}: {{sgEvent.name}}</span>
+    </foreignObject>
+</svg>

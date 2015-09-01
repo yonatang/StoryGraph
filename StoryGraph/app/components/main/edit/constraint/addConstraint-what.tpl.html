@@ -1,0 +1,63 @@
+<div>
+    Item constraint
+</div>
+<div class="form-group">
+    <label>Select operator</label>
+    <select class="form-control"
+            required
+            ng-options="operator as operator.name for (id , operator) in ctrl.constraint.operators"
+            ng-model="ctrl.constraint.operator"></select>
+</div>
+<div class="checkbox">
+    <label>
+        <input type="checkbox" ng-model="ctrl.constraint.soft">
+        <span>Optional Constraint?</span>
+    </label>
+</div>
+<div class="form-inline">
+    <div class="form-group"
+         ng-if="ctrl.constraint.operator.extraN">
+        <label>Size of N</label>
+        <input type="number"
+               required
+               class="form-control"
+               ng-model="ctrl.constraint.extraN">
+    </div>
+</div>
+
+<div class="form-group">
+    <label>Add item</label>
+
+    <div class="input-group">
+        <input class="form-control"
+               ng-model="addValue"
+               placeholder="item">
+
+        <div class="input-group-btn">
+            <button class="btn btn-default"
+                    type="button"
+                    ng-disabled="ctrl.valueExists(addValue)"
+                    ng-click="ctrl.constraint.value.push({name:addValue,id:addValue}); addValue=''">
+                <span class="glyphicon glyphicon-plus"></span>
+            </button>
+        </div>
+    </div>
+    <div class="help-block"
+         ng-show="ctrl.valueExists(addValue)">Duplicate item {{addValue}}
+    </div>
+
+
+</div>
+<div>
+    <ul class="list-group">
+        <li class="list-group-item"
+            ng-repeat="item in ctrl.constraint.value">
+            <span>{{item.name}}</span>
+            <a href
+               class="pull-right"
+               ng-click="ctrl.constraint.value.splice($index,1)">
+                <span class="glyphicon glyphicon-remove"></span>
+            </a>
+        </li>
+    </ul>
+</div>

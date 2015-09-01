@@ -1,0 +1,106 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>Story Graph</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <script type="application/javascript">
+        window.build={
+            "buildDate":"$^BUILD_DATE_STRING^$",
+            "commit":"$^COMMIT_ID^$"
+        };
+        if (window.build.buildDate.indexOf('$^')!==-1){
+            window.build.buildDate='N/A';
+        }
+        if (window.build.commit.indexOf('$^')!==-1){
+            window.build.commit='N/A';
+        }
+        if (console && console.log){
+            console.log('version',window.build.commit,window.build.buildDate);
+        }
+    </script>
+</head>
+<body ng-app="sg">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<div class="container-fluid full-height">
+    <div ng-view="" class="full-height"></div>
+</div>
+
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+<!--<script>-->
+    <!--!function (A, n, g, u, l, a, r) {-->
+        <!--A.GoogleAnalyticsObject = l, A[l] = A[l] || function () {-->
+            <!--(A[l].q = A[l].q || []).push(arguments)-->
+        <!--}, A[l].l = +new Date, a = n.createElement(g),-->
+            <!--r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)-->
+    <!--}(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');-->
+
+    <!--ga('create', 'UA-XXXXX-X');-->
+    <!--ga('send', 'pageview');-->
+<!--</script>-->
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<script src="bower_components/lodash/dist/lodash.compat.js"></script>
+<script src="bower_components/graphlib/dist/graphlib.core.js"></script>
+<script src="bower_components/graphlib/dist/graphlib.core.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/checklist-model/checklist-model.js"></script>
+<script src="bower_components/ng-file-upload-shim/angular-file-upload-shim.js"></script>
+<script src="bower_components/ng-file-upload/angular-file-upload.js"></script>
+<script src="bower_components/angular-elastic/elastic.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+
+<script src="components/model/model.module.js"></script>
+<script src="components/model/profiles.js"></script>
+<script src="components/model/dependencies.fct.js"></script>
+<script src="components/model/constraints.js"></script>
+<script src="components/model/storyEvent.js"></script>
+
+<script src="components/main/main.js"></script>
+<script src="components/main/edit/select-characters/selectCharacters.drv.js"></script>
+<script src="components/main/edit/save/save.drv.js"></script>
+<script src="components/main/edit/editEvent.js"></script>
+<script src="components/main/edit/constraint/addConstraint.js"></script>
+<script src="components/main/edit/dependency/addDependency.js"></script>
+<script src="components/app.js"></script>
+
+<script src="components/services/services.module.js"></script>
+<script src="components/services/storyGraphService.js"></script>
+<script src="components/services/mouseCaptureService.js"></script>
+<script src="components/services/dragService.js"></script>
+
+<script src="components/storyCanvas/storyCanvas.module.js"></script>
+<script src="components/storyCanvas/storyCanvas.js"></script>
+<script src="components/storyCanvas/eventShape.js"></script>
+<script src="components/storyCanvas/dependencyLine.js"></script>
+<!-- endbuild -->
+</body>
+</html>

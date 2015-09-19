@@ -68,12 +68,19 @@ public abstract class AbsSearcher {
         log.debug("  Searching for pages of size {}", size);
         Set<PageTemplate> pageTemplates = templatesBySize.get(size);
         PageLayout best = null;
-        double score = Double.NEGATIVE_INFINITY;
+        double bestScore = Double.NEGATIVE_INFINITY;
         for (PageTemplate pageTemplate : pageTemplates) {
             PageLayout candidate = createPageLayout(pageTemplate, album, pageIdx);
-            if (candidate.getScore() > score) {
+            double score=0;
+            for (ImageFrame imageFrame : candidate.getImageFrames()) {
+                double textScore = imageFrame.getTextScore();
+                double fitScore = imageFrame.getFitScore();
+                double orientationScore = imageFrame.getOrientationScore();
+                score += 0.5*fitScore+0.2*textScore+0.2*orientationScore;
+            }
+            if (score > bestScore) {
                 best = candidate;
-                score = best.getScore();
+                bestScore=score;
             }
         }
         return best;
@@ -103,15 +110,16 @@ public abstract class AbsSearcher {
             Pair<BufferedImage,Double> croppedImageData =
                     imageService.cropImage(albumPage.getImage(), bufferedImage, imageFrame.getImageRect().getDimension());
             imageFrame.setImage(croppedImageData.getLeft());
-            //TODO use a real scoring here
-            score += croppedImageData.getRight();
+
+            imageFrame.setFitScore(croppedImageData.getRight());
+            imageFrame.setOrientationScore(
+                    imageService.getOrientation(bufferedImage) == imageService.getOrientation(imageFrame.getImageRect()) ? 1 : 0);
 
             ImageService.TextImageHolder textImageHolder =
                     imageService.getTextImage(albumPage.getText(), pageLayout.getHeight(), imageFrame.getTextRect());
             imageFrame.setTextImage(textImageHolder.getImage());
-            score += calcTextScore(textImageHolder);
+            imageFrame.setTextScore(calcTextScore(textImageHolder));
         }
-        pageLayout.setScore(score);
         return pageLayout;
     }
 

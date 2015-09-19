@@ -11,6 +11,7 @@ import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
@@ -35,6 +36,16 @@ public class ImageService {
 
     @Autowired
     private LegacyVectorService legacyVectorService;
+
+    @Value("${story-album.saliency-sum-dir}")
+    private String saliencySumDir;
+
+    @Value("${story-album.faces-dir}")
+    private String facesDir;
+
+    @Value("${story-album.skip-saliency-and-faces}")
+    private Boolean skipSaliencyAndFaces;
+
 
     @AllArgsConstructor
     @Getter
@@ -179,13 +190,15 @@ public class ImageService {
     }
 
     private File getImageSilencyVectorFile(AnnotatedImage annotatedImage) {
-        String baseFile = "/Users/yonatan/Dropbox/Studies/Story Albums/Sets/Riddle/Set1/saliencySum";
+        String baseFile = saliencySumDir;
+                //"/Users/yonatan/Dropbox/Studies/Story Albums/Sets/Riddle/Set1/saliencySum";
         String fileName = FilenameUtils.removeExtension(annotatedImage.getImageFilename());
         return new File(baseFile + File.separatorChar + fileName + ".xml");
     }
 
     private File getImageFaceVectorFile(AnnotatedImage annotatedImage) {
-        String baseFile = "/Users/yonatan/Dropbox/Studies/Story Albums/Sets/Riddle/Set1/faces";
+        String baseFile = facesDir;
+//                "/Users/yonatan/Dropbox/Studies/Story Albums/Sets/Riddle/Set1/faces";
         String fileName = FilenameUtils.removeExtension(annotatedImage.getImageFilename());
         return new File(baseFile + File.separatorChar + fileName + ".xml");
     }
@@ -194,16 +207,6 @@ public class ImageService {
     public Pair<BufferedImage, Double> cropImage(AnnotatedImage albumPageImage, BufferedImage image, Dimension targetSize) {
         log.debug("  Original image {}x{}", image.getWidth(), image.getHeight());
         log.debug("  Target image   {}x{}", targetSize.getWidth(), targetSize.getHeight());
-
-        LegacyVectorService.SalientSum vSilency;
-        LegacyVectorService.SalientSum vFaces;
-        try {
-            vSilency = legacyVectorService.readVector(getImageSilencyVectorFile(albumPageImage));
-            vFaces = legacyVectorService.readVector(getImageFaceVectorFile(albumPageImage));
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-
 
         double widthRatio = (double) targetSize.getWidth() / (double) image.getWidth();
         double heightRatio = (double) targetSize.getHeight() / (double) image.getHeight();
@@ -218,60 +221,74 @@ public class ImageService {
             //perfect fit - same ratio
             return new ImmutablePair<>(scaledImage, 1.0);
         }
-        if (vFaces.getHorizontalVector().size() != image.getWidth()) {
-            log.error("faces horiz vector size {}, image width {}, file {}",
-                    vFaces.getHorizontalVector().size(), image.getWidth(), albumPageImage.getImageFilename());
-            throw new RuntimeException("Bad horz face vector for " + albumPageImage.getImageFilename());
-        }
-        if (vFaces.getVerticalVector().size() != image.getHeight()) {
-            log.error("faces vert vector size {}, image height {}, file {}",
-                    vFaces.getVerticalVector().size(), image.getHeight(), albumPageImage.getImageFilename());
-            throw new RuntimeException("Bad vert face vector for " + albumPageImage.getImageFilename());
-        }
-        if (vSilency.getHorizontalVector().size() != image.getWidth()) {
-            log.error("silency horiz vector size {}, image width {}, file {}",
-                    vSilency.getHorizontalVector().size(), image.getWidth(), albumPageImage.getImageFilename());
-            throw new RuntimeException("Bad horz silency vector for " + albumPageImage.getImageFilename());
-        }
-        if (vSilency.getVerticalVector().size() != image.getHeight()) {
-            log.error("silency vert vector size {}, image height {}, file {}",
-                    vSilency.getVerticalVector().size(), image.getHeight(), albumPageImage.getImageFilename());
-            throw new RuntimeException("Bad vert silency vector for " + albumPageImage.getImageFilename());
-        }
-
         boolean xDirectionScan = targetSize.getWidth() < scaledImage.getWidth();
-        int windowSize = (xDirectionScan ?
-                targetSize.getWidth() :
-                targetSize.getHeight());
-
-        int nonScaledWindowSize = (int) (windowSize * (1 / targetRatio));
-        int maxI = (xDirectionScan ?
-                image.getWidth() - nonScaledWindowSize :
-                image.getHeight() - nonScaledWindowSize);
-        double bestScore = Double.NEGATIVE_INFINITY;
         int bestI = 0;
-        double saliencyOrg = legacyVectorService.calcWindow(vSilency, xDirectionScan, 0,
-                (xDirectionScan ? image.getWidth() : image.getHeight()) - 1);
-        double facesOrg = legacyVectorService.calcWindow(vFaces, xDirectionScan, 0,
-                (xDirectionScan ? image.getWidth() : image.getHeight()) - 1);
-        log.debug("Faces fit {}, saliency fit {}", facesOrg, saliencyOrg);
-        double beta = 0.2;
-        for (int i = 0; i < maxI; i++) {
-            double sFit = legacyVectorService.calcWindow(vSilency, xDirectionScan, i, i + nonScaledWindowSize);
-            double score;
-            if (facesOrg > 0) {
-                double fFit = legacyVectorService.calcWindow(vFaces, xDirectionScan, i, i + nonScaledWindowSize);
-                score = beta * (sFit / saliencyOrg) + (1 - beta) * (fFit / facesOrg);
-            } else {
-                score = (sFit / saliencyOrg);
+        double bestScore = Double.NEGATIVE_INFINITY;
+        if (!skipSaliencyAndFaces) {
+            LegacyVectorService.SalientSum vSilency;
+            LegacyVectorService.SalientSum vFaces;
+            try {
+                vSilency = legacyVectorService.readVector(getImageSilencyVectorFile(albumPageImage));
+                vFaces = legacyVectorService.readVector(getImageFaceVectorFile(albumPageImage));
+            } catch (Exception e) {
+                throw new RuntimeException(e);
             }
+
+            if (vFaces.getHorizontalVector().size() != image.getWidth()) {
+                log.error("faces horiz vector size {}, image width {}, file {}",
+                        vFaces.getHorizontalVector().size(), image.getWidth(), albumPageImage.getImageFilename());
+                throw new RuntimeException("Bad horz face vector for " + albumPageImage.getImageFilename());
+            }
+            if (vFaces.getVerticalVector().size() != image.getHeight()) {
+                log.error("faces vert vector size {}, image height {}, file {}",
+                        vFaces.getVerticalVector().size(), image.getHeight(), albumPageImage.getImageFilename());
+                throw new RuntimeException("Bad vert face vector for " + albumPageImage.getImageFilename());
+            }
+            if (vSilency.getHorizontalVector().size() != image.getWidth()) {
+                log.error("silency horiz vector size {}, image width {}, file {}",
+                        vSilency.getHorizontalVector().size(), image.getWidth(), albumPageImage.getImageFilename());
+                throw new RuntimeException("Bad horz silency vector for " + albumPageImage.getImageFilename());
+            }
+            if (vSilency.getVerticalVector().size() != image.getHeight()) {
+                log.error("silency vert vector size {}, image height {}, file {}",
+                        vSilency.getVerticalVector().size(), image.getHeight(), albumPageImage.getImageFilename());
+                throw new RuntimeException("Bad vert silency vector for " + albumPageImage.getImageFilename());
+            }
+
+            int windowSize = (xDirectionScan ?
+                    targetSize.getWidth() :
+                    targetSize.getHeight());
+
+            int nonScaledWindowSize = (int) (windowSize * (1 / targetRatio));
+            int maxI = (xDirectionScan ?
+                    image.getWidth() - nonScaledWindowSize :
+                    image.getHeight() - nonScaledWindowSize);
+            double saliencyOrg = legacyVectorService.calcWindow(vSilency, xDirectionScan, 0,
+                    (xDirectionScan ? image.getWidth() : image.getHeight()) - 1);
+            double facesOrg = legacyVectorService.calcWindow(vFaces, xDirectionScan, 0,
+                    (xDirectionScan ? image.getWidth() : image.getHeight()) - 1);
+            log.debug("Faces fit {}, saliency fit {}", facesOrg, saliencyOrg);
+            double beta = 0.2;
+            for (int i = 0; i < maxI; i++) {
+                double sFit = legacyVectorService.calcWindow(vSilency, xDirectionScan, i, i + nonScaledWindowSize);
+                double score;
+                if (facesOrg > 0) {
+                    double fFit = legacyVectorService.calcWindow(vFaces, xDirectionScan, i, i + nonScaledWindowSize);
+                    score = beta * (sFit / saliencyOrg) + (1 - beta) * (fFit / facesOrg);
+                } else {
+                    score = (sFit / saliencyOrg);
+                }
 //            log.debug("From {} to {} scanning (window {}, maxI {}) - score {}", i, i + nonScaledWindowSize, nonScaledWindowSize, maxI, score);
-            if (score > bestScore) {
-                bestScore = score;
-                bestI = i;
+                if (score > bestScore) {
+                    bestScore = score;
+                    bestI = i;
+                }
             }
+            bestI = (int) (bestI * targetRatio);
+        } else {
+            bestI=1;
+            bestScore=1.0;
         }
-        bestI = (int) (bestI * targetRatio);
 
         BufferedImage croppedImage;
         if (xDirectionScan) {

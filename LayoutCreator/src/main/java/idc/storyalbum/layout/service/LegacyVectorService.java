@@ -2,6 +2,7 @@ package idc.storyalbum.layout.service;
 
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.w3c.dom.Document;
@@ -30,6 +31,9 @@ public class LegacyVectorService {
 
     }
 
+    @Value("${story-album.reverse-vector-format}")
+    private Boolean reverseVectorFormat;
+
     @Cacheable("vector-cache")
     public SalientSum readVector(File file) throws Exception {
         log.info("Reading vector file {}", file);
@@ -38,9 +42,14 @@ public class LegacyVectorService {
         DocumentBuilder db = dbf.newDocumentBuilder();
         Document doc = db.parse(file);
         SalientSum ss = new SalientSum();
-        // seems the files got mixed up with the data.
-        readVectorList(doc, "horizontalVector", ss.verticalVector, ss.sumsVert);
-        readVectorList(doc, "verticalVector", ss.horizontalVector, ss.sumsHorz);
+        if (reverseVectorFormat) {
+            // seems the files got mixed up with the data.
+            readVectorList(doc, "horizontalVector", ss.verticalVector, ss.sumsVert);
+            readVectorList(doc, "verticalVector", ss.horizontalVector, ss.sumsHorz);
+        } else {
+            readVectorList(doc, "verticalVector", ss.verticalVector, ss.sumsVert);
+            readVectorList(doc, "horizontalVector", ss.horizontalVector, ss.sumsHorz);
+        }
         ss.file = file;
         return ss;
     }

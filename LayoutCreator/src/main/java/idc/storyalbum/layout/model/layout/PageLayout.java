@@ -4,6 +4,7 @@ import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
 
+import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,6 +15,7 @@ import java.util.List;
 public class PageLayout {
     @Setter(AccessLevel.NONE)
     private List<ImageFrame> imageFrames = new ArrayList<>();
+    private BufferedImage background;
     private int width;
     private int height;
     private double score;

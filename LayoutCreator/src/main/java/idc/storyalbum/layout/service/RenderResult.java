@@ -28,7 +28,10 @@ public class RenderResult {
             log.debug("  Creating image {}", output);
             BufferedImage image = new BufferedImage(pageLayout.getWidth(), pageLayout.getHeight(), BufferedImage.TYPE_INT_RGB);
             Graphics2D g = image.createGraphics();
+            g.drawImage(pageLayout.getBackground(),0,0,null);
+
             for (ImageFrame imageFrame : pageLayout.getImageFrames()) {
+
                 BufferedImage frameImage=imageFrame.getImage();
                 log.debug("    Painting image frame at {},{}",imageFrame.getImageRect().getX(), imageFrame.getImageRect().getY());
                 g.drawImage(frameImage, imageFrame.getImageRect().getX(), imageFrame.getImageRect().getY(), null);

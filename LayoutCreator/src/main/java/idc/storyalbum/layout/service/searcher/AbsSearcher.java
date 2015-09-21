@@ -93,6 +93,7 @@ public abstract class AbsSearcher {
         PageLayout pageLayout = new PageLayout();
         pageLayout.setHeight(pageTemplate.getHeight());
         pageLayout.setWidth(pageTemplate.getWidth());
+        pageLayout.setBackground(pageTemplate.getBackground());
         double score = 0;
         for (int i = 0; i < templateSize; i++) {
             AlbumPage albumPage = subAlbumPages.get(i);

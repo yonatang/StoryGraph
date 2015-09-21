@@ -4,10 +4,13 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import idc.storyalbum.layout.model.template.PageTemplate;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FilenameUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.Collection;
 import java.util.HashSet;
@@ -34,6 +37,10 @@ public class TemplateReader {
         for (File file : files) {
             try {
                 PageTemplate pageTemplate = objectMapper.readValue(file, PageTemplate.class);
+                String filenameNoExt = FilenameUtils.removeExtension(file.getAbsolutePath());
+                File imageFile=new File(filenameNoExt+".jpg");
+                BufferedImage background = ImageIO.read(imageFile);
+                pageTemplate.setBackground(background);
                 templates.add(pageTemplate);
             } catch (Exception e) {
                 log.warn("Error while parsing template {} - {}", file, e);

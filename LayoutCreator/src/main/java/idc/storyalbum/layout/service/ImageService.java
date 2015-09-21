@@ -89,13 +89,15 @@ public class ImageService {
                 continue;
             }
 
-            g.setColor(Color.white);
-            g.fillRect(0, 0, textRect.getWidth(), textRect.getHeight() - 3);
+            //White background
+//            g.setColor(Color.white);
+//            g.fillRect(0, 0, textRect.getWidth(), textRect.getHeight() - 3);
 
             // Stroke oldStroke = g2d.getStroke();
             g.setColor(Color.black);
-            g.setStroke(new BasicStroke(8));
-            g.drawRect(0, 0, textRect.getWidth(), textRect.getHeight());
+            // black border
+//            g.setStroke(new BasicStroke(8));
+//            g.drawRect(0, 0, textRect.getWidth(), textRect.getHeight());
             // g2d.setStroke(oldStroke);
             g.setFont(font);
 

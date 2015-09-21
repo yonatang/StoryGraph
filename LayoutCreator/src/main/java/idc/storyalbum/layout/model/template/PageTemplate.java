@@ -5,6 +5,7 @@ import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
 
+import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,6 +18,7 @@ public class PageTemplate {
     @Setter(AccessLevel.NONE)
     private List<Frame> frames = new ArrayList<>();
 
+    private BufferedImage background;
     private int width;
     private int height;
 

@@ -1,6 +1,5 @@
 package idc.storyalbum.matcher.tools.html_album;
 
-import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.joda.JodaModule;
 import idc.storyalbum.model.album.Album;
@@ -19,11 +18,15 @@ import java.util.List;
  * Created by yonatan on 25/4/2015.
  */
 public class ConvertToHtml {
-    public static void write(File albumFile, File htmlFile) throws IOException {
+    public static void write(File albumFile, File htmlFile, String imagesBasePath) throws IOException {
+
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.registerModule(new JodaModule());
         Album album = objectMapper.readValue(albumFile, Album.class);
         String baseDir = album.getBaseDir().getAbsolutePath();
+        if (StringUtils.isNotEmpty(imagesBasePath)){
+            baseDir= imagesBasePath + File.separatorChar + baseDir;
+        }
         List<String> lines = new ArrayList<>();
         lines.add("<!DOCTYPE html>");
         lines.add("<html>");
@@ -58,6 +61,6 @@ public class ConvertToHtml {
     public static void main(String... args) throws Exception {
         File input = new File("/Users/yonatan/StoryAlbumData/Riddle/Set1/album.json");
         File output = new File("/Users/yonatan/StoryAlbumData/Riddle/Set1/out.html");
-        write(input,output);
+        write(input,output, null);
     }
 }

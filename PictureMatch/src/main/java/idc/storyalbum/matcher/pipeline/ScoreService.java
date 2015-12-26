@@ -1,11 +1,12 @@
 package idc.storyalbum.matcher.pipeline;
 
+import idc.storyalbum.matcher.conf.Props;
 import idc.storyalbum.model.graph.Constraint;
 import idc.storyalbum.model.graph.StoryEvent;
 import idc.storyalbum.model.image.AnnotatedImage;
 import idc.storyalbum.model.image.ImageQuality;
 import org.apache.commons.lang3.RandomUtils;
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
@@ -17,15 +18,8 @@ import java.util.stream.Collectors;
 @Service
 public class ScoreService {
 
-    @Value("${story-album.scores.quality-factory}")
-    private double qualityFactor;
-
-    @Value("${story-album.scores.underExposedPenalty}")
-    private double underExposedPenalty;
-    @Value("${story-album.scores.blurinessLevelPenalty}")
-    private double blurinessLevelPenalty;
-    @Value("${story-album.scores.overExposedPenalty}")
-    private double overExposedPenalty;
+    @Autowired
+    private Props.ScoreProps scoreProps;
 
     /**
      * Calculate the fineness of a specific image to an event with some random jittering
@@ -55,7 +49,7 @@ public class ScoreService {
         double softConstraintsScore = 0;
         if (!softConstraints.isEmpty()) {
             long softConstraintsCount = Math.min(softConstraints.size(), 10);
-            double factor = (1.0 - qualityFactor) / ((double) softConstraintsCount);
+            double factor = (1.0 - scoreProps.getQualityFactor()) / ((double) softConstraintsCount);
             long matchedConstraints = softConstraints.stream()
                     .filter(constraint -> ConstraintUtils.isMatch(constraint, image))
                     .count();
@@ -68,16 +62,14 @@ public class ScoreService {
         imageQuality.getOverExposedPenalty();
         imageQuality.getUnderExposedPenalty();
 
-        double qualityScore = qualityFactor * (
-                underExposedPenalty * imageQuality.getUnderExposedPenalty() +
-                        overExposedPenalty * imageQuality.getOverExposedPenalty() +
-                        blurinessLevelPenalty * imageQuality.getBlurinessLevelPenalty());
+        double qualityScore = scoreProps.getQualityFactor() * (
+                scoreProps.getUnderExposedPenalty() * imageQuality.getUnderExposedPenalty() +
+                scoreProps.getOverExposedPenalty() * imageQuality.getOverExposedPenalty() +
+                scoreProps.getBlurinessLevelPenalty() * imageQuality.getBlurinessLevelPenalty());
 
         return qualityScore + softConstraintsScore;
     }
 
-    @Value("${story-album.scores.event-factor}")
-    private double eventScoreFactor = 0.5;
 
     /**
      * Calculate the relative score of an event, in order to greedy process it
@@ -102,6 +94,7 @@ public class ScoreService {
         double degree = ctx.getInDependenciesForEvent(event).size();
         double optionsCount = ctx.getEventToPossibleImages().get(event).size();
 
+        double eventScoreFactor = scoreProps.getEventScoreFactor();
         double result = eventScoreFactor * (1.0 - (optionsCount / largestOptions));
         result += (1.0 - eventScoreFactor) * (degree / largestDegree);
         result += fuziness(nonFuzziness);

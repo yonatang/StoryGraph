@@ -1,20 +1,25 @@
 package idc.storyalbum.matcher.pipeline.albumsearch;
 
+import idc.storyalbum.matcher.conf.Props;
+import idc.storyalbum.matcher.pipeline.DependencyUtils;
+import idc.storyalbum.matcher.pipeline.PipelineContext;
+import idc.storyalbum.matcher.pipeline.ScoreService;
 import idc.storyalbum.model.album.Album;
 import idc.storyalbum.model.album.AlbumPage;
 import idc.storyalbum.model.graph.Constraint;
 import idc.storyalbum.model.graph.StoryDependency;
 import idc.storyalbum.model.graph.StoryEvent;
 import idc.storyalbum.model.image.AnnotatedImage;
-import idc.storyalbum.matcher.pipeline.DependencyUtils;
-import idc.storyalbum.matcher.pipeline.PipelineContext;
-import idc.storyalbum.matcher.pipeline.ScoreService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.SortedSet;
 
 import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.toMap;
@@ -27,8 +32,8 @@ public abstract class AlbumSearch {
     @Autowired
     ScoreService scoreService;
 
-    @Value("${story-album.score.skip-dep-calc:false}")
-    boolean skipDependenciesCalculation;
+    @Autowired
+    Props.ScoreProps scoreProps;
 
     double evaluateDependencies(List<StoryDependency> dependencies, AnnotatedImage i1, AnnotatedImage i2) {
 
@@ -60,7 +65,7 @@ public abstract class AlbumSearch {
                 .collect(toMap((page) -> page.getStoryEvent().getId(), AlbumPage::getImage));
 
         double dependenciesScore = 0;
-        if (!skipDependenciesCalculation) {
+        if (!scoreProps.isSkinDepCalc()) {
             // calculate each dependencies' score
             double sum = 0;
             int count = 0;

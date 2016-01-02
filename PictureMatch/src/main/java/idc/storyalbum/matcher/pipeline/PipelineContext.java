@@ -14,7 +14,9 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 import static java.util.function.Function.identity;
+import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toMap;
+import static java.util.stream.Collectors.toSet;
 
 /**
  * Created by yonatan on 18/4/2015.
@@ -29,24 +31,25 @@ public class PipelineContext {
                 .stream()
                 .collect(toMap(StoryEvent::getId, identity()));
         this.eventToPossibleImages = storyGraph.getEvents().stream()
-                .collect(Collectors.toMap(identity(), (x) -> new HashSet<>()));
+                .collect(toMap(identity(), x -> new HashSet<>()));
 
         this.imageNameMap = annotatedSet.getImages()
                 .stream()
                 .collect(toMap(annotatedImage -> annotatedImage.getImageFilename(), identity()));
         this.imagesToPossibleEvents = set.getImages().stream()
-                .collect(toMap(identity(), (x) -> new HashSet<>()));
+                .collect(toMap(AnnotatedImage::getImageFilename, x -> new HashSet<>()));
     }
 
     private AnnotatedSet annotatedSet;
     private StoryGraph storyGraph;
 
+    private Set<ImageInstance> imageInstances=new HashSet<>();
     private Map<Integer, StoryEvent> eventIdMap = new HashMap<>();
     private Map<String, AnnotatedImage> imageNameMap = new HashMap<>();
     private Set<String> assignedImages = new HashSet<>();
     private Set<Integer> assignedEvents = new HashSet<>();
-    private Map<StoryEvent, Set<AnnotatedImage>> eventToPossibleImages;
-    private Map<AnnotatedImage, Set<StoryEvent>> imagesToPossibleEvents;
+    private Map<StoryEvent, Set<ImageInstance>> eventToPossibleImages;
+    private Map<String, Set<StoryEvent>> imagesToPossibleEvents;
 
     /**
      * Add to an event a possible image
@@ -54,30 +57,36 @@ public class PipelineContext {
      * @param event
      * @param image
      */
-    public void addPossibleMatch(StoryEvent event, AnnotatedImage image) {
+    public void addPossibleMatch(StoryEvent event, ImageInstance image) {
         if (!eventToPossibleImages.containsKey(event)) {
             eventToPossibleImages.put(event, new HashSet<>());
         }
         eventToPossibleImages.get(event).add(image);
-        if (!imagesToPossibleEvents.containsKey(image)) {
-            imagesToPossibleEvents.put(image, new HashSet<>());
+        String filename=image.getImageFilename();
+        if (!imagesToPossibleEvents.containsKey(filename)) {
+            imagesToPossibleEvents.put(filename, new HashSet<>());
         }
-        imagesToPossibleEvents.get(image).add(event);
+        imagesToPossibleEvents.get(filename).add(event);
     }
 
     /**
      * Remove from an event a possible match
      *
      * @param event
-     * @param image
+     * @param filename
      */
-    public boolean removePossibleMatch(StoryEvent event, AnnotatedImage image) {
-        boolean removed = eventToPossibleImages.get(event).remove(image);
-        imagesToPossibleEvents.get(image).remove(event);
+    public boolean removePossibleMatch(StoryEvent event, String filename) {
+
+        Set<ImageInstance> imageInstances = eventToPossibleImages.get(event);
+        Set<ImageInstance> imagesToRemove = imageInstances.stream()
+                .filter(instance -> instance.getImageFilename().equals(filename)).collect(toSet());
+
+        boolean removed = imageInstances.removeAll(imagesToRemove);
+        imagesToPossibleEvents.get(filename).remove(event);
         return removed;
     }
 
-    public Set<AnnotatedImage> getPossibleMatches(StoryEvent event) {
+    public Set<ImageInstance> getPossibleMatches(StoryEvent event) {
         return eventToPossibleImages.get(event);
     }
 

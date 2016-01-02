@@ -1,5 +1,6 @@
 package idc.storyalbum.matcher.pipeline.albumsearch;
 
+import idc.storyalbum.matcher.pipeline.ImageInstance;
 import idc.storyalbum.model.album.Album;
 import idc.storyalbum.model.album.AlbumPage;
 import idc.storyalbum.model.graph.StoryEvent;
@@ -26,12 +27,12 @@ public class AlbumSearchExhaustive extends AlbumSearch {
 
     private void search(List<StoryEvent> events, int i) {
         StoryEvent thisEvent = events.get(i);
-        Set<AnnotatedImage> possibleMatches = ctx.getPossibleMatches(thisEvent);
+        Set<ImageInstance> possibleMatches = ctx.getPossibleMatches(thisEvent);
         if (possibleMatches.isEmpty()) {
             return;
         }
         i++;
-        for (AnnotatedImage possibleMatch : possibleMatches) {
+        for (ImageInstance possibleMatch : possibleMatches) {
             if (usedImages.contains(possibleMatch)) {
 //                log.debug("Dead end!");
                 continue;

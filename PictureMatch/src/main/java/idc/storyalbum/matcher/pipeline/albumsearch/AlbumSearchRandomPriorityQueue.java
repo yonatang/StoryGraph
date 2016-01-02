@@ -1,5 +1,6 @@
 package idc.storyalbum.matcher.pipeline.albumsearch;
 
+import idc.storyalbum.matcher.pipeline.ImageInstance;
 import idc.storyalbum.model.album.Album;
 import idc.storyalbum.model.album.AlbumPage;
 import idc.storyalbum.model.graph.StoryEvent;
@@ -8,6 +9,7 @@ import idc.storyalbum.model.image.AnnotatedImage;
 import idc.storyalbum.matcher.pipeline.PipelineContext;
 import idc.storyalbum.matcher.pipeline.ScoreService;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.time.StopWatch;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -32,7 +34,7 @@ public class AlbumSearchRandomPriorityQueue extends AlbumSearch {
     int NUM_OF_BEST_RESULTS;
 
 
-    private class ImageMatchPriorityQueue extends PriorityQueue<AnnotatedImage> {
+    private class ImageMatchPriorityQueue extends PriorityQueue<ImageInstance> {
         public ImageMatchPriorityQueue(ScoreService scoreService, StoryEvent event, double nonFuzziness) {
             super((o1, o2) -> {
                 double o1Score = scoreService.getImageFitScore(o1, event,nonFuzziness);
@@ -40,6 +42,13 @@ public class AlbumSearchRandomPriorityQueue extends AlbumSearch {
                 //sort largest first
                 return Double.compare(o2Score, o1Score);
             });
+        }
+
+        public void removeByFilename(String imageFilename) {
+            List<ImageInstance> toRemove = stream()
+                    .filter(x -> StringUtils.equals(imageFilename, x.getImageFilename()))
+                    .collect(toList());
+            removeAll(toRemove);
         }
     }
 
@@ -62,7 +71,7 @@ public class AlbumSearchRandomPriorityQueue extends AlbumSearch {
         for (StoryEvent storyEvent : storyGraph.getEvents()) {
             ImageMatchPriorityQueue queue = new ImageMatchPriorityQueue(scoreService, storyEvent, nonFuzziness);
             queues.put(storyEvent, queue);
-            Set<AnnotatedImage> possibleMatches = ctx.getPossibleMatches(storyEvent);
+            Set<ImageInstance> possibleMatches = ctx.getPossibleMatches(storyEvent);
             log.trace("Adding for {}:{} possible images {}", storyEvent.getId(), storyEvent.getName(), possibleMatches);
             queue.addAll(possibleMatches);
             eventQueue.add(storyEvent);
@@ -76,10 +85,10 @@ public class AlbumSearchRandomPriorityQueue extends AlbumSearch {
                 //break and continue to next solution
                 return null;
             }
-            AnnotatedImage bestImage = images.poll();
+            ImageInstance bestImage = images.poll();
 
             for (ImageMatchPriorityQueue queue : queues.values()) {
-                queue.remove(bestImage);
+                queue.removeByFilename(bestImage.getImageFilename());
             }
             assignment.add(new AlbumPage(bestImage, event));
         }

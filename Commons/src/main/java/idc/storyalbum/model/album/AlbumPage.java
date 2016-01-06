@@ -2,6 +2,7 @@ package idc.storyalbum.model.album;
 
 import idc.storyalbum.model.graph.StoryEvent;
 import idc.storyalbum.model.image.AnnotatedImage;
+import idc.storyalbum.model.image.ImageInstance;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -11,12 +12,12 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class AlbumPage {
-    public AlbumPage(AnnotatedImage image, StoryEvent storyEvent) {
+    public AlbumPage(ImageInstance image, StoryEvent storyEvent) {
         this.image = image;
         this.storyEvent = storyEvent;
     }
 
-    private AnnotatedImage image;
+    private ImageInstance image;
     private StoryEvent storyEvent;
     private String text;
 }

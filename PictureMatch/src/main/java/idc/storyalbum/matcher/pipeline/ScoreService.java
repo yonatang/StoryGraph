@@ -4,6 +4,7 @@ import idc.storyalbum.matcher.conf.Props;
 import idc.storyalbum.model.graph.Constraint;
 import idc.storyalbum.model.graph.StoryEvent;
 import idc.storyalbum.model.image.AnnotatedImage;
+import idc.storyalbum.model.image.ImageInstance;
 import idc.storyalbum.model.image.ImageQuality;
 import org.apache.commons.lang3.RandomUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,15 @@ public class ScoreService {
     @Autowired
     private Props.ScoreProps scoreProps;
 
+    public double getImageCrowdedness(AnnotatedImage image, ImageInstance imageInstance) {
+        if (image instanceof ImageInstance) {
+            throw new IllegalArgumentException("AnnotatedImage must not be ImageInstance");
+        }
+        if (image.getCharacterIds().size() == 0) {
+            return 1.0;
+        }
+        return (double) imageInstance.getCharacterIds().size() / (double) image.getCharacterIds().size();
+    }
     /**
      * Calculate the fineness of a specific image to an event with some random jittering
      *
@@ -29,7 +39,7 @@ public class ScoreService {
      * @param nonFuziness
      * @return
      */
-    public double getImageFitScore(AnnotatedImage image, StoryEvent event, double nonFuziness) {
+    public double getImageFitScore(ImageInstance image, StoryEvent event, double nonFuziness) {
         return getImageFitScore(image, event) + fuziness(nonFuziness);
     }
 
@@ -40,7 +50,7 @@ public class ScoreService {
      * @param event
      * @return score
      */
-    public double getImageFitScore(AnnotatedImage image, StoryEvent event) {
+    public double getImageFitScore(ImageInstance image, StoryEvent event) {
         //calculate soft constraints score
         Set<Constraint> softConstraints = event.getConstraints().stream()
                 .filter(Constraint::isSoft)
@@ -67,7 +77,8 @@ public class ScoreService {
                 scoreProps.getOverExposedPenalty() * imageQuality.getOverExposedPenalty() +
                 scoreProps.getBlurinessLevelPenalty() * imageQuality.getBlurinessLevelPenalty());
 
-        return qualityScore + softConstraintsScore;
+        double crowdednessScore = image.getCrowdedness(); //TODO BETTER FUNCTION!
+        return crowdednessScore * (qualityScore + softConstraintsScore);
     }
 
 

@@ -1,16 +1,22 @@
 package idc.storyalbum.matcher.pipeline.albumsearch;
 
-import idc.storyalbum.matcher.pipeline.ImageInstance;
+import idc.storyalbum.matcher.pipeline.PipelineContext;
 import idc.storyalbum.model.album.Album;
 import idc.storyalbum.model.album.AlbumPage;
 import idc.storyalbum.model.graph.StoryEvent;
 import idc.storyalbum.model.image.AnnotatedImage;
-import idc.storyalbum.matcher.pipeline.PipelineContext;
+import idc.storyalbum.model.image.ImageInstance;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.time.StopWatch;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Set;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 /**
  * Created by yonatan on 27/4/2015.

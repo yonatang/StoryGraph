@@ -7,9 +7,11 @@ import idc.storyalbum.matcher.exception.NoMatchException;
 import idc.storyalbum.model.graph.Constraint;
 import idc.storyalbum.model.graph.StoryEvent;
 import idc.storyalbum.model.image.AnnotatedImage;
+import idc.storyalbum.model.image.ImageInstance;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.mutable.MutableBoolean;
 import org.apache.commons.math3.util.CombinatoricsUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -27,6 +29,9 @@ import static java.util.stream.Collectors.toSet;
 @Service
 @Slf4j
 public class MandatoryImageMatcher {
+
+    @Autowired
+    private ScoreService scoreService;
 
     private boolean possibleMatch(StoryEvent event, AnnotatedImage image) {
         for (Constraint constraint : event.getConstraints()) {
@@ -79,7 +84,10 @@ public class MandatoryImageMatcher {
         log.debug("    Instances: {}", product.size());
         for (List<Set<String>> instance : product) {
             ImageInstance imageInstance = new ImageInstance(annotatedImage, instance);
+            double imageCrowdedness = scoreService.getImageCrowdedness(annotatedImage, imageInstance);
+            imageInstance.setCrowdedness(imageCrowdedness);
             log.debug("      Instance: {}", imageInstance.getCharacterIds());
+            log.debug("      Crowdedness: {}", imageCrowdedness);
             ctx.addPossibleMatch(storyEvent, imageInstance);
         }
 

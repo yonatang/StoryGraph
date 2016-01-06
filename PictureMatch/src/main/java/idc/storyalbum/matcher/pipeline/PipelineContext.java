@@ -5,6 +5,7 @@ import idc.storyalbum.model.graph.StoryEvent;
 import idc.storyalbum.model.graph.StoryGraph;
 import idc.storyalbum.model.image.AnnotatedImage;
 import idc.storyalbum.model.image.AnnotatedSet;
+import idc.storyalbum.model.image.ImageInstance;
 import lombok.Data;
 
 import java.util.HashMap;
@@ -14,7 +15,6 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 import static java.util.function.Function.identity;
-import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toMap;
 import static java.util.stream.Collectors.toSet;
 

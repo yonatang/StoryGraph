@@ -1,16 +1,8 @@
-package idc.storyalbum.matcher.pipeline;
+package idc.storyalbum.model.image;
 
-import com.google.common.collect.HashMultiset;
-import com.google.common.collect.Multiset;
-import idc.storyalbum.model.image.AnnotatedImage;
-import idc.storyalbum.model.image.ImageQuality;
-import idc.storyalbum.model.image.Rectangle;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import org.joda.time.DateTime;
 
-import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
@@ -25,6 +17,8 @@ import java.util.Set;
  * Other characters are ignored.
  */
 public class ImageInstance extends AnnotatedImage{
+
+    private double crowdedness;
 
     public ImageInstance(AnnotatedImage annotatedImage, List<Set<String>> relevantGroupCharacterIds) {
         setImageDate(annotatedImage.getImageDate());

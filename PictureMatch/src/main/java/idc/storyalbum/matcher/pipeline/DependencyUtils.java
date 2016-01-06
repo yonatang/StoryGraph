@@ -4,6 +4,7 @@ import com.google.common.collect.HashMultiset;
 import com.google.common.collect.Sets;
 import idc.storyalbum.model.graph.StoryDependency;
 import idc.storyalbum.model.image.AnnotatedImage;
+import idc.storyalbum.model.image.ImageInstance;
 import org.joda.time.DateTime;
 import org.joda.time.Interval;
 
@@ -13,7 +14,7 @@ import java.util.Set;
  * Created by yonatan on 22/4/2015.
  */
 public class DependencyUtils {
-    static public boolean isMatch(StoryDependency dependency, AnnotatedImage i1, AnnotatedImage i2) {
+    static public boolean isMatch(StoryDependency dependency, ImageInstance i1, ImageInstance i2) {
         switch (dependency.getType()) {
             case "when":
                 return isWhenMatch(dependency, i1, i2);
@@ -34,17 +35,20 @@ public class DependencyUtils {
 
         return Sets.intersection(set,dependency.getValues());
     }
-    static boolean isWhoMatch(StoryDependency dependency, AnnotatedImage i1, AnnotatedImage i2) {
+    static boolean isWhoMatch(StoryDependency dependency, ImageInstance i1, ImageInstance i2) {
         Set<String> i1CharIds=filter(dependency,i1.getCharacterIds().elementSet());
         Set<String> i2CharIds=filter(dependency,i2.getCharacterIds().elementSet());
 
+        Set<String> i1RelCharIds = filter(dependency,i1.getRelevantCharacters().elementSet());
+        Set<String> i2RelCharIds = filter(dependency,i2.getRelevantCharacters().elementSet());
+
         switch (dependency.getOperator()) {
             case "include":
-                return Sets.intersection(i1CharIds, i2CharIds).size() == i1CharIds.size();
+                return Sets.intersection(i1RelCharIds, i2RelCharIds).size() == i1CharIds.size();
             case "exclude":
                 return Sets.intersection(i1CharIds, i2CharIds).size() == 0;
             case "includeN":
-                return Sets.intersection(i1CharIds, i2CharIds).size() >= dependency.getExtraN();
+                return Sets.intersection(i1RelCharIds, i2RelCharIds).size() >= dependency.getExtraN();
         }
         throw new IllegalStateException("Unknown who operator " + dependency.getOperator());
     }

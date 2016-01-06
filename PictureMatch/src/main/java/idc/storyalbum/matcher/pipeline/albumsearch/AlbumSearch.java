@@ -10,6 +10,7 @@ import idc.storyalbum.model.graph.Constraint;
 import idc.storyalbum.model.graph.StoryDependency;
 import idc.storyalbum.model.graph.StoryEvent;
 import idc.storyalbum.model.image.AnnotatedImage;
+import idc.storyalbum.model.image.ImageInstance;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,7 +36,7 @@ public abstract class AlbumSearch {
     @Autowired
     Props.ScoreProps scoreProps;
 
-    double evaluateDependencies(List<StoryDependency> dependencies, AnnotatedImage i1, AnnotatedImage i2) {
+    double evaluateDependencies(List<StoryDependency> dependencies, ImageInstance i1, ImageInstance i2) {
 
         double sum = 0;
         for (StoryDependency dependency : dependencies) {
@@ -61,7 +62,7 @@ public abstract class AlbumSearch {
                                         new ImmutablePair<>(dependency.getFromEventId(), dependency.getToEventId())));
 
         // map each event to its annotated image
-        Map<Integer, AnnotatedImage> eventToImage = assignment.stream()
+        Map<Integer, ImageInstance> eventToImage = assignment.stream()
                 .collect(toMap((page) -> page.getStoryEvent().getId(), AlbumPage::getImage));
 
         double dependenciesScore = 0;
@@ -70,8 +71,8 @@ public abstract class AlbumSearch {
             double sum = 0;
             int count = 0;
             for (ImmutablePair<Integer, Integer> pair : pairDependencies.keySet()) {
-                AnnotatedImage i1 = eventToImage.get(pair.getLeft());
-                AnnotatedImage i2 = eventToImage.get(pair.getRight());
+                ImageInstance i1 = eventToImage.get(pair.getLeft());
+                ImageInstance i2 = eventToImage.get(pair.getRight());
                 List<StoryDependency> dependencies = pairDependencies.get(pair);
                 count += dependencies.size();
                 sum += evaluateDependencies(dependencies, i1, i2);

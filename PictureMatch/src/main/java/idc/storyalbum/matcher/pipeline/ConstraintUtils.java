@@ -5,6 +5,7 @@ import com.google.common.collect.Sets;
 import idc.storyalbum.matcher.Consts.Constraints;
 import idc.storyalbum.model.graph.Constraint;
 import idc.storyalbum.model.image.AnnotatedImage;
+import idc.storyalbum.model.image.ImageInstance;
 import org.apache.commons.lang3.NotImplementedException;
 import org.apache.commons.lang3.StringUtils;
 import org.joda.time.DateTime;
@@ -98,7 +99,7 @@ public class ConstraintUtils {
 
     static boolean isWhatMatch(Constraint constraint, AnnotatedImage image) {
         Multiset<String> itemIds = image.getItemIds();
-        return isMultivalMatch(constraint, itemIds);
+        return isMultivalMatch(constraint, itemIds, null);
     }
 
     static boolean isWhoMatch(Constraint constraint, AnnotatedImage image) {
@@ -107,10 +108,18 @@ public class ConstraintUtils {
         //* includeN
         //* excludeAll
         Multiset<String> characterIds = image.getCharacterIds();
-        return isMultivalMatch(constraint, characterIds);
+        Multiset<String> relevantCharactersId = null;
+        if (image instanceof ImageInstance) {
+            relevantCharactersId = ((ImageInstance) image).getRelevantCharacters();
+        }
+        return isMultivalMatch(constraint, characterIds, relevantCharactersId);
     }
 
-    private static boolean isMultivalMatch(Constraint constraint, Multiset<String> imageData) {
+    private static boolean isMultivalMatch(Constraint constraint, Multiset<String> imageData,
+                                           Multiset<String> specificData) {
+        if (specificData == null) {
+            specificData = imageData;
+        }
         switch (constraint.getOperator()) {
             case Constraints.OP_INCLUDE_N:
                 return includeN(constraint.getExtraN(), constraint.getMultiplier(),
@@ -118,7 +127,7 @@ public class ConstraintUtils {
             case Constraints.OP_INCLUDE_ALL:
                 return includeAll(constraint.getValues(), constraint.getMultiplier(), imageData);
             case Constraints.OP_EXCLUDE_ALL:
-                return excludeAll(constraint.getValues(), imageData.elementSet());
+                return excludeAll(constraint.getValues(), specificData.elementSet());
 
         }
         throw new IllegalStateException("Unknown operator type " + constraint.getOperator());

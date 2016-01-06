@@ -1,6 +1,9 @@
 package idc.storyalbum.model.image;
 
+import com.google.common.collect.HashMultiset;
+import com.google.common.collect.Multiset;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
@@ -20,13 +23,16 @@ public class ImageInstance extends AnnotatedImage{
 
     private double crowdedness;
 
+    private HashMultiset<String> relevantCharacters = HashMultiset.create();
+
     public ImageInstance(AnnotatedImage annotatedImage, List<Set<String>> relevantGroupCharacterIds) {
         setImageDate(annotatedImage.getImageDate());
         setImageFilename(annotatedImage.getImageFilename());
         setImageQuality(annotatedImage.getImageQuality());
         setLocationId(annotatedImage.getLocationId());
+        setCharacterIds(annotatedImage.getCharacterIds());
         for (Set<String> group : relevantGroupCharacterIds) {
-            getCharacterIds().addAll(group);
+            getRelevantCharacters().addAll(group);
         }
     }
 
@@ -36,11 +42,11 @@ public class ImageInstance extends AnnotatedImage{
         if (o == null || getClass() != o.getClass()) return false;
         ImageInstance that = (ImageInstance) o;
         return Objects.equals(getImageFilename(), that.getImageFilename()) &&
-                Objects.equals(getCharacterIds(), that.getCharacterIds());
+                Objects.equals(getRelevantCharacters(), that.getRelevantCharacters());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getImageFilename(), getCharacterIds());
+        return Objects.hash(getImageFilename(), getRelevantCharacters());
     }
 }

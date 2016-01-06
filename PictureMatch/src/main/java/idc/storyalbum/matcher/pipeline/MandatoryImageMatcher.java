@@ -84,7 +84,7 @@ public class MandatoryImageMatcher {
         log.debug("    Instances: {}", product.size());
         for (List<Set<String>> instance : product) {
             ImageInstance imageInstance = new ImageInstance(annotatedImage, instance);
-            double imageCrowdedness = scoreService.getImageCrowdedness(annotatedImage, imageInstance);
+            double imageCrowdedness = scoreService.getImageCrowdedness(imageInstance);
             imageInstance.setCrowdedness(imageCrowdedness);
             log.debug("      Instance: {}", imageInstance.getCharacterIds());
             log.debug("      Crowdedness: {}", imageCrowdedness);

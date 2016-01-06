@@ -22,14 +22,11 @@ public class ScoreService {
     @Autowired
     private Props.ScoreProps scoreProps;
 
-    public double getImageCrowdedness(AnnotatedImage image, ImageInstance imageInstance) {
-        if (image instanceof ImageInstance) {
-            throw new IllegalArgumentException("AnnotatedImage must not be ImageInstance");
-        }
-        if (image.getCharacterIds().size() == 0) {
+    public double getImageCrowdedness(ImageInstance imageInstance) {
+        if (imageInstance.getCharacterIds().size() == 0) {
             return 1.0;
         }
-        return (double) imageInstance.getCharacterIds().size() / (double) image.getCharacterIds().size();
+        return (double) imageInstance.getRelevantCharacters().size() / (double) imageInstance.getCharacterIds().size();
     }
     /**
      * Calculate the fineness of a specific image to an event with some random jittering

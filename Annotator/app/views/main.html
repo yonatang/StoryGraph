@@ -3,7 +3,7 @@
     save-btn="ctrl.annotatedSet"
     save-btn-filename="ctrl.albumId+'-annotatedSet.json'"
     class="btn btn-info">Save Set</button>
-  <input ng-model="albumId">
+  <input ng-model="albumId" placeholder="Set to load ({{ctrl.albumId}})">
   <button ng-click="ctrl.loadAlbum(albumId)">Load</button>
   <div class="page-header">
     <h4>Image name {{ctrl.thisImage.imageFilename}} {{ctrl.idx+1}}/{{ctrl.annotatedSet.images.length}} (Album {{ctrl.albumId}})</h4>
@@ -20,7 +20,19 @@
                typeahead="location.id for location in ctrl.locations | filter:{id:$viewValue} | limitTo:8"
                class="form-control"
               style="width: 350px">
-        <img ng-src="{{ctrl.getImageSrc()}}" style="max-height: 300px; max-width: 300px">
+        <div style="position: relative">
+          <div id="tagger" ng-show="ctrl.tagData.showTagger"
+               ng-style="ctrl.tagData.borderStyle"
+               ng-mousemove="ctrl.imageMouseMove($event,true)"
+               style="position: absolute; border: solid thick darkgray; color: darkgray; text-overflow: ellipsis;
+               text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+            {{ctrl.tagData.charId}}
+          </div>
+          <img id="img" ng-src="{{ctrl.getImageSrc()}}"
+               ng-mousemove="ctrl.imageMouseMove($event)"
+               ng-click="ctrl.imageClick($event)"
+               style="max-height: 300px; max-width: 300px">
+        </div>
       </div>
     </div>
     <div class="col-md-4">
@@ -30,6 +42,13 @@
           <button
             class="btn btn-danger"
             ng-click="ctrl.removeCharachter($index)">Remove</button>
+          <button
+            class="btn btn-info"
+            ng-click="ctrl.tagCharachter($index)">Tag</button>
+
+          <a href ng-show="ctrl.isCharHaveTag($index)"
+            ng-mouseenter="ctrl.showBorder($index, true)"
+            ng-mouseleave="ctrl.showBorder($index,false)">Tagged</a>
           {{charachterId}}
         </li>
       </ul>

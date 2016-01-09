@@ -13,7 +13,7 @@ angular.module('annotatorApp')
     var prefix = '/Users/yonatan/Dropbox/Studies/Story Albums/Sets';
     that.getAnnotatedSet = function (id) {
       return AnnSet.get({id: id}, function (annotatedSet) {
-        annotatedSet.baseDir = annotatedSet.baseDir.substr(prefix.length);
+        //annotatedSet.baseDir = annotatedSet.baseDir.substr(prefix.length);
         //annotatedSet.images.sort(function(i1,i2){
         //  var fn1=i1.imageFilename.replace('.txt','').replace('.jpg','');
         //  var fn2=i2.imageFilename.replace('.txt','').replace('.jpg','');

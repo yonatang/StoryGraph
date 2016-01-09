@@ -106,9 +106,22 @@ angular.module('annotatorApp')
 
     };
 
+    $('#img').on('load', function () {
+      $scope.$apply(function () {
+        var elem = $('#img')[0];
+        ctrl.imageData = {
+          nHeight: elem.naturalHeight,
+          nWidth: elem.naturalWidth,
+          cHeight: elem.clientHeight,
+          cWidth: elem.clientWidth
+        };
+      });
+    });
+
     ctrl.nextImage = function(){
       if (ctrl.idx<annotatedSet.images.length-1){
         ctrl.idx++;
+        ctrl.tagData.showTagger = false;
         ctrl.thisImage=annotatedSet.images[ctrl.idx];
         updateAutsuggest();
 
@@ -117,6 +130,7 @@ angular.module('annotatorApp')
     ctrl.prevImage = function(){
       if (ctrl.idx>0){
         ctrl.idx--;
+        ctrl.tagData.showTagger = false;
         ctrl.thisImage=annotatedSet.images[ctrl.idx];
         updateAutsuggest();
       }
@@ -128,7 +142,8 @@ angular.module('annotatorApp')
         return null;
       }
       filename = filename.replace('.txt', '.jpg');
-      return '/resources' + annotatedSet.baseDir + '/' + filename;
+      var imageSrc = '/resources' + annotatedSet.baseDir + '/' + filename;
+      return imageSrc;
     };
     ctrl.addCharacter = function () {
       if (ctrl.characterId) {
@@ -143,9 +158,107 @@ angular.module('annotatorApp')
       }
     };
     ctrl.removeCharachter = function (idx) {
+      var charId=ctrl.thisImage.characterIds[idx];
       ctrl.thisImage.characterIds.splice(idx, 1);
+      delete ctrl.thisImage.charQualities[charId];
     };
     ctrl.removeItem = function(idx){
       ctrl.thisImage.itemIds.splice(idx, 1);
+    };
+
+    ctrl.isCharHaveTag = function (idx) {
+      var charId = ctrl.thisImage.characterIds[idx];
+      var img = ctrl.thisImage;
+      if (!img.charQualities || !img.charQualities[charId]) {
+        return false;
+      }
+      var charQuality = img.charQualities[charId];
+      return (charQuality.length > 0);
+    };
+
+    ctrl.tagData = {};
+    ctrl.showBorder = function (idx, show) {
+      var charId = ctrl.thisImage.characterIds[idx];
+      var charQuality = ctrl.thisImage.charQualities[charId][0];
+      ctrl.tagData.showTagger = show;
+
+      ctrl.tagData.charId = charId;
+      var data = ctrl.imageData,
+        ratioW = data.cWidth / data.nWidth,
+        ratioH = data.cHeight / data.nHeight;
+
+      var x = charQuality.x * ratioW,
+        y = charQuality.y * ratioH,
+        height = charQuality.height * ratioH,
+        width = charQuality.width * ratioW;
+
+      ctrl.tagData.borderStyle = {
+        left: x + 'px',
+        top: y + 'px',
+        width: width + 'px',
+        height: height + 'px'
+      };
+    };
+
+    ctrl.tagCharachter = function (idx) {
+      var charId = ctrl.thisImage.characterIds[idx];
+      ctrl.tagData.inProgress = true;
+      ctrl.tagData.charId = charId;
+      ctrl.tagData.firstClick = true;
+      ctrl.tagData.charId = charId;
+    };
+    ctrl.imageMouseMove = function ($event, inTagger) {
+      if (!ctrl.tagData.inProgress || ctrl.tagData.firstClick) {
+        return;
+      }
+
+      var x = $event.offsetX,
+        y = $event.offsetY;
+
+      if (!inTagger){
+        x -= ctrl.tagData.x;
+        y -= ctrl.tagData.y;
+      }
+      ctrl.tagData.borderStyle.width = x +'px';
+      ctrl.tagData.borderStyle.height = y + 'px';
+    };
+    ctrl.imageClick = function ($event) {
+      if (!ctrl.tagData.inProgress){
+        return;
+      }
+      var x = $event.offsetX,
+        y = $event.offsetY,
+        data = ctrl.imageData;
+
+      var realX = x * data.nWidth / data.cWidth,
+        realY = y * data.nHeight / data.cHeight;
+
+      if (ctrl.tagData.firstClick) {
+        ctrl.tagData.x = x;
+        ctrl.tagData.y = y;
+        ctrl.tagData.realX = realX;
+        ctrl.tagData.realY = realY;
+        ctrl.tagData.firstClick = false;
+        ctrl.tagData.showTagger = true;
+        ctrl.tagData.borderStyle = {
+          left: x + 'px',
+          top: y + 'px',
+          width: 1 + 'px',
+          height: 1 + 'px'
+        };
+      } else {
+        var charQuality = {
+          x : parseInt(ctrl.tagData.realX),
+          y : parseInt(ctrl.tagData.realY),
+          width : parseInt(realX - ctrl.tagData.realX),
+          height : parseInt(realY - ctrl.tagData.realY)
+        };
+        if (!ctrl.thisImage.charQualities) {
+          ctrl.thisImage.charQualities={};
+        }
+        ctrl.thisImage.charQualities[ctrl.tagData.charId] = [charQuality];
+        ctrl.tagData.inProgress=false;
+        ctrl.tagData.showTagger = false;
+      }
     };
   });

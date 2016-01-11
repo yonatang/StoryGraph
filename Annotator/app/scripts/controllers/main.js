@@ -181,7 +181,7 @@ angular.module('annotatorApp')
     ctrl.tagData = {};
     ctrl.showBorder = function (idx, show) {
       var charId = ctrl.thisImage.characterIds[idx];
-      var charQuality = ctrl.thisImage.charQualities[charId][0];
+      var charQuality = ctrl.thisImage.charQualities[charId][0].box;
       ctrl.tagData.showTagger = show;
 
       ctrl.tagData.charId = charId;
@@ -250,10 +250,12 @@ angular.module('annotatorApp')
         };
       } else {
         var charQuality = {
-          x : parseInt(ctrl.tagData.realX),
-          y : parseInt(ctrl.tagData.realY),
-          width : parseInt(realX - ctrl.tagData.realX),
-          height : parseInt(realY - ctrl.tagData.realY)
+          box : {
+            x: parseInt(ctrl.tagData.realX),
+            y: parseInt(ctrl.tagData.realY),
+            width: parseInt(realX - ctrl.tagData.realX),
+            height: parseInt(realY - ctrl.tagData.realY)
+          }
         };
         if (!ctrl.thisImage.charQualities) {
           ctrl.thisImage.charQualities={};

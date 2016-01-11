@@ -14,7 +14,7 @@
         <label>Location</label>
         <input
             id="locationInput"
-          ng-keyup="ctrl.handleKeyup($event)"
+            ng-keyup="ctrl.handleKeyup($event,ctrl.thisImage.locationId)"
                tabindex="1"
                ng-model="ctrl.thisImage.locationId"
                typeahead="location.id for location in ctrl.locations | filter:{id:$viewValue} | limitTo:8"
@@ -49,6 +49,17 @@
           <a href ng-show="ctrl.isCharHaveTag($index)"
             ng-mouseenter="ctrl.showBorder($index, true)"
             ng-mouseleave="ctrl.showBorder($index,false)">Tagged</a>
+          <select ng-model="ctrl.thisImage.charQualities[charachterId][0].facing"
+                  ng-keyup="ctrl.handleKeyup($event)"
+                  ng-if="ctrl.isCharHaveTag($index)">
+            <option value="FRONT">Front</option>
+            <option value="SIDE">Side</option>
+            <option value="UP">Up</option>
+            <option value="DOWN">Down</option>
+            <option value="BOTTOM">Bottom</option>
+            <option value="BACK">Back</option>
+
+          </select>
           {{charachterId}}
         </li>
       </ul>
@@ -69,7 +80,7 @@
     <form ng-submit="ctrl.addCharacter()">
       <input
         tabindex="2"
-        ng-keyup="ctrl.handleKeyup($event)"
+        ng-keyup="ctrl.handleKeyup($event, ctrl.characterId)"
         ng-model="ctrl.characterId"
         typeahead="character.id for character in ctrl.characters | filter:{id:$viewValue} | limitTo:8"
         class="form-control">

@@ -52,12 +52,14 @@ angular.module('annotatorApp')
       }
     });
 
-    ctrl.handleKeyup = function(event){
+    ctrl.handleKeydown = function(event){
+
+    }
+    ctrl.handleKeyup = function(event, model){
       if (event.keyCode===27){
         ctrl.characterId='';
       } else
-      if (!ctrl.characterId){
-        console.log(ctrl.characterId);
+      if (!model){
         if (event.keyCode===39){
           ctrl.nextImage();
         }
@@ -102,7 +104,7 @@ angular.module('annotatorApp')
           console.log('added char',id);
         }
       }
-      $('#locationInput').focus(); //oh lord, forgive me.
+      //$('#locationInput').focus(); //oh lord, forgive me.
 
     };
 

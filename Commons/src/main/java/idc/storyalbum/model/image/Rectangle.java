@@ -1,5 +1,6 @@
 package idc.storyalbum.model.image;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -21,6 +22,7 @@ public class Rectangle {
     private int width;
     private int height;
 
+    @JsonIgnore
     public Dimension getDimension() {
         return new Dimension(width, height);
     }

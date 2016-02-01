@@ -10,4 +10,6 @@ public class ImageQuality {
     private double overExposedPenalty;
     private double underExposedPenalty;
     private double blurinessLevelPenalty;
+    private int height;
+    private int width;
 }

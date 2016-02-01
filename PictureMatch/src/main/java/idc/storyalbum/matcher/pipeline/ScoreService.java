@@ -1,11 +1,13 @@
 package idc.storyalbum.matcher.pipeline;
 
+import com.google.common.collect.HashMultimap;
 import idc.storyalbum.matcher.conf.Props;
 import idc.storyalbum.model.graph.Constraint;
 import idc.storyalbum.model.graph.StoryEvent;
-import idc.storyalbum.model.image.AnnotatedImage;
+import idc.storyalbum.model.image.CharacterQuality;
 import idc.storyalbum.model.image.ImageInstance;
 import idc.storyalbum.model.image.ImageQuality;
+import idc.storyalbum.model.image.Rectangle;
 import org.apache.commons.lang3.RandomUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -52,11 +54,15 @@ public class ScoreService {
         Set<Constraint> softConstraints = event.getConstraints().stream()
                 .filter(Constraint::isSoft)
                 .collect(Collectors.toSet());
+        double SOFT_CONSTRAINT_FACTOR = 0.5;
+        double IMAGE_QUALITY_FACTOR = 0.2;
+        double CROWD_FACTOR = 0.1;
+        double CHAR_QUALITY_FACTOR = 0.2;
 
         double softConstraintsScore = 0;
         if (!softConstraints.isEmpty()) {
             long softConstraintsCount = Math.min(softConstraints.size(), 10);
-            double factor = (1.0 - scoreProps.getQualityFactor()) / ((double) softConstraintsCount);
+            double factor = (SOFT_CONSTRAINT_FACTOR) / ((double) softConstraintsCount);
             long matchedConstraints = softConstraints.stream()
                     .filter(constraint -> ConstraintUtils.isMatch(constraint, image))
                     .count();
@@ -69,13 +75,54 @@ public class ScoreService {
         imageQuality.getOverExposedPenalty();
         imageQuality.getUnderExposedPenalty();
 
-        double qualityScore = scoreProps.getQualityFactor() * (
+
+        double qualityScore = IMAGE_QUALITY_FACTOR * (
                 scoreProps.getUnderExposedPenalty() * imageQuality.getUnderExposedPenalty() +
                 scoreProps.getOverExposedPenalty() * imageQuality.getOverExposedPenalty() +
                 scoreProps.getBlurinessLevelPenalty() * imageQuality.getBlurinessLevelPenalty());
 
-        double crowdednessScore = image.getCrowdedness(); //TODO BETTER FUNCTION!
-        return crowdednessScore * (qualityScore + softConstraintsScore);
+        HashMultimap<String, CharacterQuality> charQualities = image.getCharQualities();
+        double charQualityScore = 0;
+        int charQualityCount = 0;
+        for (String charName : charQualities.keySet()) {
+            if (image.getRelevantCharacters().contains(charName)) {
+                CharacterQuality charQuality = charQualities.get(charName).iterator().next();
+                charQualityScore += getCharQualityScore(image, charQuality);
+                charQualityCount++;
+            }
+        }
+        if (charQualityCount > 0) {
+            charQualityScore = CHAR_QUALITY_FACTOR * (charQualityScore / (double) charQualityCount);
+        }
+        double crowdednessScore = CROWD_FACTOR * image.getCrowdedness(); //precalculated in earlier stage
+        return crowdednessScore + qualityScore + softConstraintsScore + charQualityScore;
+    }
+
+    private double getCharQualityScore(ImageInstance image, CharacterQuality characterQuality) {
+        double facingScore;
+        switch (characterQuality.getFacing()) {
+            case FRONT:
+                facingScore = 1;
+                break;
+            case UP:
+            case DOWN:
+            case SIDE:
+                facingScore = 0.25;
+                break;
+            case BACK:
+                facingScore = 0.05;
+                break;
+            default:
+                throw new RuntimeException("Facing " + characterQuality.getFacing() + " not supported");
+        }
+
+        ImageQuality imageQuality = image.getImageQuality();
+        int imageSize = imageQuality.getHeight() * imageQuality.getWidth();
+        Rectangle box = characterQuality.getBox();
+        int charSize = box.getHeight() * box.getWidth();
+
+        double sizeScore = (double) charSize / (double) imageSize;
+        return sizeScore * facingScore;
     }
 
 

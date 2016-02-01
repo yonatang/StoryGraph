@@ -18,10 +18,11 @@ import java.util.List;
  * Created by yonatan on 25/4/2015.
  */
 public class ConvertToHtml {
-    public static void write(File albumFile, File htmlFile, String imagesBasePath) throws IOException {
+    public static void write(ObjectMapper objectMapper, File albumFile, File htmlFile, String imagesBasePath) throws IOException {
 
-        ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.registerModule(new JodaModule());
+//        ObjectMapper objectMapper = new ObjectMapper();
+//        objectMapper.registerModule(new JodaModule());
+//        objectMapper.re
         Album album = objectMapper.readValue(albumFile, Album.class);
         String baseDir = album.getBaseDir().getAbsolutePath();
         if (StringUtils.isNotEmpty(imagesBasePath)){
@@ -61,6 +62,6 @@ public class ConvertToHtml {
     public static void main(String... args) throws Exception {
         File input = new File("/Users/yonatan/StoryAlbumData/Riddle/Set1/album.json");
         File output = new File("/Users/yonatan/StoryAlbumData/Riddle/Set1/out.html");
-        write(input,output, null);
+        write(new ObjectMapper(), input,output, null);
     }
 }

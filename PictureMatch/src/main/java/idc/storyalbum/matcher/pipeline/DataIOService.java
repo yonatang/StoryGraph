@@ -1,6 +1,7 @@
 package idc.storyalbum.matcher.pipeline;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import idc.storyalbum.matcher.conf.Props;
 import idc.storyalbum.model.album.Album;
 import idc.storyalbum.model.album.AlbumPage;
 import idc.storyalbum.model.graph.Constraint;
@@ -9,11 +10,14 @@ import idc.storyalbum.model.graph.StoryEvent;
 import idc.storyalbum.model.graph.StoryGraph;
 import idc.storyalbum.model.image.AnnotatedImage;
 import idc.storyalbum.model.image.AnnotatedSet;
+import idc.storyalbum.model.image.ImageQuality;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -28,6 +32,9 @@ import java.util.List;
 public class DataIOService {
     @Autowired
     private ObjectMapper objectMapper;
+
+    @Autowired
+    private Props.GlobalProps globalProps;
 
     public PipelineContext readData(File graphFile, File setFile) throws IOException {
         return new PipelineContext(readStoryGraph(graphFile), readAnnotatedSet(setFile));
@@ -57,6 +64,15 @@ public class DataIOService {
     private AnnotatedSet readAnnotatedSet(File file) throws IOException {
         log.info("Reading set data {}", file);
         AnnotatedSet annotatedSet = objectMapper.readValue(file, AnnotatedSet.class);
+        File base = new File(globalProps.getDebugAlbumFullPath(), annotatedSet.getBaseDir().getAbsolutePath());
+        for (AnnotatedImage annotatedImage : annotatedSet.getImages()) {
+            File imageFile = new File(base, annotatedImage.getImageFilename());
+            log.debug("Reading content of file {}", imageFile);
+            BufferedImage read = ImageIO.read(imageFile);
+            ImageQuality imageQuality = annotatedImage.getImageQuality();
+            imageQuality.setWidth(read.getWidth());
+            imageQuality.setHeight(read.getHeight());
+        }
         log.info("Read set with {} images", annotatedSet.getImages().size());
         return annotatedSet;
     }

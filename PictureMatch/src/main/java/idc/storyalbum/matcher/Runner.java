@@ -1,5 +1,6 @@
 package idc.storyalbum.matcher;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import idc.storyalbum.matcher.conf.Props;
 import idc.storyalbum.matcher.exception.NoMatchException;
 import idc.storyalbum.matcher.exception.TemplateErrorException;
@@ -58,6 +59,9 @@ public class Runner implements CommandLineRunner {
     @Autowired
     private StoryTextResolver storyTextResolver;
 
+    @Autowired
+    private ObjectMapper objectMapper;
+
     @Override
     public void run(String... args) throws Exception {
         try {
@@ -82,7 +86,7 @@ public class Runner implements CommandLineRunner {
             if (globalProps.isDebugAlbum()) {
                 File debugHtmlFile = new File(outputPath, "album-" + searchProps.getStrategyName() + ".html");
                 log.info("Producing a debug album {}", debugHtmlFile);
-                ConvertToHtml.write(albumFile, debugHtmlFile, globalProps.getDebugAlbumFullPath());
+                ConvertToHtml.write(objectMapper, albumFile, debugHtmlFile, globalProps.getDebugAlbumFullPath());
             }
         } catch (NoMatchException e) {
             log.error("Error! Cannot satisfy story constraints: {}", e.getMessage());

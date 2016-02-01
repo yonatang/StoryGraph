@@ -1,5 +1,7 @@
 package idc.storyalbum.model.image;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.google.common.collect.HashMultiset;
 import com.google.common.collect.Multiset;
 import lombok.Data;
@@ -30,6 +32,7 @@ public class ImageInstance extends AnnotatedImage{
         setImageFilename(annotatedImage.getImageFilename());
         setImageQuality(annotatedImage.getImageQuality());
         setLocationId(annotatedImage.getLocationId());
+        setCharQualities(annotatedImage.getCharQualities());
         setCharacterIds(annotatedImage.getCharacterIds());
         for (Set<String> group : relevantGroupCharacterIds) {
             getRelevantCharacters().addAll(group);

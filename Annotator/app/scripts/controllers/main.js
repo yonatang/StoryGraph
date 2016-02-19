@@ -208,6 +208,7 @@ angular.module('annotatorApp')
       ctrl.tagData.charId = charId;
       ctrl.tagData.firstClick = true;
       ctrl.tagData.charId = charId;
+      ctrl.tagData.idx = idx;
     };
     ctrl.imageMouseMove = function ($event, inTagger) {
       if (!ctrl.tagData.inProgress || ctrl.tagData.firstClick) {
@@ -263,6 +264,7 @@ angular.module('annotatorApp')
         ctrl.thisImage.charQualities[ctrl.tagData.charId] = [charQuality];
         ctrl.tagData.inProgress=false;
         ctrl.tagData.showTagger = false;
+        setTimeout(function(){$('#tagData-'+ctrl.tagData.idx).focus();},10);
       }
     };
   });

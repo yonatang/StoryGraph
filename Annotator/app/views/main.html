@@ -49,15 +49,16 @@
           <a href ng-show="ctrl.isCharHaveTag($index)"
             ng-mouseenter="ctrl.showBorder($index, true)"
             ng-mouseleave="ctrl.showBorder($index,false)">Tagged</a>
-          <select ng-model="ctrl.thisImage.charQualities[charachterId][0].facing"
+          <select id="tagData-{{$index}}"
+                  ng-model="ctrl.thisImage.charQualities[charachterId][0].facing"
                   ng-keyup="ctrl.handleKeyup($event)"
                   ng-if="ctrl.isCharHaveTag($index)">
             <option value="FRONT">Front</option>
             <option value="SIDE">Side</option>
             <option value="UP">Up</option>
             <option value="DOWN">Down</option>
-            <option value="BOTTOM">Bottom</option>
             <option value="BACK">Back</option>
+            <option value="BOTTOM">Bottom</option>
 
           </select>
           {{charachterId}}

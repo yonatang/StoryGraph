@@ -1,5 +1,6 @@
 package idc.storyalbum.matcher.pipeline.albumsearch;
 
+import com.google.common.base.Stopwatch;
 import idc.storyalbum.matcher.conf.Props;
 import idc.storyalbum.matcher.pipeline.DependencyUtils;
 import idc.storyalbum.matcher.pipeline.PipelineContext;
@@ -21,6 +22,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.SortedSet;
+import java.util.concurrent.TimeUnit;
+import java.util.function.Consumer;
 
 import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.toMap;
@@ -118,7 +121,11 @@ public abstract class AlbumSearch {
 
     public SortedSet<Album> findAlbums(PipelineContext ctx) {
         SortedSet<Album> bestAlbums = findAlbumsImpl(ctx);
+        Stopwatch stopwatch=Stopwatch.createStarted();
         debugShowAlbum(bestAlbums.first(), ctx);
+        stopwatch.stop();
+        long seconds = stopwatch.elapsed(TimeUnit.SECONDS);
+        bestAlbums.forEach(album -> album.setRunningTime((int)seconds));
         return bestAlbums;
     }
 

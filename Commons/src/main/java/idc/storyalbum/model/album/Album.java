@@ -18,5 +18,6 @@ public class Album {
     private double score;
     private Date date;
     private File baseDir;
+    private int iterations;
     private int runningTime;
 }

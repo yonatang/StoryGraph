@@ -1,7 +1,6 @@
 package idc.storyalbum.matcher.tools.html_album;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.datatype.joda.JodaModule;
 import idc.storyalbum.model.album.Album;
 import idc.storyalbum.model.album.AlbumPage;
 import idc.storyalbum.model.image.AnnotatedImage;
@@ -35,6 +34,7 @@ public class ConvertToHtml {
         lines.add("<body>");
         lines.add("<div>");
         lines.add("<h1>Album date: " + album.getDate() + ", score: " + album.getScore() + "</h1>");
+        lines.add("<h2>Iterations: " + album.getIterations() + "</h2>");
         int idx = 0;
         for (AlbumPage albumPage : album.getPages()) {
             idx++;

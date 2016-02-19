@@ -15,6 +15,7 @@ import idc.storyalbum.model.album.Album;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -80,12 +81,13 @@ public class Runner implements CommandLineRunner {
                 outputPath = albumPath;
             }
             new File(outputPath).mkdirs();
-            File albumFile = new File(outputPath + File.separatorChar + "album.json");
-
+            String now = DateTime.now().toDateTimeISO().toString("yyyy-MM-dd-hh-mm");
+            File albumFile = new File(outputPath + File.separatorChar + "album-"+now+".json");
             dataIOService.writeAlbum(bestAlbum, albumFile);
             if (globalProps.isDebugAlbum()) {
-                File debugHtmlFile = new File(outputPath, "album-" + searchProps.getStrategyName() + ".html");
-                log.info("Producing a debug album {}", debugHtmlFile);
+
+                File debugHtmlFile = new File(outputPath, "album-" + searchProps.getStrategyName() + "-" + now + ".html");
+                log.info("Producing a debug album {}", StringUtils.replace(debugHtmlFile.toString()," ","%20"));
                 ConvertToHtml.write(objectMapper, albumFile, debugHtmlFile, globalProps.getDebugAlbumFullPath());
             }
         } catch (NoMatchException e) {

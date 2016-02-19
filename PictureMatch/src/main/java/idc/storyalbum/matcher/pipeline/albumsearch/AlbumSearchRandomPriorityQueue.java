@@ -13,6 +13,7 @@ import org.apache.commons.lang3.time.StopWatch;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -109,7 +110,14 @@ public class AlbumSearchRandomPriorityQueue extends AlbumSearch {
 
         StopWatch s3 = new StopWatch();
         s3.start();
+        long split = System.currentTimeMillis();
+        DecimalFormat df=new DecimalFormat("#.##");
         for (int i = 0; i < M; i++) {
+            if (System.currentTimeMillis() - split > 60000) {
+                double percentage = (((double) i / (double) M) * 100.0);
+                log.info("{}% completed", df.format(percentage));
+                split = System.currentTimeMillis();
+            }
             Set<AlbumPage> assignment = findAssignment(ctx, i);
             if (assignment == null) {
                 continue;

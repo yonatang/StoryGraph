@@ -36,7 +36,7 @@ public class StoryTextResolver {
     private Context createContext(Album album, Profile profile) {
         Map<String, Character> charIdToChar = profile.getCharacters()
                 .stream()
-                .collect(toMap((x) -> x.getId(), identity()));
+                .collect(toMap(Character::getId, identity()));
         profile.getLocations().stream().collect(toMap(Location::getId, identity()));
         Map<String, idc.storyalbum.matcher.freemarker.context.Character> charCache = new HashMap<>();
 
@@ -65,13 +65,17 @@ public class StoryTextResolver {
         String locId = albumPage.getImage().getLocationId();
         if (!locCache.containsKey(locId)) {
             Location location = locIdToLocation.get(locId);
+            idc.storyalbum.matcher.freemarker.context.Location ctxLoc = new idc.storyalbum.matcher.freemarker.context.Location();
             if (location != null) {
-                idc.storyalbum.matcher.freemarker.context.Location ctxLoc = new idc.storyalbum.matcher.freemarker.context.Location();
                 ctxLoc.setName(location.getName());
                 ctxLoc.setId(locId);
                 locCache.put(locId, ctxLoc);
-                page.setLocation(ctxLoc);
+            } else {
+                ctxLoc.setName("Unknown");
+                ctxLoc.setId(locId);
+                locCache.put(locId, ctxLoc);
             }
+            page.setLocation(ctxLoc);
         } else {
             page.setLocation(locCache.get(locId));
         }

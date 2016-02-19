@@ -106,6 +106,7 @@ public class ScoreService {
                 break;
             case UP:
             case DOWN:
+            case BOTTOM:
             case SIDE:
                 facingScore = 0.25;
                 break;

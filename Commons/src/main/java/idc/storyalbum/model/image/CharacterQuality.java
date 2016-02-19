@@ -8,7 +8,7 @@ import lombok.Data;
 @Data
 public class CharacterQuality {
     public enum Facing {
-        FRONT, SIDE, BACK, DOWN, UP;
+        FRONT, SIDE, BACK, DOWN, UP, BOTTOM;
     }
     private Rectangle box;
     private Facing facing;

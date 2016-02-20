@@ -15,6 +15,7 @@ import idc.storyalbum.model.album.Album;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.tuple.Pair;
 import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -22,6 +23,8 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.SortedSet;
 
 /**
@@ -63,37 +66,65 @@ public class Runner implements CommandLineRunner {
     @Autowired
     private ObjectMapper objectMapper;
 
+    @Autowired
+    private Props.SearchPriorityProps searchPriorityProps;
+
     @Override
     public void run(String... args) throws Exception {
+        List<Pair<Integer, Double>> results = new ArrayList<>();
         try {
             File annotatedSetFile = new File(fileProps.getAnnotatedSetPath()); //"/Users/yonatan/StoryAlbumData/Riddle/Set1/annotatedSet.json"); //new File("/tmp/annotatedSet.json");
             File storyGraphFile = new File(fileProps.getStoryPath()); //"/Users/yonatan/StoryAlbumData/Riddle/story.json");
-            PipelineContext ctx = dataIOService.readData(storyGraphFile, annotatedSetFile);
-            mandatoryImageMatcher.match(ctx);
-            SortedSet<Album> bestAlbums = albumSearch.findAlbums(ctx);
-            Album bestAlbum = bestAlbums.first();
-            storyTextResolver.resolveText(bestAlbum, ctx.getStoryGraph().getProfile());
 
-            String albumPath = FilenameUtils.getFullPath(fileProps.getAnnotatedSetPath());
-            String outputPath = fileProps.getOutputPath();
+// code snippet to test number of iterations for a good result
+//            int[] iterations = new int[]{
+//
+//                    400000, 400000,
+//                    500000, 500000,
+//                    600000, 600000,
+//                    700000, 700000,
+//                    800000, 800000
+//            };
+//            for (int iteration : iterations) {
+                PipelineContext ctx = dataIOService.readData(storyGraphFile, annotatedSetFile);
+                mandatoryImageMatcher.match(ctx);
+//                searchPriorityProps.setNumOfRepetitions(iteration);
+                log.info("Running {} iterations", searchPriorityProps.getNumOfRepetitions());
 
-            if (StringUtils.isBlank(outputPath)) {
-                outputPath = albumPath;
-            }
-            new File(outputPath).mkdirs();
-            String now = DateTime.now().toDateTimeISO().toString("yyyy-MM-dd-hh-mm");
-            File albumFile = new File(outputPath + File.separatorChar + "album-"+now+".json");
-            dataIOService.writeAlbum(bestAlbum, albumFile);
-            if (globalProps.isDebugAlbum()) {
 
-                File debugHtmlFile = new File(outputPath, "album-" + searchProps.getStrategyName() + "-" + now + ".html");
-                log.info("Producing a debug album {}", StringUtils.replace(debugHtmlFile.toString()," ","%20"));
-                ConvertToHtml.write(objectMapper, albumFile, debugHtmlFile, globalProps.getDebugAlbumFullPath());
-            }
+                SortedSet<Album> bestAlbums = albumSearch.findAlbums(ctx);
+                Album bestAlbum = bestAlbums.first();
+                storyTextResolver.resolveText(bestAlbum, ctx.getStoryGraph().getProfile());
+
+                String albumPath = FilenameUtils.getFullPath(fileProps.getAnnotatedSetPath());
+                String outputPath = fileProps.getOutputPath();
+
+                if (StringUtils.isBlank(outputPath)) {
+                    outputPath = albumPath;
+                }
+                new File(outputPath).mkdirs();
+                String now = DateTime.now().toDateTimeISO().toString("yyyy-MM-dd-hh-mm");
+                File albumFile = new File(outputPath + File.separatorChar + "album-" + now
+                        + "_" + searchPriorityProps.getNumOfRepetitions() + ".json");
+                dataIOService.writeAlbum(bestAlbum, albumFile);
+                if (globalProps.isDebugAlbum()) {
+
+                    File debugHtmlFile = new File(outputPath, "album-" + searchProps.getStrategyName() + "-" + now +
+                            "_" + searchPriorityProps.getNumOfRepetitions() + ".html");
+                    log.info("Producing a debug album {}", StringUtils.replace(debugHtmlFile.toString(), " ", "%20"));
+                    ConvertToHtml.write(objectMapper, albumFile, debugHtmlFile, globalProps.getDebugAlbumFullPath());
+                }
+                results.add(Pair.of(searchPriorityProps.getNumOfRepetitions(), bestAlbum.getScore()));
+//            }
+
         } catch (NoMatchException e) {
             log.error("Error! Cannot satisfy story constraints: {}", e.getMessage());
         } catch (TemplateErrorException e) {
             log.error("Error! Cannot process template: {}", e.getMessage());
         }
+        for (Pair<Integer, Double> result : results) {
+            System.out.println(result.getLeft() + "\t" + result.getRight());
+        }
     }
+
 }

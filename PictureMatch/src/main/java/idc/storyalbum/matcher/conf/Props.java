@@ -52,5 +52,12 @@ public class Props {
 
     }
 
+    @Configuration
+    @ConfigurationProperties(prefix = "story-album.search.priority")
+    @Data
+    public static class SearchPriorityProps {
+        private int numOfRepetitions;
+    }
+
 
 }

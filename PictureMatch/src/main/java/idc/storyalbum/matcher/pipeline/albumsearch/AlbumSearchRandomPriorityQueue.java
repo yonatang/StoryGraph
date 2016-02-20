@@ -1,5 +1,6 @@
 package idc.storyalbum.matcher.pipeline.albumsearch;
 
+import idc.storyalbum.matcher.conf.Props;
 import idc.storyalbum.matcher.pipeline.PipelineContext;
 import idc.storyalbum.matcher.pipeline.ScoreService;
 import idc.storyalbum.model.album.Album;
@@ -10,6 +11,7 @@ import idc.storyalbum.model.image.ImageInstance;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.time.StopWatch;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -34,8 +36,8 @@ import static java.util.stream.Collectors.toList;
 @Slf4j
 public class AlbumSearchRandomPriorityQueue extends AlbumSearch {
 
-    @Value("${story-album.search.priority.num-of-repetitions}")
-    int M;
+    @Autowired
+    Props.SearchPriorityProps searchPriorityProps;
 
     @Value("${story-album.search.num-of-results}")
     int NUM_OF_BEST_RESULTS;
@@ -71,6 +73,7 @@ public class AlbumSearchRandomPriorityQueue extends AlbumSearch {
     }
 
     Set<AlbumPage> findAssignment(PipelineContext ctx, int t) {
+        int M=searchPriorityProps.getNumOfRepetitions();
         StoryGraph storyGraph = ctx.getStoryGraph();
         double nonFuzziness = (double) t / (double) M;
         EventPriorityQueue eventQueue = new EventPriorityQueue(ctx, scoreService, nonFuzziness);
@@ -103,6 +106,7 @@ public class AlbumSearchRandomPriorityQueue extends AlbumSearch {
     }
 
     public SortedSet<Album> findAlbumsImpl(PipelineContext ctx) {
+        int M=searchPriorityProps.getNumOfRepetitions();
         log.info("Searching for {} best albums, Priority Queue strategy, using {} iterations", NUM_OF_BEST_RESULTS, M);
         SortedSet<Album> bestAlbums =
                 //sort largest first

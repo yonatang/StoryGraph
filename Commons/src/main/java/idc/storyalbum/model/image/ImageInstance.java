@@ -34,6 +34,7 @@ public class ImageInstance extends AnnotatedImage{
         setLocationId(annotatedImage.getLocationId());
         setCharQualities(annotatedImage.getCharQualities());
         setCharacterIds(annotatedImage.getCharacterIds());
+        setItemIds(annotatedImage.getItemIds());
         for (Set<String> group : relevantGroupCharacterIds) {
             getRelevantCharacters().addAll(group);
         }

@@ -115,11 +115,14 @@ public class AlbumSearchRandomPriorityQueue extends AlbumSearch {
         StopWatch s3 = new StopWatch();
         s3.start();
         long split = System.currentTimeMillis();
-        DecimalFormat df=new DecimalFormat("#.##");
+        DecimalFormat df1 = new DecimalFormat("#.##");
+        DecimalFormat df2 = new DecimalFormat("#.####");
         for (int i = 0; i < M; i++) {
             if (System.currentTimeMillis() - split > 60000) {
                 double percentage = (((double) i / (double) M) * 100.0);
-                log.info("{}% completed", df.format(percentage));
+                Album f = bestAlbums.first();
+                double bestScore = f.getScore();
+                log.info("{}% completed, best for now {}", df1.format(percentage), df2.format(bestScore));
                 split = System.currentTimeMillis();
             }
             Set<AlbumPage> assignment = findAssignment(ctx, i);

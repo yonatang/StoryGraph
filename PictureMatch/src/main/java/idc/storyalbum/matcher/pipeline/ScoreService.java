@@ -9,9 +9,12 @@ import idc.storyalbum.model.image.ImageInstance;
 import idc.storyalbum.model.image.ImageQuality;
 import idc.storyalbum.model.image.Rectangle;
 import org.apache.commons.lang3.RandomUtils;
+import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -23,6 +26,11 @@ public class ScoreService {
 
     @Autowired
     private Props.ScoreProps scoreProps;
+
+    public void evictCache() {
+        getImagetFitScoreCache.clear();
+        getEventScoreCache.clear();
+    }
 
     public double getImageCrowdedness(ImageInstance imageInstance) {
         if (imageInstance.getCharacterIds().size() == 0) {
@@ -42,6 +50,9 @@ public class ScoreService {
         return getImageFitScore(image, event) + fuziness(nonFuziness);
     }
 
+    private Map<Pair<ImageInstance, StoryEvent>, Double> getImagetFitScoreCache = new HashMap<>();
+    private Map<StoryEvent, Double> getEventScoreCache = new HashMap<>();
+
     /**
      * Calculate the fineness of a specific image to an event
      *
@@ -50,6 +61,10 @@ public class ScoreService {
      * @return score
      */
     public double getImageFitScore(ImageInstance image, StoryEvent event) {
+        Pair<ImageInstance, StoryEvent> pair = Pair.of(image, event);
+        if (getImagetFitScoreCache.containsKey(pair)) {
+            return getImagetFitScoreCache.get(pair);
+        }
         //calculate soft constraints score
         Set<Constraint> softConstraints = event.getConstraints().stream()
                 .filter(Constraint::isSoft)
@@ -95,7 +110,9 @@ public class ScoreService {
             charQualityScore = CHAR_QUALITY_FACTOR * (charQualityScore / (double) charQualityCount);
         }
         double crowdednessScore = CROWD_FACTOR * image.getCrowdedness(); //precalculated in earlier stage
-        return crowdednessScore + qualityScore + softConstraintsScore + charQualityScore;
+        double result = crowdednessScore + qualityScore + softConstraintsScore + charQualityScore;
+        getImagetFitScoreCache.put(pair, result);
+        return result;
     }
 
     private double getCharQualityScore(ImageInstance image, CharacterQuality characterQuality) {
@@ -137,22 +154,28 @@ public class ScoreService {
      * @return
      */
     public double getEventScore(PipelineContext ctx, StoryEvent event, double nonFuzziness) {
-        double largestOptions = ctx.getEventToPossibleImages().values()
-                .stream()
-                .mapToInt(Set::size)
-                .max()
-                .getAsInt();
-        double largestDegree = ctx.getEventToPossibleImages().keySet()
-                .stream()
-                .mapToInt((event1) -> ctx.getInDependenciesForEvent(event1).size())
-                .max()
-                .getAsInt();
-        double degree = ctx.getInDependenciesForEvent(event).size();
-        double optionsCount = ctx.getEventToPossibleImages().get(event).size();
+        double result=0;
+        if (getEventScoreCache.containsKey(event)){
+            result=getEventScoreCache.get(event);
+        } else {
+            double largestOptions = ctx.getEventToPossibleImages().values()
+                    .stream()
+                    .mapToInt(Set::size)
+                    .max()
+                    .getAsInt();
+            double largestDegree = ctx.getEventToPossibleImages().keySet()
+                    .stream()
+                    .mapToInt((event1) -> ctx.getInDependenciesForEvent(event1).size())
+                    .max()
+                    .getAsInt();
+            double degree = ctx.getInDependenciesForEvent(event).size();
+            double optionsCount = ctx.getEventToPossibleImages().get(event).size();
 
-        double eventScoreFactor = scoreProps.getEventScoreFactor();
-        double result = eventScoreFactor * (1.0 - (optionsCount / largestOptions));
-        result += (1.0 - eventScoreFactor) * (degree / largestDegree);
+            double eventScoreFactor = scoreProps.getEventScoreFactor();
+            result = eventScoreFactor * (1.0 - (optionsCount / largestOptions));
+            result += (1.0 - eventScoreFactor) * (degree / largestDegree);
+            getEventScoreCache.put(event,result);
+        }
         result += fuziness(nonFuzziness);
         return result;
     }

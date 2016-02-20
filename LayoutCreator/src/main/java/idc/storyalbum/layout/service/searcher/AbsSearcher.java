@@ -13,8 +13,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.RandomUtils;
 import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -86,6 +88,9 @@ public abstract class AbsSearcher {
         return best;
     }
 
+    @Value("${story-album.imagesBase}")
+    private File imagesBasePath;
+
     private PageLayout createPageLayout(PageTemplate pageTemplate, Album album, int pageIdx) {
         log.debug("  Page Template {}", pageTemplate);
         int templateSize = pageTemplate.getFrames().size();
@@ -95,6 +100,8 @@ public abstract class AbsSearcher {
         pageLayout.setWidth(pageTemplate.getWidth());
         pageLayout.setBackground(pageTemplate.getBackground());
         double score = 0;
+        File baseImage=new File(imagesBasePath,album.getBaseDir().getPath());
+
         for (int i = 0; i < templateSize; i++) {
             AlbumPage albumPage = subAlbumPages.get(i);
             Frame templateFrame = pageTemplate.getFrames().get(i);
@@ -106,7 +113,7 @@ public abstract class AbsSearcher {
             imageFrame.setText(albumPage.getText());
 
 
-            BufferedImage bufferedImage = imageService.loadImage(album.getBaseDir(), albumPage.getImage().getImageFilename());
+            BufferedImage bufferedImage = imageService.loadImage(baseImage, albumPage.getImage().getImageFilename());
             log.debug("    Image {}x{}", bufferedImage.getWidth(), bufferedImage.getHeight());
             Pair<BufferedImage,Double> croppedImageData =
                     imageService.cropImage(albumPage.getImage(), bufferedImage, imageFrame.getImageRect().getDimension());

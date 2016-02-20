@@ -7,6 +7,7 @@ import idc.storyalbum.matcher.exception.TemplateErrorException;
 import idc.storyalbum.matcher.pipeline.DataIOService;
 import idc.storyalbum.matcher.pipeline.MandatoryImageMatcher;
 import idc.storyalbum.matcher.pipeline.PipelineContext;
+import idc.storyalbum.matcher.pipeline.ScoreService;
 import idc.storyalbum.matcher.pipeline.StoryTextResolver;
 import idc.storyalbum.matcher.pipeline.albumsearch.AlbumSearch;
 import idc.storyalbum.matcher.pipeline.albumsearch.AlbumSearchFactory;
@@ -69,6 +70,9 @@ public class Runner implements CommandLineRunner {
     @Autowired
     private Props.SearchPriorityProps searchPriorityProps;
 
+    @Autowired
+    private ScoreService scoreService;
+
     @Override
     public void run(String... args) throws Exception {
         List<Pair<Integer, Double>> results = new ArrayList<>();
@@ -86,6 +90,7 @@ public class Runner implements CommandLineRunner {
 //                    800000, 800000
 //            };
 //            for (int iteration : iterations) {
+//                scoreService.evictCache();
                 PipelineContext ctx = dataIOService.readData(storyGraphFile, annotatedSetFile);
                 mandatoryImageMatcher.match(ctx);
 //                searchPriorityProps.setNumOfRepetitions(iteration);

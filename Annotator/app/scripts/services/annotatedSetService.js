@@ -9,7 +9,11 @@ angular.module('annotatorApp')
     angular.forEach(profile.characters, function(character){
       charIdMap[character.id]=character;
     });
-    var AnnSet = $resource('/resources/Riddle/:id/annotatedSet.json');
+    var story = 'Riddle';
+    //var story = 'MP';
+    //var story = 'Zoo';
+
+    var AnnSet = $resource('/resources/'+story+'/:id/annotatedSet.json');
     var prefix = '/Users/yonatan/Dropbox/Studies/Story Albums/Sets';
     that.getAnnotatedSet = function (id) {
       return AnnSet.get({id: id}, function (annotatedSet) {

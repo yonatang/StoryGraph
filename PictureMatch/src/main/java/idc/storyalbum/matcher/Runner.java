@@ -108,7 +108,7 @@ public class Runner implements CommandLineRunner {
                     outputPath = albumPath;
                 }
                 new File(outputPath).mkdirs();
-                String now = DateTime.now().toDateTimeISO().toString("yyyy-MM-dd-hh-mm");
+                String now = DateTime.now().toDateTimeISO().toString("yyyy-MM-dd-HH-mm");
                 File albumFile = new File(outputPath + File.separatorChar + "album-" + now
                         + "_" + searchPriorityProps.getNumOfRepetitions() + ".json");
                 dataIOService.writeAlbum(bestAlbum, albumFile);

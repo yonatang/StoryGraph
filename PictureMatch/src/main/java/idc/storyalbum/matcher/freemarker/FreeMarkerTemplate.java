@@ -26,6 +26,7 @@ public class FreeMarkerTemplate {
         cfg.setSharedVariable("charactersByGroup",
                 new GetCharactersByGroupMethod(cfg));
         cfg.setSharedVariable("heSheIt", new GetHeSheItMethod(cfg));
+        cfg.setSharedVariable("himHerIt", new GetHeSheItMethod(cfg, "him", "her", "it"));
     }
 
     @SneakyThrows(IOException.class)

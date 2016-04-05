@@ -11,6 +11,7 @@
             {id: 'night', name: 'Night'}
         ],
         locations: [
+            {id: 'agent_p_world_showcase_adventure', name: 'Agent P\'s World Showcase Adventure'},
             {id: 'buena_vista_street_carthay_circle_lounge', name: 'Carthay circle lounge'},
             {id: 'buena_vista_street_carthay_circle_restaurant', name: 'Carthay circle restaurant'},
             {id: 'buena_vista_street_clarabelles_handscooped_ice_cream', name: 'Clarabelles ice cream'},
@@ -183,7 +184,9 @@
             {id: 'tomorrowland_innoventions', name: 'Innoventions'},
             {id: 'tomorrowland_space_mountain', name: 'Space mountain'},
             {id: 'tomorrowland_star_tours_the_adventures_continue', name: 'Star tours'},
-            {id: 'tomorrowland_starcade', name: 'Starcade'}
+            {id: 'tomorrowland_starcade', name: 'Starcade'},
+            {id: 'wilderness_explorer_camp', name: 'Wilderness Explorer Camp'}
+
         ],
         characters: [
             {id: 'father', name: 'Father', gender:'male', groups: ['family']},
@@ -191,8 +194,13 @@
             {id: 'boy', name: 'Boy', gender:'male', groups: ['family']},
             {id: 'girl', name: 'Girl', gender:'female', groups: ['family']},
 
+            {id: 'russell', name: 'Russell', gender:'male', groups: ['disney']},
+            {id: 'dug', name: 'Dug', gender:'male', groups: ['disney']},
+            {id: 'phineas', name: 'Phineas', gender:'male', groups: ['disney']},
+            {id: 'ferb', name: 'Ferb', gender:'male', groups: ['disney']},
             {id: 'mickeyMouse', name: 'Mickey', gender:'male', groups: ['disney']},
             {id: 'minniMouse', name: 'Minni', gender:'female', groups: ['disney']},
+            {id: 'maryPoppins', name: 'Mary Poppins', groups: [ 'disney']},
             {id: 'aliceInWonderland', name: 'Alice', gender:'female', groups: ['disney']},
             {id: 'goofy', name: 'Goofy', gender:'male', groups: ['disney']},
             {id: 'dumbo', name: 'Dumbo', gender:'male', groups: ['disney']},

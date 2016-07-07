@@ -113,11 +113,10 @@ public class Runner implements CommandLineRunner {
                         + "_" + searchPriorityProps.getNumOfRepetitions() + ".json");
                 dataIOService.writeAlbum(bestAlbum, albumFile);
                 if (globalProps.isDebugAlbum()) {
-
                     File debugHtmlFile = new File(outputPath, "album-" + searchProps.getStrategyName() + "-" + now +
                             "_" + searchPriorityProps.getNumOfRepetitions() + ".html");
                     log.info("Producing a debug album {}", StringUtils.replace(debugHtmlFile.toString(), " ", "%20"));
-                    ConvertToHtml.write(objectMapper, albumFile, debugHtmlFile, globalProps.getDebugAlbumFullPath());
+                    ConvertToHtml.write(objectMapper, albumFile, debugHtmlFile);
                 }
                 results.add(Pair.of(searchPriorityProps.getNumOfRepetitions(), bestAlbum.getScore()));
 //            }

@@ -12,6 +12,7 @@ import idc.storyalbum.model.image.AnnotatedImage;
 import idc.storyalbum.model.image.AnnotatedSet;
 import idc.storyalbum.model.image.ImageQuality;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -64,7 +65,9 @@ public class DataIOService {
     private AnnotatedSet readAnnotatedSet(File file) throws IOException {
         log.info("Reading set data {}", file);
         AnnotatedSet annotatedSet = objectMapper.readValue(file, AnnotatedSet.class);
-        File base = new File(globalProps.getDebugAlbumFullPath(), annotatedSet.getBaseDir().getAbsolutePath());
+        String basePath= '/'+FilenameUtils.getPath(file.getAbsolutePath());
+        File base = new File(basePath, annotatedSet.getBaseDir().getPath());
+        annotatedSet.setBaseDir(base);
         for (AnnotatedImage annotatedImage : annotatedSet.getImages()) {
             File imageFile = new File(base, annotatedImage.getImageFilename());
             log.debug("Reading content of file {}", imageFile);

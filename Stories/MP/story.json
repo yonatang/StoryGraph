@@ -1,0 +1,750 @@
+{
+  "graph": {
+    "options": {
+      "directed": true,
+      "multigraph": true,
+      "compound": false
+    },
+    "nodes": [
+      {
+        "v": "1",
+        "value": {
+          "id": 1,
+          "x": 116,
+          "y": 90,
+          "name": "Start",
+          "constraints": [
+            {
+              "type": "where",
+              "operator": {
+                "id": "oneOf",
+                "name": "Must be one of"
+              },
+              "value": [
+                {
+                  "id": "cusco",
+                  "name": "Cusco"
+                }
+              ],
+              "soft": false
+            },
+            {
+              "type": "what",
+              "operator": {
+                "id": "excludeAll",
+                "name": "Cannot include all of"
+              },
+              "value": [
+                {
+                  "name": "food",
+                  "id": "food"
+                }
+              ],
+              "soft": false
+            }
+          ],
+          "text": "Your adventure starts off in Cusco, the historic capitol of the Inca Empire.  Your expedition was reluctantly funded by your university, where many think your lost city of the Incas is just a myth."
+        }
+      },
+      {
+        "v": "2",
+        "value": {
+          "id": 2,
+          "x": 305,
+          "y": 90,
+          "name": "Food",
+          "constraints": [
+            {
+              "type": "what",
+              "operator": {
+                "id": "includeN",
+                "name": "Must include N of",
+                "extraN": true,
+                "multiplier": true
+              },
+              "value": [
+                {
+                  "name": "food",
+                  "id": "food"
+                }
+              ],
+              "soft": false,
+              "extraN": 1
+            },
+            {
+              "type": "where",
+              "operator": {
+                "id": "oneOf",
+                "name": "Must be one of"
+              },
+              "value": [
+                {
+                  "id": "cusco",
+                  "name": "Cusco"
+                }
+              ],
+              "soft": false
+            }
+          ],
+          "text": "In Cusco, you talk to the natives and enjoy some of their food: \nCiviche, a Pisco Sour, or, if you are daring and never had a pet guinea pig... Cuy."
+        }
+      },
+      {
+        "v": "3",
+        "value": {
+          "id": 3,
+          "x": 523,
+          "y": 93,
+          "name": "Group",
+          "constraints": [
+            {
+              "type": "who",
+              "operator": {
+                "id": "includeN",
+                "name": "Must include N of",
+                "extraN": true,
+                "multiplier": true
+              },
+              "value": [
+                {
+                  "id": "travler",
+                  "name": "Travler",
+                  "group": "travlers"
+                }
+              ],
+              "soft": false,
+              "group": null,
+              "extraN": 1,
+              "multiplier": null
+            },
+            {
+              "type": "who",
+              "operator": {
+                "id": "includeN",
+                "name": "Must include N of",
+                "extraN": true,
+                "multiplier": true
+              },
+              "value": [
+                {
+                  "id": "travler",
+                  "name": "Travler",
+                  "group": "travlers"
+                }
+              ],
+              "soft": true,
+              "group": null,
+              "extraN": 1,
+              "multiplier": 2
+            },
+            {
+              "type": "where",
+              "operator": {
+                "id": "oneOf",
+                "name": "Must be one of"
+              },
+              "value": [
+                {
+                  "id": "cusco",
+                  "name": "Cusco"
+                }
+              ],
+              "soft": false
+            }
+          ],
+          "text": "The next morning you set out to look for the lost city of Incas."
+        }
+      },
+      {
+        "v": "4",
+        "value": {
+          "id": 4,
+          "x": 118,
+          "y": 206,
+          "name": "Hiking",
+          "constraints": [
+            {
+              "type": "what",
+              "operator": {
+                "id": "includeN",
+                "name": "Must include N of",
+                "extraN": true,
+                "multiplier": true
+              },
+              "value": [
+                {
+                  "name": "hiking",
+                  "id": "hiking"
+                }
+              ],
+              "soft": false,
+              "extraN": 1
+            },
+            {
+              "type": "where",
+              "operator": {
+                "id": "notOneOf",
+                "name": "Cannot be one of"
+              },
+              "value": [
+                {
+                  "id": "mp",
+                  "name": "Machu Picchu"
+                },
+                {
+                  "id": "cusco",
+                  "name": "Cusco"
+                }
+              ],
+              "soft": false
+            }
+          ],
+          "text": "You leave civilization on foot into the unknown wild. It won’t be easy."
+        }
+      },
+      {
+        "v": "5",
+        "value": {
+          "id": 5,
+          "x": 305,
+          "y": 207,
+          "name": "Andes",
+          "constraints": [
+            {
+              "type": "what",
+              "operator": {
+                "id": "includeN",
+                "name": "Must include N of",
+                "extraN": true,
+                "multiplier": true
+              },
+              "value": [
+                {
+                  "name": "andes",
+                  "id": "andes"
+                }
+              ],
+              "soft": false,
+              "extraN": 1
+            },
+            {
+              "type": "what",
+              "operator": {
+                "id": "includeN",
+                "name": "Must include N of",
+                "extraN": true,
+                "multiplier": true
+              },
+              "value": [
+                {
+                  "name": "hiking",
+                  "id": "hiking"
+                }
+              ],
+              "soft": true,
+              "extraN": 1
+            },
+            {
+              "type": "where",
+              "operator": {
+                "id": "notOneOf",
+                "name": "Cannot be one of"
+              },
+              "value": [
+                {
+                  "id": "mp",
+                  "name": "Machu Picchu"
+                },
+                {
+                  "id": "cusco",
+                  "name": "Cusco"
+                }
+              ],
+              "soft": false
+            }
+          ],
+          "text": "The andes are unforgiving mountains and the altitude makes the air hard to breath. Every step feels like your shoes are lined with led."
+        }
+      },
+      {
+        "v": "6",
+        "value": {
+          "id": 6,
+          "x": 523,
+          "y": 207,
+          "name": "Tents",
+          "constraints": [
+            {
+              "type": "when",
+              "operator": {
+                "id": "oneOf",
+                "name": "Must be one of"
+              },
+              "value": [
+                {
+                  "id": "night",
+                  "name": "Night"
+                },
+                {
+                  "id": "late-night",
+                  "name": "Late Night"
+                },
+                {
+                  "id": "evening",
+                  "name": "Evening"
+                }
+              ],
+              "soft": true
+            },
+            {
+              "type": "what",
+              "operator": {
+                "id": "includeN",
+                "name": "Must include N of",
+                "extraN": true,
+                "multiplier": true
+              },
+              "value": [
+                {
+                  "name": "tent",
+                  "id": "tent"
+                }
+              ],
+              "soft": false,
+              "extraN": 1
+            },
+            {
+              "type": "when",
+              "operator": {
+                "id": "oneOf",
+                "name": "Must be one of"
+              },
+              "value": [
+                {
+                  "id": "night",
+                  "name": "Night"
+                },
+                {
+                  "id": "late-night",
+                  "name": "Late Night"
+                }
+              ],
+              "soft": true
+            },
+            {
+              "type": "where",
+              "operator": {
+                "id": "notOneOf",
+                "name": "Cannot be one of"
+              },
+              "value": [
+                {
+                  "id": "mp",
+                  "name": "Machu Picchu"
+                },
+                {
+                  "id": "cusco",
+                  "name": "Cusco"
+                }
+              ],
+              "soft": false
+            }
+          ],
+          "text": "At night you set up camp and sleep amongst the rain forrest animals, plants, and trees."
+        }
+      },
+      {
+        "v": "7",
+        "value": {
+          "id": 7,
+          "x": 118,
+          "y": 323,
+          "name": "Water",
+          "constraints": [
+            {
+              "type": "what",
+              "operator": {
+                "id": "includeN",
+                "name": "Must include N of",
+                "extraN": true,
+                "multiplier": true
+              },
+              "value": [
+                {
+                  "name": "water",
+                  "id": "water"
+                }
+              ],
+              "soft": false,
+              "extraN": 1
+            },
+            {
+              "type": "where",
+              "operator": {
+                "id": "notOneOf",
+                "name": "Cannot be one of"
+              },
+              "value": [
+                {
+                  "id": "mp",
+                  "name": "Machu Picchu"
+                },
+                {
+                  "id": "cusco",
+                  "name": "Cusco"
+                }
+              ],
+              "soft": false
+            }
+          ],
+          "text": "During the day you must stay hydrated, water is a crucial resource."
+        }
+      },
+      {
+        "v": "8",
+        "value": {
+          "id": 8,
+          "x": 307,
+          "y": 324,
+          "name": "Plants",
+          "constraints": [
+            {
+              "type": "what",
+              "operator": {
+                "id": "includeN",
+                "name": "Must include N of",
+                "extraN": true,
+                "multiplier": true
+              },
+              "value": [
+                {
+                  "name": "flower",
+                  "id": "flower"
+                },
+                {
+                  "name": "plant",
+                  "id": "plant"
+                }
+              ],
+              "soft": false,
+              "extraN": 1
+            },
+            {
+              "type": "where",
+              "operator": {
+                "id": "notOneOf",
+                "name": "Cannot be one of"
+              },
+              "value": [
+                {
+                  "id": "mp",
+                  "name": "Machu Picchu"
+                },
+                {
+                  "id": "cusco",
+                  "name": "Cusco"
+                }
+              ],
+              "soft": false
+            }
+          ],
+          "text": "Along the way you see never ending examples of nature’s beauty."
+        }
+      },
+      {
+        "v": "9",
+        "value": {
+          "id": 9,
+          "x": 524,
+          "y": 324,
+          "name": "Alpaca",
+          "constraints": [
+            {
+              "type": "what",
+              "operator": {
+                "id": "includeN",
+                "name": "Must include N of",
+                "extraN": true,
+                "multiplier": true
+              },
+              "value": [
+                {
+                  "name": "alpaca",
+                  "id": "alpaca"
+                }
+              ],
+              "soft": false,
+              "extraN": 1
+            },
+            {
+              "type": "where",
+              "operator": {
+                "id": "notOneOf",
+                "name": "Cannot be one of"
+              },
+              "value": [
+                {
+                  "id": "mp",
+                  "name": "Machu Picchu"
+                },
+                {
+                  "id": "cusco",
+                  "name": "Cusco"
+                }
+              ],
+              "soft": false
+            }
+          ],
+          "text": "What’s this? Alpaca! It’s an omen and you get the feeling something must be close by."
+        }
+      },
+      {
+        "v": "10",
+        "value": {
+          "id": 10,
+          "x": 121,
+          "y": 438,
+          "name": "Fog",
+          "constraints": [
+            {
+              "type": "what",
+              "operator": {
+                "id": "includeN",
+                "name": "Must include N of",
+                "extraN": true,
+                "multiplier": true
+              },
+              "value": [
+                {
+                  "name": "fog",
+                  "id": "fog"
+                }
+              ],
+              "soft": false,
+              "extraN": 1
+            },
+            {
+              "type": "where",
+              "operator": {
+                "id": "notOneOf",
+                "name": "Cannot be one of"
+              },
+              "value": [
+                {
+                  "id": "cusco",
+                  "name": "Cusco"
+                },
+                {
+                  "id": "mp",
+                  "name": "Machu Picchu"
+                }
+              ],
+              "soft": false
+            }
+          ],
+          "text": "The intense fog creeps over the mountains and reveals something incredible..."
+        }
+      },
+      {
+        "v": "11",
+        "value": {
+          "id": 11,
+          "x": 306,
+          "y": 439,
+          "name": "MP Scape",
+          "constraints": [
+            {
+              "type": "where",
+              "operator": {
+                "id": "oneOf",
+                "name": "Must be one of"
+              },
+              "value": [
+                {
+                  "id": "mp",
+                  "name": "Machu Picchu"
+                }
+              ],
+              "soft": false
+            },
+            {
+              "type": "what",
+              "operator": {
+                "id": "includeN",
+                "name": "Must include N of",
+                "extraN": true,
+                "multiplier": true
+              },
+              "value": [
+                {
+                  "name": "scape",
+                  "id": "scape"
+                }
+              ],
+              "soft": false,
+              "extraN": 1
+            }
+          ],
+          "text": "Sure enough, you can’t believe your very eyes... what is this wondrous place!"
+        }
+      },
+      {
+        "v": "12",
+        "value": {
+          "id": 12,
+          "x": 525,
+          "y": 437,
+          "name": "Ruins",
+          "constraints": [
+            {
+              "type": "what",
+              "operator": {
+                "id": "includeN",
+                "name": "Must include N of",
+                "extraN": true,
+                "multiplier": true
+              },
+              "value": [
+                {
+                  "name": "ruins",
+                  "id": "ruins"
+                }
+              ],
+              "soft": false,
+              "extraN": 1
+            },
+            {
+              "type": "where",
+              "operator": {
+                "id": "oneOf",
+                "name": "Must be one of"
+              },
+              "value": [
+                {
+                  "id": "mp",
+                  "name": "Machu Picchu"
+                }
+              ],
+              "soft": false
+            }
+          ],
+          "text": "These ruins will forever change our knowledge of ancient civilization and cement your name into archeological history forever."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "v": "4",
+        "w": "3",
+        "name": "when",
+        "value": {
+          "fromEventId": 4,
+          "toEventId": 3,
+          "type": "when",
+          "operator": {
+            "id": "increase",
+            "name": "Increase"
+          },
+          "value": null,
+          "selected": false
+        }
+      }
+    ]
+  },
+  "profile": {
+    "id": "mp",
+    "name": "Machu Picchu",
+    "times": [
+      {
+        "id": "morning",
+        "name": "Morning"
+      },
+      {
+        "id": "afternoon",
+        "name": "Afternoon"
+      },
+      {
+        "id": "night",
+        "name": "Night"
+      }
+    ],
+    "locations": [
+      {
+        "id": "mp",
+        "name": "Machu Picchu"
+      },
+      {
+        "id": "cusco",
+        "name": "Cusco"
+      }
+    ],
+    "characters": [
+      {
+        "id": "travler",
+        "name": "Travler",
+        "group": "travlers"
+      },
+      {
+        "id": "local",
+        "name": "Local Person",
+        "group": "locals"
+      }
+    ],
+    "groups": [
+      {
+        "id": "travlers",
+        "name": "Travlers"
+      },
+      {
+        "id": "locals",
+        "name": "Locals"
+      }
+    ],
+    "timesById": {
+      "morning": {
+        "id": "morning",
+        "name": "Morning"
+      },
+      "afternoon": {
+        "id": "afternoon",
+        "name": "Afternoon"
+      },
+      "night": {
+        "id": "night",
+        "name": "Night"
+      }
+    },
+    "locationsById": {
+      "mp": {
+        "id": "mp",
+        "name": "Machu Picchu"
+      },
+      "cusco": {
+        "id": "cusco",
+        "name": "Cusco"
+      }
+    },
+    "charactersById": {
+      "travler": {
+        "id": "travler",
+        "name": "Travler",
+        "group": "travlers"
+      },
+      "local": {
+        "id": "local",
+        "name": "Local Person",
+        "group": "locals"
+      }
+    },
+    "groupsById": {
+      "travlers": {
+        "id": "travlers",
+        "name": "Travlers"
+      },
+      "locals": {
+        "id": "locals",
+        "name": "Locals"
+      }
+    }
+  }
+}

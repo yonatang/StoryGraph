@@ -126,9 +126,9 @@ public class Runner implements CommandLineRunner {
         } catch (TemplateErrorException e) {
             log.error("Error! Cannot process template: {}", e.getMessage());
         }
-        for (Pair<Integer, Double> result : results) {
-            System.out.println(result.getLeft() + "\t" + result.getRight());
-        }
+//        for (Pair<Integer, Double> result : results) {
+//            System.out.println(result.getLeft() + "\t" + result.getRight());
+//        }
     }
 
 }

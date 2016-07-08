@@ -1,0 +1,890 @@
+{
+  "baseDir": "Images",
+  "images": [
+    {
+      "imageFilename": "0.jpg",
+      "imageDate": "2012-07-03T09:37:00.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3163
+      },
+      "locationId": null,
+      "characterIds": [],
+      "itemIds": [
+        "plant"
+      ],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "1.jpg",
+      "imageDate": "2012-07-02T17:29:41.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0001,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2383
+      },
+      "locationId": "mp",
+      "characterIds": [
+        "travler",
+        "travler",
+        "travler"
+      ],
+      "itemIds": [
+        "ruins"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "travler": [
+          {
+            "box": {
+              "x": 838,
+              "y": 421,
+              "width": 253,
+              "height": 402
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "2.jpg",
+      "imageDate": "2012-07-03T08:33:50.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2414
+      },
+      "locationId": "mp",
+      "characterIds": [
+        "travler"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "travler": [
+          {
+            "box": {
+              "x": 163,
+              "y": 118,
+              "width": 464,
+              "height": 780
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "3.jpg",
+      "imageDate": "2012-07-08T23:40:33.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0068,
+        "underExposedPenalty": -0.0007,
+        "blurinessLevelPenalty": 0.2672
+      },
+      "locationId": "cusco",
+      "characterIds": [
+        "travler",
+        "travler"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "travler": [
+          {
+            "box": {
+              "x": 620,
+              "y": 876,
+              "width": 217,
+              "height": 588
+            },
+            "facing": "BACK"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "4.jpg",
+      "imageDate": "2012-07-03T08:27:57.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0003,
+        "underExposedPenalty": -0.0198,
+        "blurinessLevelPenalty": 0.1819
+      },
+      "locationId": "mp",
+      "characterIds": [],
+      "itemIds": [
+        "scape"
+      ],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "5.jpg",
+      "imageDate": "2012-07-08T23:46:14.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0004,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2326
+      },
+      "locationId": "mp",
+      "characterIds": [
+        "travler"
+      ],
+      "itemIds": [
+        "ruins"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "travler": [
+          {
+            "box": {
+              "x": 601,
+              "y": 556,
+              "width": 236,
+              "height": 243
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "6.jpg",
+      "imageDate": "2012-06-29T09:44:29.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2386
+      },
+      "locationId": "cusco",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "7.jpg",
+      "imageDate": "2015-05-11T17:48:10.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.1185,
+        "blurinessLevelPenalty": 0.2457
+      },
+      "locationId": null,
+      "characterIds": [],
+      "itemIds": [
+        "fog"
+      ],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "8.jpg",
+      "imageDate": "2012-07-05T08:43:32.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0064,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3169
+      },
+      "locationId": null,
+      "characterIds": [],
+      "itemIds": [
+        "plant"
+      ],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "9.jpg",
+      "imageDate": "2012-06-29T17:07:43.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0037,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.1985
+      },
+      "locationId": "cusco",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "10.jpg",
+      "imageDate": "2012-07-05T11:14:00.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0001,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.303
+      },
+      "locationId": null,
+      "characterIds": [
+        "travler",
+        "travler"
+      ],
+      "itemIds": [
+        "hiking"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "travler": [
+          {
+            "box": {
+              "x": 1200,
+              "y": 138,
+              "width": 285,
+              "height": 544
+            },
+            "facing": "BACK"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "11.jpg",
+      "imageDate": "2012-07-01T14:02:20.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2931
+      },
+      "locationId": null,
+      "characterIds": [
+        "travler",
+        "travler",
+        "travler"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "travler": [
+          {
+            "box": {
+              "x": 1171,
+              "y": 588,
+              "width": 473,
+              "height": 505
+            },
+            "facing": "BOTTOM"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "12.jpg",
+      "imageDate": "2012-07-02T17:21:24.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2114
+      },
+      "locationId": "mp",
+      "characterIds": [],
+      "itemIds": [
+        "scape"
+      ],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "13.jpg",
+      "imageDate": "2012-07-08T23:44:36.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0092,
+        "blurinessLevelPenalty": 0.2518
+      },
+      "locationId": null,
+      "characterIds": [],
+      "itemIds": [
+        "tent",
+        "tent"
+      ],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "14.jpg",
+      "imageDate": "2012-07-03T12:06:50.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2456
+      },
+      "locationId": null,
+      "characterIds": [
+        "travler"
+      ],
+      "itemIds": [
+        "andes"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "travler": [
+          {
+            "box": {
+              "x": 537,
+              "y": 416,
+              "width": 211,
+              "height": 608
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "15.jpg",
+      "imageDate": "2012-07-05T07:33:24.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4236
+      },
+      "locationId": null,
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "16.jpg",
+      "imageDate": "2012-06-29T09:37:42.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0074,
+        "underExposedPenalty": -0.0143,
+        "blurinessLevelPenalty": 0.294
+      },
+      "locationId": "cusco",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "17.jpg",
+      "imageDate": "2012-07-06T10:21:11.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0021,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4339
+      },
+      "locationId": "cusco",
+      "characterIds": [],
+      "itemIds": [
+        "food"
+      ],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "18.jpg",
+      "imageDate": "2012-06-29T10:10:21.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0003,
+        "underExposedPenalty": -0.0159,
+        "blurinessLevelPenalty": 0.2469
+      },
+      "locationId": "cusco",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "19.jpg",
+      "imageDate": "2012-07-07T18:47:07.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0173,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2487
+      },
+      "locationId": "cusco",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "20.jpg",
+      "imageDate": "2012-07-08T23:43:40.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4714
+      },
+      "locationId": null,
+      "characterIds": [],
+      "itemIds": [
+        "plant"
+      ],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "21.jpg",
+      "imageDate": "2012-07-08T23:45:37.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0001,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.1993
+      },
+      "locationId": "mp",
+      "characterIds": [],
+      "itemIds": [
+        "alpaca"
+      ],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "22.jpg",
+      "imageDate": "2012-06-29T18:17:40.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0589,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.5619
+      },
+      "locationId": "cusco",
+      "characterIds": [
+        "travler"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "travler": [
+          {
+            "box": {
+              "x": 1073,
+              "y": 704,
+              "width": 465,
+              "height": 472
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "23.jpg",
+      "imageDate": "2012-06-29T16:08:36.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0002,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.311
+      },
+      "locationId": "cusco",
+      "characterIds": [],
+      "itemIds": [
+        "food"
+      ],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "24.jpg",
+      "imageDate": "2012-07-03T12:50:56.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0121,
+        "blurinessLevelPenalty": 0.278
+      },
+      "locationId": "mp",
+      "characterIds": [],
+      "itemIds": [
+        "scape"
+      ],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "25.jpg",
+      "imageDate": "2012-06-29T16:27:59.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0001,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2352
+      },
+      "locationId": "cusco",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "26.jpg",
+      "imageDate": "2015-05-11T17:48:15.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0001,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2113
+      },
+      "locationId": null,
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "27.jpg",
+      "imageDate": "2012-06-29T09:43:36.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.356
+      },
+      "locationId": "cusco",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "28.jpg",
+      "imageDate": "2012-07-08T23:47:54.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0018,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3925
+      },
+      "locationId": null,
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "29.jpg",
+      "imageDate": "2012-07-08T23:48:00.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4895
+      },
+      "locationId": "cusco",
+      "characterIds": [
+        "travler"
+      ],
+      "itemIds": [
+        "food"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "travler": [
+          {
+            "box": {
+              "x": 524,
+              "y": 121,
+              "width": 659,
+              "height": 768
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "30.jpg",
+      "imageDate": "2012-07-08T23:44:48.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0001,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4926
+      },
+      "locationId": "mp",
+      "characterIds": [
+        "travler"
+      ],
+      "itemIds": [
+        "ruins"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "travler": [
+          {
+            "box": {
+              "x": 434,
+              "y": 617,
+              "width": 447,
+              "height": 845
+            },
+            "facing": "BACK"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "31.jpg",
+      "imageDate": "2012-06-29T09:47:49.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0085,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3551
+      },
+      "locationId": "cusco",
+      "characterIds": [
+        "travler",
+        "travler",
+        "travler"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "travler": [
+          {
+            "box": {
+              "x": 1024,
+              "y": 96,
+              "width": 262,
+              "height": 640
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "32.jpg",
+      "imageDate": "2012-07-08T23:44:43.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2684
+      },
+      "locationId": null,
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "33.jpg",
+      "imageDate": "2012-07-08T23:46:12.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3925
+      },
+      "locationId": null,
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "34.jpg",
+      "imageDate": "2012-07-02T18:15:36.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4305
+      },
+      "locationId": "mp",
+      "characterIds": [
+        "travler",
+        "travler",
+        "travler"
+      ],
+      "itemIds": [
+        "ruins"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "travler": [
+          {
+            "box": {
+              "x": 858,
+              "y": 356,
+              "width": 299,
+              "height": 635
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "35.jpg",
+      "imageDate": "2012-06-29T17:07:18.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0004,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.1871
+      },
+      "locationId": "cusco",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "36.jpg",
+      "imageDate": "2012-07-08T23:45:19.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0065,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4829
+      },
+      "locationId": null,
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "37.jpg",
+      "imageDate": "2012-06-29T18:04:25.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0174,
+        "underExposedPenalty": -0.0034,
+        "blurinessLevelPenalty": 0.3558
+      },
+      "locationId": "cusco",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "38.jpg",
+      "imageDate": "2012-06-29T18:22:56.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0178,
+        "underExposedPenalty": -0.0038,
+        "blurinessLevelPenalty": 0.2554
+      },
+      "locationId": "cusco",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "39.jpg",
+      "imageDate": "2012-06-29T19:12:27.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.1365,
+        "blurinessLevelPenalty": 0.2258
+      },
+      "locationId": null,
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "40.jpg",
+      "imageDate": "2012-07-08T23:46:51.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0001,
+        "underExposedPenalty": -0.0193,
+        "blurinessLevelPenalty": 0.417
+      },
+      "locationId": "cusco",
+      "characterIds": [],
+      "itemIds": [
+        "food"
+      ],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "41.jpg",
+      "imageDate": "2012-06-29T16:20:31.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0021,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2565
+      },
+      "locationId": "cusco",
+      "characterIds": [],
+      "itemIds": [
+        "food"
+      ],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "42.jpg",
+      "imageDate": "2012-07-03T16:25:03.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0289,
+        "blurinessLevelPenalty": 0.6488
+      },
+      "locationId": null,
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "43.jpg",
+      "imageDate": "2012-06-29T09:49:59.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0001,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.292
+      },
+      "locationId": null,
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "44.jpg",
+      "imageDate": "2012-06-29T18:12:44.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0011,
+        "underExposedPenalty": -0.0616,
+        "blurinessLevelPenalty": 0.4121
+      },
+      "locationId": null,
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "45.jpg",
+      "imageDate": "2012-07-03T11:38:22.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0017,
+        "underExposedPenalty": -0.0182,
+        "blurinessLevelPenalty": 0.3689
+      },
+      "locationId": null,
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "46.jpg",
+      "imageDate": "2012-07-05T09:34:40.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.005,
+        "blurinessLevelPenalty": 0.2229
+      },
+      "locationId": null,
+      "characterIds": [],
+      "itemIds": [
+        "water"
+      ],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "47.jpg",
+      "imageDate": "2012-07-08T23:43:02.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0032,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4625
+      },
+      "locationId": null,
+      "characterIds": [],
+      "itemIds": [
+        "alpaca"
+      ],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "48.jpg",
+      "imageDate": "2012-06-29T09:49:29.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2786
+      },
+      "locationId": null,
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "49.jpg",
+      "imageDate": "2012-06-29T18:57:49.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0099,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2247
+      },
+      "locationId": null,
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    }
+  ]
+}

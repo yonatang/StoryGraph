@@ -1,0 +1,906 @@
+{
+  "baseDir" : "Images",
+  "images" : [ {
+    "imageFilename" : "734659.93178_0101.jpg",
+    "imageDate" : "2013-08-08T15:00:04.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : -0.3198
+    },
+    "locationId" : "mickeys_toontown_chip_n_dale_treehouse",
+    "characterIds" : [ "chip", "dale", "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734659.74602_0091.jpg",
+    "imageDate" : "2013-08-08T21:59:34.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.4047
+    },
+    "locationId" : "disneyland_park_main_entrance",
+    "characterIds" : [ "mother", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734659.88752_0079.jpg",
+    "imageDate" : "2013-08-08T21:59:48.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.3169
+    },
+    "locationId" : "tomorrowland_finding_nemo_submarine_voyage",
+    "characterIds" : [ "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734660.06310_0064.jpg",
+    "imageDate" : "2013-08-08T15:02:02.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0021,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : -0.3126
+    },
+    "locationId" : "mickeys_toontown_minnies_house",
+    "characterIds" : [ "boy", "boy", "duffy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734660.27131_0006.jpg",
+    "imageDate" : "2013-08-08T15:02:34.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : -0.2456
+    },
+    "locationId" : "new_orleans_square_disneyland_railroad",
+    "characterIds" : [ "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734660.19913_0011.jpg",
+    "imageDate" : "2013-08-08T15:02:18.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : -0.4029
+    },
+    "locationId" : "tomorrowland_disneyland_railroad",
+    "characterIds" : [ "mother", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734659.99494_0038.jpg",
+    "imageDate" : "2013-08-08T22:01:34.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.3814
+    },
+    "locationId" : "mickeys_toontown_goofys_playhouse",
+    "characterIds" : [ "goofy", "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734660.27238_0012.jpg",
+    "imageDate" : "2013-08-08T22:02:38.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 1.0E-4,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.2326
+    },
+    "locationId" : "mickeys_toontown_roger_rabbits_car_toon_spin",
+    "characterIds" : [ ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734660.72878_0258.jpg",
+    "imageDate" : "2013-08-08T22:02:58.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0553,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.277
+    },
+    "locationId" : "disneyland_park_main_entrance",
+    "characterIds" : [ "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734660.87884_0257.jpg",
+    "imageDate" : "2013-08-08T15:03:48.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : -0.3895
+    },
+    "locationId" : "main_street_usa",
+    "characterIds" : [ "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734663.79334_0333.jpg",
+    "imageDate" : "2013-08-08T22:05:42.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.001,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.2318
+    },
+    "locationId" : "critter_country_the_many_adventures_of_winnie_the_pooh",
+    "characterIds" : [ ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734659.99116_0152.jpg",
+    "imageDate" : "2013-08-08T15:00:58.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : -0.3905
+    },
+    "locationId" : "mickeys_toontown_minnies_house",
+    "characterIds" : [ "minniMouse", "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734659.99497_0040.jpg",
+    "imageDate" : "2013-08-08T22:01:36.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.3534
+    },
+    "locationId" : "mickeys_toontown_goofys_playhouse",
+    "characterIds" : [ "goofy", "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734660.27648_0016.jpg",
+    "imageDate" : "2013-08-08T22:02:44.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : -0.039,
+      "blurinessLevelPenalty" : 0.2563
+    },
+    "locationId" : "mickeys_toontown_roger_rabbits_car_toon_spin",
+    "characterIds" : [ ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734659.99291_0159.jpg",
+    "imageDate" : "2013-08-08T15:01:06.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : -0.3793
+    },
+    "locationId" : "mickeys_toontown_donalds_boat",
+    "characterIds" : [ "donnaldDuck", "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734659.88755_0085.jpg",
+    "imageDate" : "2013-08-08T21:59:50.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : -0.0109,
+      "blurinessLevelPenalty" : 0.3294
+    },
+    "locationId" : "tomorrowland_finding_nemo_submarine_voyage",
+    "characterIds" : [ "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734661.27832_0212.jpg",
+    "imageDate" : "2013-08-08T22:04:12.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.3734
+    },
+    "locationId" : "disneyland_park_castle_area_anaheim",
+    "characterIds" : [ "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734660.94551_0274.jpg",
+    "imageDate" : "2013-08-08T22:04:02.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.286
+    },
+    "locationId" : "disneyland_park_castle_area_anaheim",
+    "characterIds" : [ ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734661.30652_0188.jpg",
+    "imageDate" : "2013-08-08T22:04:24.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : -0.1245,
+      "blurinessLevelPenalty" : 0.2121
+    },
+    "locationId" : "disneyland_park_castle_area_anaheim",
+    "characterIds" : [ ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734661.31052_0189.jpg",
+    "imageDate" : "2013-08-08T15:04:24.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0,
+      "underExposedPenalty" : -0.0943,
+      "blurinessLevelPenalty" : -0.2339
+    },
+    "locationId" : "disneyland_park_castle_area_anaheim",
+    "characterIds" : [ ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734659.99255_0153.jpg",
+    "imageDate" : "2013-08-08T22:01:00.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.3845
+    },
+    "locationId" : "mickeys_toontown_goofys_playhouse",
+    "characterIds" : [ "donnaldDuck", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734660.94485_0272.jpg",
+    "imageDate" : "2013-08-08T15:04:00.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : -0.2588
+    },
+    "locationId" : "disneyland_park_castle_area_anaheim",
+    "characterIds" : [ ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734660.95400_0278.jpg",
+    "imageDate" : "2013-08-08T15:04:06.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0012,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.4008
+    },
+    "locationId" : "main_street_usa",
+    "characterIds" : [ "buckeyTheSquirell" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734661.32472_0198.jpg",
+    "imageDate" : "2013-08-08T22:04:36.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : -0.2783,
+      "blurinessLevelPenalty" : 0.3139
+    },
+    "locationId" : "disneyland_park_castle_area_anaheim",
+    "characterIds" : [ ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734661.27667_0211.jpg",
+    "imageDate" : "2013-08-08T15:04:12.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : -0.1205,
+      "blurinessLevelPenalty" : 0.2542
+    },
+    "locationId" : "disneyland_park_castle_area_anaheim",
+    "characterIds" : [ ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734659.93179_0103.jpg",
+    "imageDate" : "2013-08-08T22:00:06.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : -0.089,
+      "blurinessLevelPenalty" : 0.2939
+    },
+    "locationId" : "mickeys_toontown_chip_n_dale_treehouse",
+    "characterIds" : [ "chip", "dale", "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734660.72581_0247.jpg",
+    "imageDate" : "2013-08-08T22:02:58.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0634,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.2603
+    },
+    "locationId" : "disneyland_park_main_entrance",
+    "characterIds" : [ ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734663.76198_0294.jpg",
+    "imageDate" : "2013-08-08T15:05:04.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -3.0E-4,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : -0.3616
+    },
+    "locationId" : "critter_country_the_many_adventures_of_winnie_the_pooh",
+    "characterIds" : [ "piglet", "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734660.75694_0220.jpg",
+    "imageDate" : "2013-08-08T15:03:10.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : -0.4409
+    },
+    "locationId" : "fantasyland_dumbo_the_flying_elephant",
+    "characterIds" : [ "mother", "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734663.74383_0386.jpg",
+    "imageDate" : "2013-08-08T22:04:58.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0157,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.2469
+    },
+    "locationId" : "disneyland_park_castle_area_anaheim",
+    "characterIds" : [ ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734660.95339_0277.jpg",
+    "imageDate" : "2013-08-08T15:04:04.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0,
+      "underExposedPenalty" : -0.012,
+      "blurinessLevelPenalty" : -0.3537
+    },
+    "locationId" : "main_street_usa",
+    "characterIds" : [ "woody" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734659.99106_0148.jpg",
+    "imageDate" : "2013-08-08T22:00:54.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : -0.0043,
+      "blurinessLevelPenalty" : 0.3713
+    },
+    "locationId" : "mickeys_toontown_goofys_playhouse",
+    "characterIds" : [ "minniMouse", "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734659.93227_0110.jpg",
+    "imageDate" : "2013-08-08T15:00:12.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0,
+      "underExposedPenalty" : -0.0728,
+      "blurinessLevelPenalty" : -0.2817
+    },
+    "locationId" : "mickeys_toontown_chip_n_dale_treehouse",
+    "characterIds" : [ "chip", "dale", "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734660.88006_0264.jpg",
+    "imageDate" : "2014-12-26T20:17:02.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0205,
+      "underExposedPenalty" : -0.0032,
+      "blurinessLevelPenalty" : -0.3799
+    },
+    "locationId" : "main_street_usa",
+    "characterIds" : [ "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734660.94566_0275.jpg",
+    "imageDate" : "2013-08-08T15:04:02.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : -0.2857
+    },
+    "locationId" : "disneyland_park_castle_area_anaheim",
+    "characterIds" : [ ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734661.32697_0203.jpg",
+    "imageDate" : "2013-08-08T22:04:42.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : -0.2591,
+      "blurinessLevelPenalty" : 0.2571
+    },
+    "locationId" : "disneyland_park_castle_area_anaheim",
+    "characterIds" : [ ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734661.30429_0182.jpg",
+    "imageDate" : "2013-08-08T15:04:16.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0,
+      "underExposedPenalty" : -0.2093,
+      "blurinessLevelPenalty" : -0.2375
+    },
+    "locationId" : "disneyland_park_castle_area_anaheim",
+    "characterIds" : [ ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734661.32363_0193.jpg",
+    "imageDate" : "2013-08-08T15:04:30.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0,
+      "underExposedPenalty" : -0.0479,
+      "blurinessLevelPenalty" : -0.256
+    },
+    "locationId" : "disneyland_park_castle_area_anaheim",
+    "characterIds" : [ ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734663.86157_0359.jpg",
+    "imageDate" : "2013-08-08T15:06:10.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0013,
+      "underExposedPenalty" : -0.0027,
+      "blurinessLevelPenalty" : -0.4093
+    },
+    "locationId" : "disneyland_park_castle_area_anaheim",
+    "characterIds" : [ "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734659.98948_0132.jpg",
+    "imageDate" : "2013-08-08T22:00:36.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.3091
+    },
+    "locationId" : "mickeys_toontown_goofys_playhouse",
+    "characterIds" : [ "pluto", "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734663.88973_0381.jpg",
+    "imageDate" : "2013-08-08T15:06:32.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0079,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : -0.3397
+    },
+    "locationId" : "disneyland_park_castle_area_anaheim",
+    "characterIds" : [ ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734660.27229_0010.jpg",
+    "imageDate" : "2013-08-08T22:02:38.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.2237
+    },
+    "locationId" : "mickeys_toontown_roger_rabbits_car_toon_spin",
+    "characterIds" : [ ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734660.72943_0269.jpg",
+    "imageDate" : "2013-08-08T22:03:00.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0474,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.2901
+    },
+    "locationId" : "disneyland_park_main_entrance",
+    "characterIds" : [ "mother", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734659.99058_0140.jpg",
+    "imageDate" : "2013-08-08T22:00:46.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.3543
+    },
+    "locationId" : "mickeys_toontown_goofys_playhouse",
+    "characterIds" : [ "pluto", "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734659.98829_0116.jpg",
+    "imageDate" : "2013-08-08T22:00:18.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.3254
+    },
+    "locationId" : "mickeys_toontown_goofys_playhouse",
+    "characterIds" : [ "mickeyMouse", "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734659.98851_0120.jpg",
+    "imageDate" : "2013-08-08T22:00:22.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : -0.0089,
+      "blurinessLevelPenalty" : 0.4021
+    },
+    "locationId" : "mickeys_toontown_goofys_playhouse",
+    "characterIds" : [ "mickeyMouse", "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734659.98949_0134.jpg",
+    "imageDate" : "2013-08-08T22:00:38.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.3097
+    },
+    "locationId" : "mickeys_toontown_goofys_playhouse",
+    "characterIds" : [ "pluto", "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734660.75674_0217.jpg",
+    "imageDate" : "2013-08-08T15:03:08.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0048,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : -0.3555
+    },
+    "locationId" : "fantasyland_dumbo_the_flying_elephant",
+    "characterIds" : [ "mother", "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734663.79391_0335.jpg",
+    "imageDate" : "2013-08-08T22:05:46.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0036,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.2592
+    },
+    "locationId" : "critter_country_the_many_adventures_of_winnie_the_pooh",
+    "characterIds" : [ ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734659.99296_0162.jpg",
+    "imageDate" : "2013-08-08T22:01:10.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.3785
+    },
+    "locationId" : "mickeys_toontown_goofys_playhouse",
+    "characterIds" : [ "donnaldDuck", "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734661.33501_0206.jpg",
+    "imageDate" : "2013-08-08T15:04:46.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0,
+      "underExposedPenalty" : -0.361,
+      "blurinessLevelPenalty" : -0.3326
+    },
+    "locationId" : "disneyland_park_castle_area_anaheim",
+    "characterIds" : [ ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734660.70755_0225.jpg",
+    "imageDate" : "2013-08-08T15:02:56.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : -0.3898
+    },
+    "locationId" : "main_street_usa",
+    "characterIds" : [ "mother", "girl", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734661.33543_0207.jpg",
+    "imageDate" : "2013-08-08T22:04:48.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : -0.2766,
+      "blurinessLevelPenalty" : 0.2768
+    },
+    "locationId" : "disneyland_park_castle_area_anaheim",
+    "characterIds" : [ ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734661.27836_0213.jpg",
+    "imageDate" : "2013-08-08T15:04:12.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : -0.368
+    },
+    "locationId" : "disneyland_park_castle_area_anaheim",
+    "characterIds" : [ "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734660.27671_0017.jpg",
+    "imageDate" : "2013-08-08T22:02:44.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.2794
+    },
+    "locationId" : "mickeys_toontown_roger_rabbits_car_toon_spin",
+    "characterIds" : [ ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734659.98851_0121.jpg",
+    "imageDate" : "2013-08-08T15:00:24.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0,
+      "underExposedPenalty" : -0.0065,
+      "blurinessLevelPenalty" : -0.3842
+    },
+    "locationId" : "mickeys_toontown_goofys_playhouse",
+    "characterIds" : [ "mickeyMouse", "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734659.99295_0160.jpg",
+    "imageDate" : "2013-08-08T22:01:08.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.3742
+    },
+    "locationId" : "mickeys_toontown_goofys_playhouse",
+    "characterIds" : [ "donnaldDuck", "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734660.75687_0218.jpg",
+    "imageDate" : "2013-08-08T15:03:08.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0,
+      "underExposedPenalty" : -0.0039,
+      "blurinessLevelPenalty" : -0.3858
+    },
+    "locationId" : "fantasyland_dumbo_the_flying_elephant",
+    "characterIds" : [ "mother", "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734661.30600_0187.jpg",
+    "imageDate" : "2013-08-08T22:04:22.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : -0.0917,
+      "blurinessLevelPenalty" : 0.2169
+    },
+    "locationId" : "disneyland_park_castle_area_anaheim",
+    "characterIds" : [ "aliceInWonderland" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734659.99468_0173.jpg",
+    "imageDate" : "2013-08-08T15:01:24.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0,
+      "underExposedPenalty" : -0.0132,
+      "blurinessLevelPenalty" : -0.3903
+    },
+    "locationId" : "mickeys_toontown_goofys_playhouse",
+    "characterIds" : [ "goofy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734661.32693_0202.jpg",
+    "imageDate" : "2013-08-08T22:04:40.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : -0.1967,
+      "blurinessLevelPenalty" : 0.2559
+    },
+    "locationId" : "disneyland_park_castle_area_anaheim",
+    "characterIds" : [ ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734660.26562_0035.jpg",
+    "imageDate" : "2013-08-08T15:02:28.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : -0.3789
+    },
+    "locationId" : "tomorrowland_innoventions",
+    "characterIds" : [ "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734660.72505_0236.jpg",
+    "imageDate" : "2013-08-08T22:02:56.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0023,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.2542
+    },
+    "locationId" : "disneyland_park_main_entrance",
+    "characterIds" : [ ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734663.78649_0330.jpg",
+    "imageDate" : "2013-08-08T15:05:40.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -1.0E-4,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : -0.3979
+    },
+    "locationId" : "critter_country_the_many_adventures_of_winnie_the_pooh",
+    "characterIds" : [ "winnieThePooh", "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734660.06806_0066.jpg",
+    "imageDate" : "2013-08-08T15:02:04.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : -0.4606
+    },
+    "locationId" : "tomorrowland_innoventions",
+    "characterIds" : [ "stitch", "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734659.98921_0122.jpg",
+    "imageDate" : "2013-08-08T22:00:24.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.3605
+    },
+    "locationId" : "mickeys_toontown_goofys_playhouse",
+    "characterIds" : [ "pluto", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734659.98926_0125.jpg",
+    "imageDate" : "2013-08-08T15:00:28.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0,
+      "underExposedPenalty" : -0.0,
+      "blurinessLevelPenalty" : -0.3148
+    },
+    "locationId" : "mickeys_toontown_goofys_playhouse",
+    "characterIds" : [ "pluto", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734663.74219_0331.jpg",
+    "imageDate" : "2013-08-08T22:04:52.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.0,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.3701
+    },
+    "locationId" : "disneyland_park_walt_disney_statue_anaheim",
+    "characterIds" : [ ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734663.78627_0325.jpg",
+    "imageDate" : "2013-08-08T22:05:34.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 1.0E-4,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.3967
+    },
+    "locationId" : "critter_country_the_many_adventures_of_winnie_the_pooh",
+    "characterIds" : [ "winnieThePooh", "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734663.80360_0341.jpg",
+    "imageDate" : "2013-08-08T15:05:52.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -9.0E-4,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : -0.378
+    },
+    "locationId" : "disneyland_park_castle_area_anaheim",
+    "characterIds" : [ "mother", "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734663.80351_0340.jpg",
+    "imageDate" : "2013-08-08T22:05:52.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 0.011,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.4402
+    },
+    "locationId" : "adventureland_magic_carpet_of_aladin",
+    "characterIds" : [ "mother", "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734663.76205_0295.jpg",
+    "imageDate" : "2013-08-08T22:05:06.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : 4.0E-4,
+      "underExposedPenalty" : 0.0,
+      "blurinessLevelPenalty" : 0.4031
+    },
+    "locationId" : "critter_country_the_many_adventures_of_winnie_the_pooh",
+    "characterIds" : [ "piglet", "boy", "boy" ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "734661.32671_0200.jpg",
+    "imageDate" : "2013-08-08T15:04:38.000Z",
+    "imageQuality" : {
+      "overExposedPenalty" : -0.0,
+      "underExposedPenalty" : -0.0474,
+      "blurinessLevelPenalty" : -0.3124
+    },
+    "locationId" : "disneyland_park_castle_area_anaheim",
+    "characterIds" : [ ],
+    "itemIds" : [ ],
+    "facesLocations" : [ ]
+  }, {
+    "imageFilename" : "__734798.17662_0065.jpg",
+    "imageDate": "2013-08-08T21:41:00.000Z",
+    "imageQuality": {
+      "overExposedPenalty": 0,
+      "underExposedPenalty": 0,
+      "blurinessLevelPenalty": 0.4236
+    },
+    "locationId": "pacific_wharf_cocina_cucamonga_mexican_grill",
+    "characterIds": [],
+    "itemIds": [ "food" ],
+    "facesLocations": []
+  },{
+    "imageFilename": "__735186.01400_0057.jpg",
+    "imageDate": 1376006291000,
+    "imageQuality": {
+      "overExposedPenalty": 0,
+      "underExposedPenalty": 0,
+      "blurinessLevelPenalty": 0
+    },
+    "locationId": "main_street_usa",
+    "characterIds": [],
+    "itemIds": [
+      "crowd"
+    ],
+    "facesLocations": []
+  }]
+}

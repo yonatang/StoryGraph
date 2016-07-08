@@ -1,0 +1,3012 @@
+{
+  "baseDir": "Images",
+  "images": [
+    {
+      "imageFilename": "0.jpg",
+      "imageDate": "2009-01-19T11:34:36.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0215,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4531
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "giraffe"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "giraffe": [
+          {
+            "box": {
+              "x": 600,
+              "y": 1133,
+              "width": 2000,
+              "height": 2053
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "1.jpg",
+      "imageDate": "2009-01-19T12:06:21.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0068,
+        "blurinessLevelPenalty": 0.3505
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "lutra",
+        "lutra",
+        "lutra",
+        "lutra",
+        "lutra",
+        "lutra"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "lutra": [
+          {
+            "box": {
+              "x": 893,
+              "y": 1280,
+              "width": 719,
+              "height": 840
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "2.jpg",
+      "imageDate": "2009-01-19T13:10:41.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0036,
+        "underExposedPenalty": -0.0028,
+        "blurinessLevelPenalty": 0.3989
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "boy": [
+          {
+            "box": {
+              "x": 587,
+              "y": 1290,
+              "width": 2142,
+              "height": 806
+            },
+            "facing": "BACK"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "3.jpg",
+      "imageDate": "2009-01-19T12:16:20.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0145,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4797
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [
+        "tree",
+        "leaf"
+      ],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "4.jpg",
+      "imageDate": "2009-01-19T12:03:27.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0422,
+        "blurinessLevelPenalty": 0.4941
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "lemur",
+        "lemur"
+      ],
+      "itemIds": [
+        "rock"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "lemur": [
+          {
+            "box": {
+              "x": 1666,
+              "y": 973,
+              "width": 813,
+              "height": 1746
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "5.jpg",
+      "imageDate": "2009-01-19T13:49:49.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0083,
+        "underExposedPenalty": -0.0038,
+        "blurinessLevelPenalty": 0.3503
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "6.jpg",
+      "imageDate": "2009-01-19T12:36:05.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4465
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "rabbit"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "rabbit": [
+          {
+            "box": {
+              "x": 1797,
+              "y": 910,
+              "width": 840,
+              "height": 460
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "7.jpg",
+      "imageDate": "2009-01-19T13:39:42.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0001,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.449
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "fish"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "8.jpg",
+      "imageDate": "2009-01-19T12:20:57.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4427
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "9.jpg",
+      "imageDate": "2009-01-19T12:38:53.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3727
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "monkey"
+      ],
+      "itemIds": [
+        "rope",
+        "branch"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "monkey": [
+          {
+            "box": {
+              "x": 1509,
+              "y": 403,
+              "width": 1474,
+              "height": 1359
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "10.jpg",
+      "imageDate": "2009-01-19T13:55:48.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0122,
+        "blurinessLevelPenalty": 0.4079
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "11.jpg",
+      "imageDate": "2009-01-19T13:50:19.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0001,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4271
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "gorilla"
+      ],
+      "itemIds": [
+        "branch",
+        "leaf"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "gorilla": [
+          {
+            "box": {
+              "x": 610,
+              "y": 645,
+              "width": 1509,
+              "height": 1382
+            },
+            "facing": "BACK"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "12.jpg",
+      "imageDate": "2009-01-19T12:46:23.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4151
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "wild-cat"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "wild-cat": [
+          {
+            "box": {
+              "x": 898,
+              "y": 599,
+              "width": 1566,
+              "height": 1209
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "13.jpg",
+      "imageDate": "2009-01-19T12:06:28.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0162,
+        "blurinessLevelPenalty": 0.3938
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "lutra",
+        "lutra",
+        "lutra"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "lutra": [
+          {
+            "box": {
+              "x": 1733,
+              "y": 400,
+              "width": 920,
+              "height": 2240
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "14.jpg",
+      "imageDate": "2009-01-19T12:24:20.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0021,
+        "underExposedPenalty": -0.0082,
+        "blurinessLevelPenalty": 0.3696
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "boy": [
+          {
+            "box": {
+              "x": 161,
+              "y": 967,
+              "width": 2257,
+              "height": 1290
+            },
+            "facing": "BACK"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "15.jpg",
+      "imageDate": "2009-01-19T13:56:32.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0097,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4275
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "warthog",
+        "warthog",
+        "warthog",
+        "warthog",
+        "warthog"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "warthog": [
+          {
+            "box": {
+              "x": 2306,
+              "y": 1400,
+              "width": 1146,
+              "height": 866
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "16.jpg",
+      "imageDate": "2009-01-19T12:58:50.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0004,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.542
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "llama"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "llama": [
+          {
+            "box": {
+              "x": 720,
+              "y": 613,
+              "width": 2493,
+              "height": 1960
+            },
+            "facing": "BOTTOM"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "17.jpg",
+      "imageDate": "2009-01-19T11:50:47.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0007,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3874
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "chameleon"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "chameleon": [
+          {
+            "box": {
+              "x": 2073,
+              "y": 161,
+              "width": 1128,
+              "height": 760
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "18.jpg",
+      "imageDate": "2009-01-19T12:22:16.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.433
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 1624,
+              "y": 403,
+              "width": 1451,
+              "height": 1820
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "19.jpg",
+      "imageDate": "2009-01-19T11:27:49.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0323,
+        "underExposedPenalty": -0.21,
+        "blurinessLevelPenalty": 0.4736
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "giraffe"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "giraffe": [
+          {
+            "box": {
+              "x": 944,
+              "y": 391,
+              "width": 1209,
+              "height": 1440
+            },
+            "facing": "BACK"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "20.jpg",
+      "imageDate": "2009-01-19T13:53:55.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4089
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "monkey"
+      ],
+      "itemIds": [
+        "branch"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "monkey": [
+          {
+            "box": {
+              "x": 1152,
+              "y": 230,
+              "width": 1082,
+              "height": 1647
+            },
+            "facing": "BACK"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "21.jpg",
+      "imageDate": "2009-01-19T12:13:08.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0337,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3303
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 1600,
+              "y": 1466,
+              "width": 906,
+              "height": 2306
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "22.jpg",
+      "imageDate": "2009-01-19T13:05:21.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0055,
+        "blurinessLevelPenalty": 0.3772
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "hippopotamus",
+        "hippopotamus"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "hippopotamus": [
+          {
+            "box": {
+              "x": 1543,
+              "y": 829,
+              "width": 1520,
+              "height": 944
+            },
+            "facing": "BOTTOM"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "23.jpg",
+      "imageDate": "2009-01-19T11:52:08.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0015,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4428
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "monkey",
+        "monkey"
+      ],
+      "itemIds": [
+        "tree",
+        "leaf",
+        "branch"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "monkey": [
+          {
+            "box": {
+              "x": 573,
+              "y": 760,
+              "width": 1826,
+              "height": 2053
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "24.jpg",
+      "imageDate": "2009-01-19T12:41:02.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0002,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4017
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 1267,
+              "y": 933,
+              "width": 576,
+              "height": 1290
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "25.jpg",
+      "imageDate": "2009-01-19T12:51:19.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0011,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4739
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "tiger"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "tiger": [
+          {
+            "box": {
+              "x": 1533,
+              "y": 586,
+              "width": 2360,
+              "height": 1680
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "26.jpg",
+      "imageDate": "2009-01-19T11:41:11.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.1033,
+        "blurinessLevelPenalty": 0.2836
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "boy": [
+          {
+            "box": {
+              "x": 1543,
+              "y": 1520,
+              "width": 391,
+              "height": 668
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "27.jpg",
+      "imageDate": "2009-01-19T13:07:49.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0287,
+        "underExposedPenalty": -0.0121,
+        "blurinessLevelPenalty": 0.4078
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "28.jpg",
+      "imageDate": "2009-01-19T13:14:05.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0002,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.327
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "29.jpg",
+      "imageDate": "2009-01-19T12:11:47.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0327,
+        "blurinessLevelPenalty": 0.4897
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "king-penguin"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "king-penguin": [
+          {
+            "box": {
+              "x": 533,
+              "y": 506,
+              "width": 2066,
+              "height": 3066
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "30.jpg",
+      "imageDate": "2009-01-19T11:40:43.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0118,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2776
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 1025,
+              "y": 1071,
+              "width": 495,
+              "height": 1048
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "31.jpg",
+      "imageDate": "2009-01-19T13:12:12.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0066,
+        "underExposedPenalty": -0.0039,
+        "blurinessLevelPenalty": 0.3257
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "boy": [
+          {
+            "box": {
+              "x": 1416,
+              "y": 1013,
+              "width": 771,
+              "height": 1175
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "32.jpg",
+      "imageDate": "2009-01-19T12:54:19.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0288,
+        "blurinessLevelPenalty": 0.3777
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "flamingo",
+        "flamingo",
+        "flamingo",
+        "flamingo",
+        "flamingo",
+        "flamingo",
+        "flamingo"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "flamingo": [
+          {
+            "box": {
+              "x": 2039,
+              "y": 529,
+              "width": 334,
+              "height": 1313
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "33.jpg",
+      "imageDate": "2009-01-19T12:12:39.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0001,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.293
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "king-penguin",
+        "king-penguin",
+        "king-penguin",
+        "king-penguin",
+        "king-penguin"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "king-penguin": [
+          {
+            "box": {
+              "x": 1958,
+              "y": 1393,
+              "width": 195,
+              "height": 541
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "34.jpg",
+      "imageDate": "2009-01-19T12:28:31.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0002,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4031
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "sea-star"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "sea-star": [
+          {
+            "box": {
+              "x": 2177,
+              "y": 495,
+              "width": 817,
+              "height": 610
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "35.jpg",
+      "imageDate": "2009-01-19T11:50:27.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0042,
+        "underExposedPenalty": -0.1172,
+        "blurinessLevelPenalty": 0.4621
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "fish",
+        "fish",
+        "fish",
+        "fish"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "fish": [
+          {
+            "box": {
+              "x": 2280,
+              "y": 1071,
+              "width": 552,
+              "height": 311
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "36.jpg",
+      "imageDate": "2009-01-19T13:12:48.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.5211
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "kangaroo",
+        "kangaroo",
+        "kangaroo"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "kangaroo": [
+          {
+            "box": {
+              "x": 1586,
+              "y": 1013,
+              "width": 693,
+              "height": 919
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "37.jpg",
+      "imageDate": "2009-01-19T12:10:15.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0111,
+        "underExposedPenalty": -0.0466,
+        "blurinessLevelPenalty": 0.3222
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "38.jpg",
+      "imageDate": "2009-01-19T12:14:13.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0429,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3189
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 1293,
+              "y": 1066,
+              "width": 1053,
+              "height": 1813
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "39.jpg",
+      "imageDate": "2009-01-19T12:10:52.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0112,
+        "underExposedPenalty": -0.3036,
+        "blurinessLevelPenalty": 0.3153
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "40.jpg",
+      "imageDate": "2009-01-19T12:04:22.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2397
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "meerkat",
+        "meerkat",
+        "meerkat"
+      ],
+      "itemIds": [
+        "rock"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "meerkat": [
+          {
+            "box": {
+              "x": 426,
+              "y": 852,
+              "width": 241,
+              "height": 426
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "41.jpg",
+      "imageDate": "2009-01-19T13:34:55.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0001,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4809
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "seahorse"
+      ],
+      "itemIds": [
+        "leaf"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "seahorse": [
+          {
+            "box": {
+              "x": 748,
+              "y": 587,
+              "width": 1958,
+              "height": 1313
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "42.jpg",
+      "imageDate": "2009-01-19T12:28:22.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0073,
+        "underExposedPenalty": -0.1396,
+        "blurinessLevelPenalty": 0.4091
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "43.jpg",
+      "imageDate": "2009-01-19T12:39:57.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0244,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3942
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [
+        "clock"
+      ],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "44.jpg",
+      "imageDate": "2009-01-19T13:18:21.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0042,
+        "underExposedPenalty": -0.0242,
+        "blurinessLevelPenalty": 0.4201
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "boy": [
+          {
+            "box": {
+              "x": 2160,
+              "y": 760,
+              "width": 826,
+              "height": 1200
+            },
+            "facing": "BACK"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "45.jpg",
+      "imageDate": "2009-01-19T12:13:22.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.017,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3926
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "boy": [
+          {
+            "box": {
+              "x": 1040,
+              "y": 1306,
+              "width": 1306,
+              "height": 1493
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "46.jpg",
+      "imageDate": "2009-01-19T12:18:42.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3031
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 2188,
+              "y": 403,
+              "width": 783,
+              "height": 1175
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "47.jpg",
+      "imageDate": "2009-01-19T11:40:07.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0084,
+        "underExposedPenalty": -0.001,
+        "blurinessLevelPenalty": 0.5321
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "peacock"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "peacock": [
+          {
+            "box": {
+              "x": 564,
+              "y": 218,
+              "width": 2511,
+              "height": 1440
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "48.jpg",
+      "imageDate": "2009-01-19T13:59:23.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0019,
+        "underExposedPenalty": -0.0034,
+        "blurinessLevelPenalty": 0.3444
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [
+        "clock"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 564,
+              "y": 979,
+              "width": 910,
+              "height": 529
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "49.jpg",
+      "imageDate": "2009-01-19T13:10:14.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4179
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "lizard"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "lizard": [
+          {
+            "box": {
+              "x": 1002,
+              "y": 668,
+              "width": 2234,
+              "height": 921
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "50.jpg",
+      "imageDate": "2009-01-19T11:32:04.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.6635
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "zebra",
+        "zebra"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "zebra": [
+          {
+            "box": {
+              "x": 599,
+              "y": 184,
+              "width": 2661,
+              "height": 1969
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "51.jpg",
+      "imageDate": "2009-01-19T12:17:19.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3851
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "52.jpg",
+      "imageDate": "2009-01-19T11:26:37.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0544,
+        "blurinessLevelPenalty": 0.256
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "53.jpg",
+      "imageDate": "2009-01-19T12:18:59.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0192,
+        "underExposedPenalty": -0.0158,
+        "blurinessLevelPenalty": 0.4176
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "54.jpg",
+      "imageDate": "2009-01-19T12:07:06.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3686
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "lutra",
+        "lutra",
+        "lutra"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "lutra": [
+          {
+            "box": {
+              "x": 333,
+              "y": 666,
+              "width": 920,
+              "height": 2973
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "55.jpg",
+      "imageDate": "2009-01-19T11:27:23.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0191,
+        "underExposedPenalty": -0.1268,
+        "blurinessLevelPenalty": 0.4224
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "giraffe"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "giraffe": [
+          {
+            "box": {
+              "x": 1739,
+              "y": 426,
+              "width": 1152,
+              "height": 1555
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "56.jpg",
+      "imageDate": "2009-01-19T13:13:07.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4431
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "57.jpg",
+      "imageDate": "2009-01-19T11:39:00.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0409,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.335
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "58.jpg",
+      "imageDate": "2009-01-19T11:49:12.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0139,
+        "underExposedPenalty": -0.1079,
+        "blurinessLevelPenalty": 0.3247
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "59.jpg",
+      "imageDate": "2009-01-19T12:05:19.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3168
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "lutra",
+        "lutra",
+        "lutra",
+        "lutra"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "lutra": [
+          {
+            "box": {
+              "x": 1393,
+              "y": 875,
+              "width": 771,
+              "height": 933
+            },
+            "facing": "BOTTOM"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "60.jpg",
+      "imageDate": "2009-01-19T13:39:38.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.001,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4549
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "fish"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "fish": [
+          {
+            "box": {
+              "x": 1198,
+              "y": 933,
+              "width": 1290,
+              "height": 829
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "61.jpg",
+      "imageDate": "2009-01-19T11:52:06.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.5304
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "monkey",
+        "monkey"
+      ],
+      "itemIds": [
+        "leaf",
+        "tree"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "monkey": [
+          {
+            "box": {
+              "x": 760,
+              "y": 806,
+              "width": 887,
+              "height": 1048
+            },
+            "facing": "BACK"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "62.jpg",
+      "imageDate": "2009-01-19T11:35:12.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0011,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3728
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "giraffe"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "giraffe": [
+          {
+            "box": {
+              "x": 1002,
+              "y": 541,
+              "width": 1324,
+              "height": 933
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "63.jpg",
+      "imageDate": "2009-01-19T12:42:33.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0218,
+        "underExposedPenalty": -0.0188,
+        "blurinessLevelPenalty": 0.4438
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "64.jpg",
+      "imageDate": "2009-01-19T13:57:41.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.3403,
+        "blurinessLevelPenalty": 0.2937
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "monkey"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "monkey": [
+          {
+            "box": {
+              "x": 226,
+              "y": 560,
+              "width": 3213,
+              "height": 1200
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "65.jpg",
+      "imageDate": "2009-01-19T13:37:56.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0002,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3273
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "fish"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "fish": [
+          {
+            "box": {
+              "x": 1336,
+              "y": 518,
+              "width": 1658,
+              "height": 1370
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "66.jpg",
+      "imageDate": "2009-01-19T13:37:01.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0004,
+        "underExposedPenalty": -0.0154,
+        "blurinessLevelPenalty": 0.5274
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "fish"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "fish": [
+          {
+            "box": {
+              "x": 990,
+              "y": 103,
+              "width": 2234,
+              "height": 1474
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "67.jpg",
+      "imageDate": "2009-01-19T12:26:42.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0046,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4874
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "fish",
+        "fish"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "fish": [
+          {
+            "box": {
+              "x": 622,
+              "y": 748,
+              "width": 944,
+              "height": 760
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "68.jpg",
+      "imageDate": "2009-01-19T12:51:11.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0002,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4485
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "tiger"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "tiger": [
+          {
+            "box": {
+              "x": 520,
+              "y": 626,
+              "width": 2586,
+              "height": 1440
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "69.jpg",
+      "imageDate": "2009-01-19T12:44:33.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.5728
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "tukan",
+        "tukan"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "tukan": [
+          {
+            "box": {
+              "x": 1428,
+              "y": 1244,
+              "width": 1244,
+              "height": 817
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "70.jpg",
+      "imageDate": "2009-01-19T12:51:28.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3894
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "tiger"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "tiger": [
+          {
+            "box": {
+              "x": 80,
+              "y": 1280,
+              "width": 1853,
+              "height": 2093
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "71.jpg",
+      "imageDate": "2009-01-19T13:52:01.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2807
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "monkey"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "monkey": [
+          {
+            "box": {
+              "x": 115,
+              "y": 218,
+              "width": 2972,
+              "height": 1589
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "72.jpg",
+      "imageDate": "2009-01-19T13:36:57.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0008,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.5374
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "fish"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "fish": [
+          {
+            "box": {
+              "x": 1013,
+              "y": 541,
+              "width": 1105,
+              "height": 1117
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "73.jpg",
+      "imageDate": "2009-01-19T15:20:23.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0045,
+        "underExposedPenalty": -0.0263,
+        "blurinessLevelPenalty": 0.3827
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "74.jpg",
+      "imageDate": "2009-01-19T13:41:16.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0003,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3386
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "fish"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "fish": [
+          {
+            "box": {
+              "x": 1071,
+              "y": 691,
+              "width": 1992,
+              "height": 1428
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "75.jpg",
+      "imageDate": "2009-01-19T12:12:04.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0216,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3101
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "76.jpg",
+      "imageDate": "2009-01-19T14:25:50.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0141,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3837
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 1080,
+              "y": 1226,
+              "width": 1240,
+              "height": 2213
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "77.jpg",
+      "imageDate": "2009-01-19T13:56:16.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0178,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3189
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "78.jpg",
+      "imageDate": "2009-01-19T11:46:47.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0001,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.431
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "79.jpg",
+      "imageDate": "2009-01-19T11:53:40.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0004,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3864
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "80.jpg",
+      "imageDate": "2009-01-19T11:38:19.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0109,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4367
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "boy": [
+          {
+            "box": {
+              "x": 1820,
+              "y": 840,
+              "width": 1186,
+              "height": 1370
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "81.jpg",
+      "imageDate": "2009-01-19T13:38:14.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.002,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4136
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "fish"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "fish": [
+          {
+            "box": {
+              "x": 1059,
+              "y": 760,
+              "width": 1140,
+              "height": 887
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "82.jpg",
+      "imageDate": "2009-01-19T12:26:40.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0042,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4585
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "fish"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "fish": [
+          {
+            "box": {
+              "x": 668,
+              "y": 875,
+              "width": 1048,
+              "height": 783
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "83.jpg",
+      "imageDate": "2009-01-19T12:07:20.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0057,
+        "blurinessLevelPenalty": 0.4239
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "lutra",
+        "lutra"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "lutra": [
+          {
+            "box": {
+              "x": 933,
+              "y": 1426,
+              "width": 1133,
+              "height": 2226
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "84.jpg",
+      "imageDate": "2009-01-19T12:46:35.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4765
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "wild-cat"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "wild-cat": [
+          {
+            "box": {
+              "x": 679,
+              "y": 276,
+              "width": 1843,
+              "height": 1728
+            },
+            "facing": "BOTTOM"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "85.jpg",
+      "imageDate": "2009-01-19T12:59:11.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3887
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "camel",
+        "camel"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "camel": [
+          {
+            "box": {
+              "x": 840,
+              "y": 241,
+              "width": 2522,
+              "height": 1820
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "86.jpg",
+      "imageDate": "2009-01-19T11:35:10.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0051,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3578
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "giraffe"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "giraffe": [
+          {
+            "box": {
+              "x": 1059,
+              "y": 495,
+              "width": 1440,
+              "height": 910
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "87.jpg",
+      "imageDate": "2009-01-19T11:29:47.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3907
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "warthog",
+        "warthog",
+        "warthog"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "warthog": [
+          {
+            "box": {
+              "x": 541,
+              "y": 771,
+              "width": 956,
+              "height": 737
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "88.jpg",
+      "imageDate": "2009-01-19T12:11:54.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0712,
+        "blurinessLevelPenalty": 0.5478
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "king-penguin"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "king-penguin": [
+          {
+            "box": {
+              "x": 413,
+              "y": 786,
+              "width": 1680,
+              "height": 2760
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "89.jpg",
+      "imageDate": "2009-01-19T13:39:47.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0004,
+        "underExposedPenalty": -0.0069,
+        "blurinessLevelPenalty": 0.4703
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "fish",
+        "fish"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "fish": [
+          {
+            "box": {
+              "x": 771,
+              "y": 391,
+              "width": 1117,
+              "height": 1117
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "90.jpg",
+      "imageDate": "2009-01-19T12:58:51.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0173,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3455
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "camel",
+        "camel"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "camel": [
+          {
+            "box": {
+              "x": 1405,
+              "y": 506,
+              "width": 1935,
+              "height": 1370
+            },
+            "facing": "BACK"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "91.jpg",
+      "imageDate": "2009-01-19T12:18:54.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0028,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3013
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "92.jpg",
+      "imageDate": "2009-01-19T11:48:34.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0232,
+        "underExposedPenalty": -0.0375,
+        "blurinessLevelPenalty": 0.3961
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "93.jpg",
+      "imageDate": "2009-01-19T14:00:39.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2761
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "94.jpg",
+      "imageDate": "2009-01-19T12:06:05.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4167
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "lutra",
+        "lutra"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "lutra": [
+          {
+            "box": {
+              "x": 200,
+              "y": 186,
+              "width": 613,
+              "height": 1800
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "95.jpg",
+      "imageDate": "2009-01-19T12:49:11.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0031,
+        "blurinessLevelPenalty": 0.5685
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "lion",
+        "lion"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "lion": [
+          {
+            "box": {
+              "x": 773,
+              "y": 573,
+              "width": 933,
+              "height": 1080
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "96.jpg",
+      "imageDate": "2009-01-19T12:41:34.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0145,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2967
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "97.jpg",
+      "imageDate": "2009-01-19T13:48:20.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0002,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3328
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 322,
+              "y": 506,
+              "width": 2442,
+              "height": 806
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "98.jpg",
+      "imageDate": "2009-01-19T11:41:44.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0109,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3662
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "99.jpg",
+      "imageDate": "2009-01-19T12:34:28.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.351
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "100.jpg",
+      "imageDate": "2009-01-19T12:39:43.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.018,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3577
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "101.jpg",
+      "imageDate": "2009-01-19T11:40:34.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.015,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3783
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "peacock"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "peacock": [
+          {
+            "box": {
+              "x": 979,
+              "y": 380,
+              "width": 1762,
+              "height": 1497
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "102.jpg",
+      "imageDate": "2009-01-19T12:42:24.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4191
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "bird"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "bird": [
+          {
+            "box": {
+              "x": 1336,
+              "y": 276,
+              "width": 1704,
+              "height": 1785
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "103.jpg",
+      "imageDate": "2009-01-19T12:59:30.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0085,
+        "underExposedPenalty": -0.0118,
+        "blurinessLevelPenalty": 0.2329
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "camel",
+        "camel"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "camel": [
+          {
+            "box": {
+              "x": 288,
+              "y": 1048,
+              "width": 1105,
+              "height": 725
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "104.jpg",
+      "imageDate": "2009-01-19T12:12:32.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0025,
+        "blurinessLevelPenalty": 0.4064
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "king-penguin",
+        "king-penguin",
+        "king-penguin",
+        "king-penguin",
+        "king-penguin"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "king-penguin": [
+          {
+            "box": {
+              "x": 990,
+              "y": 702,
+              "width": 679,
+              "height": 840
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "105.jpg",
+      "imageDate": "2009-01-19T11:35:18.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0232,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3245
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "giraffe"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "giraffe": [
+          {
+            "box": {
+              "x": 956,
+              "y": 967,
+              "width": 299,
+              "height": 495
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "106.jpg",
+      "imageDate": "2009-01-19T13:31:52.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0001,
+        "underExposedPenalty": -0.036,
+        "blurinessLevelPenalty": 0.4295
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "toad"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "toad": [
+          {
+            "box": {
+              "x": 610,
+              "y": 449,
+              "width": 2154,
+              "height": 1693
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "107.jpg",
+      "imageDate": "2009-01-19T13:13:37.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3287
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "108.jpg",
+      "imageDate": "2009-01-19T11:39:56.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0096,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2475
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "109.jpg",
+      "imageDate": "2009-01-19T11:29:27.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0001,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4377
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "warthog",
+        "warthog",
+        "warthog"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "warthog": [
+          {
+            "box": {
+              "x": 1140,
+              "y": 1105,
+              "width": 576,
+              "height": 564
+            },
+            "facing": "BOTTOM"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "110.jpg",
+      "imageDate": "2009-01-19T12:39:06.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0095,
+        "blurinessLevelPenalty": 0.2895
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "monkey"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "monkey": [
+          {
+            "box": {
+              "x": 737,
+              "y": 138,
+              "width": 2280,
+              "height": 1820
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "111.jpg",
+      "imageDate": "2009-01-19T13:12:27.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0031,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.5506
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 1451,
+              "y": 737,
+              "width": 691,
+              "height": 1313
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "112.jpg",
+      "imageDate": "2009-01-19T12:53:49.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0061,
+        "blurinessLevelPenalty": 0.5379
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "flamingo",
+        "flamingo",
+        "flamingo",
+        "flamingo"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "flamingo": [
+          {
+            "box": {
+              "x": 706,
+              "y": 1533,
+              "width": 3000,
+              "height": 906
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "113.jpg",
+      "imageDate": "2009-01-19T12:29:12.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0004,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.5169
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "fish",
+        "fish",
+        "fish",
+        "fish"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "fish": [
+          {
+            "box": {
+              "x": 288,
+              "y": 449,
+              "width": 1209,
+              "height": 1048
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "114.jpg",
+      "imageDate": "2009-01-19T11:38:55.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0327,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4248
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "115.jpg",
+      "imageDate": "2009-01-19T12:54:36.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0004,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4208
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl",
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 760,
+              "y": 186,
+              "width": 1746,
+              "height": 2533
+            },
+            "facing": "FRONT"
+          }
+        ],
+        "boy": [
+          {
+            "box": {
+              "x": 2453,
+              "y": 293,
+              "width": 1453,
+              "height": 2386
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "116.jpg",
+      "imageDate": "2009-01-19T13:47:53.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0006,
+        "underExposedPenalty": -0.0442,
+        "blurinessLevelPenalty": 0.3179
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "boy": [
+          {
+            "box": {
+              "x": 1626,
+              "y": 653,
+              "width": 1626,
+              "height": 2026
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "117.jpg",
+      "imageDate": "2009-01-19T11:21:27.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0085,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2876
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 1213,
+              "y": 1106,
+              "width": 1013,
+              "height": 1773
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "118.jpg",
+      "imageDate": "2009-01-19T12:57:31.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0382,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3497
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "119.jpg",
+      "imageDate": "2009-01-19T12:22:43.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4485
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "120.jpg",
+      "imageDate": "2009-01-19T13:13:31.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0007,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3325
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "3116760408_b80db8698d_o.jpg",
+      "imageDate": "2009-01-19T13:21:52.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.217
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "rhino"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "rhino": [
+          {
+            "box": {
+              "x": 206,
+              "y": 356,
+              "width": 2487,
+              "height": 1530
+            },
+            "facing": "BOTTOM"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "4081097640_2ff9f3d682_o.jpg",
+      "imageDate": "2009-01-19T13:24:24.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.253
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "elephant"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "elephant": [
+          {
+            "box": {
+              "x": 439,
+              "y": 392,
+              "width": 1105,
+              "height": 1305
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    }
+  ]
+}

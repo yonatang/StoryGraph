@@ -1,0 +1,1476 @@
+{
+  "baseDir": "Images",
+  "images": [
+    {
+      "imageFilename": "0.jpg",
+      "imageDate": "2007-06-04T16:11:06.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0057,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2093
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 622,
+              "y": 162,
+              "width": 302,
+              "height": 635
+            },
+            "facing": "DOWN"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "1.jpg",
+      "imageDate": "2007-06-04T15:53:50.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0001,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2236
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl",
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 930,
+              "y": 439,
+              "width": 256,
+              "height": 627
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "2.jpg",
+      "imageDate": "2007-06-04T14:50:34.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2719
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl",
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 469,
+              "y": 426,
+              "width": 221,
+              "height": 452
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "3.jpg",
+      "imageDate": "2007-06-04T16:08:35.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.003,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2288
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl",
+        "llama"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 605,
+              "y": 435,
+              "width": 294,
+              "height": 375
+            },
+            "facing": "DOWN"
+          }
+        ],
+        "llama": [
+          {
+            "box": {
+              "x": 46,
+              "y": 486,
+              "width": 320,
+              "height": 174
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "4.jpg",
+      "imageDate": "2007-06-04T16:33:01.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.262
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl",
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 674,
+              "y": 401,
+              "width": 349,
+              "height": 755
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "5.jpg",
+      "imageDate": "2007-06-04T16:12:32.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0019,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3065
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "6.jpg",
+      "imageDate": "2007-06-04T16:28:10.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0004,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2294
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "monkey"
+      ],
+      "itemIds": [
+        "branch"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "monkey": [
+          {
+            "box": {
+              "x": 631,
+              "y": 123,
+              "width": 405,
+              "height": 469
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "7.jpg",
+      "imageDate": "2007-06-04T16:31:13.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.1903
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "crocodile"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "crocodile": [
+          {
+            "box": {
+              "x": 366,
+              "y": 320,
+              "width": 806,
+              "height": 580
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "8.jpg",
+      "imageDate": "2007-06-04T16:23:18.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0002,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2286
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "elephant",
+        "elephant"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "elephant": [
+          {
+            "box": {
+              "x": 76,
+              "y": 132,
+              "width": 738,
+              "height": 499
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "9.jpg",
+      "imageDate": "2007-06-04T14:31:18.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0425,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2669
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "llama",
+        "girl",
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "llama": [
+          {
+            "box": {
+              "x": 217,
+              "y": 533,
+              "width": 396,
+              "height": 409
+            },
+            "facing": "BOTTOM"
+          }
+        ],
+        "girl": [
+          {
+            "box": {
+              "x": 631,
+              "y": 93,
+              "width": 520,
+              "height": 477
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "10.jpg",
+      "imageDate": "2007-06-04T15:33:21.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2325
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "rhino"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "rhino": [
+          {
+            "box": {
+              "x": 140,
+              "y": 435,
+              "width": 861,
+              "height": 362
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "11.jpg",
+      "imageDate": "2007-06-04T15:18:26.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0011,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2991
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl",
+        "girl"
+      ],
+      "itemIds": [
+        "tree"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 797,
+              "y": 145,
+              "width": 371,
+              "height": 750
+            },
+            "facing": "BACK"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "12.jpg",
+      "imageDate": "2007-06-04T16:18:22.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0129,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3053
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl",
+        "llama"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 657,
+              "y": 128,
+              "width": 256,
+              "height": 469
+            },
+            "facing": "SIDE"
+          }
+        ],
+        "llama": [
+          {
+            "box": {
+              "x": 388,
+              "y": 550,
+              "width": 580,
+              "height": 358
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "13.jpg",
+      "imageDate": "2007-06-04T15:16:59.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0004,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2606
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl",
+        "girl"
+      ],
+      "itemIds": [
+        "tree"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 213,
+              "y": 512,
+              "width": 290,
+              "height": 674
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "14.jpg",
+      "imageDate": "2007-06-04T15:44:31.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0001,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2314
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl",
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 878,
+              "y": 136,
+              "width": 396,
+              "height": 729
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "15.jpg",
+      "imageDate": "2007-06-04T15:38:04.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2387
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "chameleon"
+      ],
+      "itemIds": [
+        "tier",
+        "leaf"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "chameleon": [
+          {
+            "box": {
+              "x": 256,
+              "y": 405,
+              "width": 622,
+              "height": 430
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "16.jpg",
+      "imageDate": "2007-06-04T16:29:35.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0001,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2266
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "chameleon"
+      ],
+      "itemIds": [
+        "mud"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "chameleon": [
+          {
+            "box": {
+              "x": 618,
+              "y": 533,
+              "width": 533,
+              "height": 332
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "17.jpg",
+      "imageDate": "2007-06-04T15:39:56.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0048,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2091
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "elephant",
+        "girl",
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "elephant": [
+          {
+            "box": {
+              "x": 605,
+              "y": 316,
+              "width": 349,
+              "height": 388
+            },
+            "facing": "BACK"
+          }
+        ],
+        "girl": [
+          {
+            "box": {
+              "x": 704,
+              "y": 636,
+              "width": 320,
+              "height": 324
+            },
+            "facing": "BACK"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "18.jpg",
+      "imageDate": "2007-06-04T15:41:33.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0001,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3204
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 456,
+              "y": 80,
+              "width": 640,
+              "height": 706
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "19.jpg",
+      "imageDate": "2007-06-04T15:04:39.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4013
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "monkey"
+      ],
+      "itemIds": [
+        "branch"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "monkey": [
+          {
+            "box": {
+              "x": 290,
+              "y": 76,
+              "width": 691,
+              "height": 729
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "20.jpg",
+      "imageDate": "2007-06-04T14:53:15.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2466
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "21.jpg",
+      "imageDate": "2007-06-04T15:21:06.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2672
+      },
+      "locationId": "zoo",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "22.jpg",
+      "imageDate": "2007-06-04T15:19:34.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2492
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "snake"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "snake": [
+          {
+            "box": {
+              "x": 422,
+              "y": 426,
+              "width": 418,
+              "height": 405
+            },
+            "facing": "BACK"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "23.jpg",
+      "imageDate": "2007-06-04T14:57:50.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0017,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3569
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "bat"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "bat": [
+          {
+            "box": {
+              "x": 422,
+              "y": 268,
+              "width": 699,
+              "height": 567
+            },
+            "facing": "BACK"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "24.jpg",
+      "imageDate": "2007-06-04T14:27:06.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2188
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 614,
+              "y": 132,
+              "width": 529,
+              "height": 520
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "25.jpg",
+      "imageDate": "2007-06-04T15:08:09.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0065,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2053
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl",
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 951,
+              "y": 388,
+              "width": 264,
+              "height": 533
+            },
+            "facing": "BACK"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "26.jpg",
+      "imageDate": "2007-06-04T15:06:41.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0004,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2477
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 695,
+              "y": 405,
+              "width": 371,
+              "height": 490
+            },
+            "facing": "BACK"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "27.jpg",
+      "imageDate": "2007-06-04T14:54:38.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0055,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2666
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "lemur"
+      ],
+      "itemIds": [
+        "branch"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "lemur": [
+          {
+            "box": {
+              "x": 541,
+              "y": 465,
+              "width": 234,
+              "height": 192
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "28.jpg",
+      "imageDate": "2007-06-04T16:24:33.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0064,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2609
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 563,
+              "y": 401,
+              "width": 264,
+              "height": 384
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "29.jpg",
+      "imageDate": "2007-06-04T15:43:20.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0025,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2301
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "turtle"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "turtle": [
+          {
+            "box": {
+              "x": 499,
+              "y": 132,
+              "width": 686,
+              "height": 609
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "30.jpg",
+      "imageDate": "2007-06-04T14:39:27.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0006,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2795
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "lemur"
+      ],
+      "itemIds": [
+        "branch"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "lemur": [
+          {
+            "box": {
+              "x": 772,
+              "y": 209,
+              "width": 422,
+              "height": 396
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "31.jpg",
+      "imageDate": "2007-06-04T15:45:31.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0143,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2973
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "goat",
+        "girl",
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "goat": [
+          {
+            "box": {
+              "x": 512,
+              "y": 507,
+              "width": 302,
+              "height": 405
+            },
+            "facing": "BOTTOM"
+          }
+        ],
+        "girl": [
+          {
+            "box": {
+              "x": 644,
+              "y": 204,
+              "width": 247,
+              "height": 529
+            },
+            "facing": "BOTTOM"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "32.jpg",
+      "imageDate": "2007-06-04T14:58:54.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0009,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2225
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "monkey"
+      ],
+      "itemIds": [
+        "tree",
+        "leaf"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "monkey": [
+          {
+            "box": {
+              "x": 332,
+              "y": 106,
+              "width": 439,
+              "height": 712
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "33.jpg",
+      "imageDate": "2007-06-04T15:14:21.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3284
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 187,
+              "y": 383,
+              "width": 482,
+              "height": 754
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "34.jpg",
+      "imageDate": "2007-06-04T15:35:26.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2191
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "chameleon"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "chameleon": [
+          {
+            "box": {
+              "x": 213,
+              "y": 153,
+              "width": 840,
+              "height": 682
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "35.jpg",
+      "imageDate": "2007-06-04T16:15:45.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2483
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 435,
+              "y": 273,
+              "width": 597,
+              "height": 708
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "36.jpg",
+      "imageDate": "2007-06-04T15:03:18.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0041,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2833
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "baboon",
+        "baboon"
+      ],
+      "itemIds": [
+        "tree",
+        "rope"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "baboon": [
+          {
+            "box": {
+              "x": 375,
+              "y": 128,
+              "width": 482,
+              "height": 644
+            },
+            "facing": "BACK"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "37.jpg",
+      "imageDate": "2007-06-04T16:19:56.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2446
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl",
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 294,
+              "y": 247,
+              "width": 418,
+              "height": 285
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "38.jpg",
+      "imageDate": "2007-06-04T16:25:30.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0069,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3036
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl",
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 819,
+              "y": 302,
+              "width": 298,
+              "height": 477
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "39.jpg",
+      "imageDate": "2007-06-04T16:22:00.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2153
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl",
+        "girl",
+        "elephant"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 686,
+              "y": 418,
+              "width": 345,
+              "height": 452
+            },
+            "facing": "FRONT"
+          }
+        ],
+        "elephant": [
+          {
+            "box": {
+              "x": 439,
+              "y": 12,
+              "width": 648,
+              "height": 490
+            },
+            "facing": "BACK"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "40.jpg",
+      "imageDate": "2007-06-04T15:10:25.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.008,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2207
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "bat",
+        "bat",
+        "bat",
+        "girl",
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "bat": [
+          {
+            "box": {
+              "x": 537,
+              "y": 243,
+              "width": 93,
+              "height": 106
+            },
+            "facing": "BOTTOM"
+          }
+        ],
+        "girl": [
+          {
+            "box": {
+              "x": 610,
+              "y": 525,
+              "width": 541,
+              "height": 504
+            },
+            "facing": "BACK"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "41.jpg",
+      "imageDate": "2007-06-04T14:36:23.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0001,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2568
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl",
+        "father"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 366,
+              "y": 183,
+              "width": 302,
+              "height": 631
+            },
+            "facing": "FRONT"
+          }
+        ],
+        "father": [
+          {
+            "box": {
+              "x": 618,
+              "y": 332,
+              "width": 362,
+              "height": 550
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "42.jpg",
+      "imageDate": "2007-06-04T14:47:14.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3985
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "girl",
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "girl": [
+          {
+            "box": {
+              "x": 704,
+              "y": 110,
+              "width": 448,
+              "height": 576
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "43.jpg",
+      "imageDate": "2007-06-04T15:23:27.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0001,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2158
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "snake"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "snake": [
+          {
+            "box": {
+              "x": 128,
+              "y": 306,
+              "width": 1075,
+              "height": 532
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "44.jpg",
+      "imageDate": "2007-06-04T15:01:36.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0003,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2561
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "monkey"
+      ],
+      "itemIds": [
+        "branch"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "monkey": [
+          {
+            "box": {
+              "x": 456,
+              "y": 251,
+              "width": 255,
+              "height": 375
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "45.jpg",
+      "imageDate": "2007-06-04T15:00:11.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.006,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2846
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "lemur"
+      ],
+      "itemIds": [
+        "branch"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "lemur": [
+          {
+            "box": {
+              "x": 260,
+              "y": 221,
+              "width": 396,
+              "height": 273
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "46.jpg",
+      "imageDate": "2007-06-04T15:36:50.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2419
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "elephant"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "elephant": [
+          {
+            "box": {
+              "x": 512,
+              "y": 328,
+              "width": 699,
+              "height": 499
+            },
+            "facing": "SIDE"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "14779233740_b26bb78ec5_o.jpg",
+      "imageDate": "2007-06-04T15:38:30.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.214
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "gorilla"
+      ],
+      "itemIds": [
+        "hay"
+      ],
+      "facesLocations": [],
+      "charQualities": {
+        "gorilla": [
+          {
+            "box": {
+              "x": 300,
+              "y": 829,
+              "width": 2118,
+              "height": 3030
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    },
+    {
+      "imageFilename": "3083902281_7f8aeeca50_o.jpg",
+      "imageDate": "2007-06-04T15:39:28.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.221
+      },
+      "locationId": "zoo",
+      "characterIds": [
+        "polar-bear"
+      ],
+      "itemIds": [],
+      "facesLocations": [],
+      "charQualities": {
+        "polar-bear": [
+          {
+            "box": {
+              "x": 164,
+              "y": 343,
+              "width": 1813,
+              "height": 770
+            },
+            "facing": "FRONT"
+          }
+        ]
+      }
+    }
+  ]
+}

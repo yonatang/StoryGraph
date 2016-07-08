@@ -1,0 +1,1958 @@
+{
+  "baseDir": "Images",
+  "images": [
+    {
+      "imageFilename": "733420.9032_244.jpg",
+      "imageDate": "2013-08-08T15:17:14.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0
+      },
+      "locationId": "main_street_usa",
+      "characterIds": [
+        "goofy",
+        "minniMouse",
+        "donnaldDuck"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.08286_0012.jpg",
+      "imageDate": "2013-08-08T21:40:56.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2282
+      },
+      "locationId": "paradise_pier_boardwalk_pizza__pasta",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "733420.9034_245.jpg",
+      "imageDate": "2013-08-08T15:17:14.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0
+      },
+      "locationId": "main_street_usa",
+      "characterIds": [
+        "donnaldDuck"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.01613_0001.jpg",
+      "imageDate": "2013-08-08T21:40:56.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0
+      },
+      "locationId": "disneyland_park_main_entrance",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.14517_0041.jpg",
+      "imageDate": "2013-08-08T21:41:00.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0825,
+        "blurinessLevelPenalty": 0.4743
+      },
+      "locationId": "tomorrowland_finding_nemo_submarine_voyage",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.18425_0406.jpg",
+      "imageDate": "2013-08-08T21:41:24.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0001,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4942
+      },
+      "locationId": "critter_country_hungry_bear_restaurant",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.99288_0579.jpg",
+      "imageDate": "2013-08-08T14:41:36.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": -0.399
+      },
+      "locationId": "tomorrowland_buzz_lightyear_astro_blasters",
+      "characterIds": [
+        "buzzLightYear",
+        "girl",
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.14593_0043.jpg",
+      "imageDate": "2013-08-08T21:41:00.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0886,
+        "blurinessLevelPenalty": 0.5708
+      },
+      "locationId": "tomorrowland_finding_nemo_submarine_voyage",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.90935_0522.jpg",
+      "imageDate": "2013-08-08T21:41:32.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0276,
+        "blurinessLevelPenalty": 0.291
+      },
+      "locationId": "disney_california_adventure_hollywood_land_hyperion",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.23936_0124.jpg",
+      "imageDate": "2013-08-08T14:41:06.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0792,
+        "blurinessLevelPenalty": -0.4635
+      },
+      "locationId": "mickeys_toontown_minnies_house",
+      "characterIds": [
+        "minniMouse",
+        "girl",
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.13479_0038.jpg",
+      "imageDate": "2013-08-08T21:40:58.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2658
+      },
+      "locationId": "disneyland_park_main_entrance",
+      "characterIds": [
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.24124_0148.jpg",
+      "imageDate": "2013-08-08T14:41:06.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0383,
+        "blurinessLevelPenalty": -0.3807
+      },
+      "locationId": "mickeys_toontown_goofys_playhouse",
+      "characterIds": [
+        "goofy",
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.08729_0021.jpg",
+      "imageDate": "2013-08-08T21:40:58.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0109,
+        "underExposedPenalty": -0.0437,
+        "blurinessLevelPenalty": 0.258
+      },
+      "locationId": "paradise_pier_boardwalk_pizza__pasta",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.14230_0040.jpg",
+      "imageDate": "2013-08-08T21:40:58.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0113,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3462
+      },
+      "locationId": "disneyland_park_main_entrance",
+      "characterIds": [
+        "mother",
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.22646_0444.jpg",
+      "imageDate": "2013-08-08T21:41:26.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3977
+      },
+      "locationId": "critter_country_hungry_bear_restaurant",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.23141_0448.jpg",
+      "imageDate": "2013-08-08T21:41:28.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4391
+      },
+      "locationId": "paradise_pier_paradise_garden_grill",
+      "characterIds": [
+        "girl",
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.17755_0386.jpg",
+      "imageDate": "2013-08-08T21:41:22.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3289
+      },
+      "locationId": "disneyland_park_main_entrance",
+      "characterIds": [
+        "mother",
+        "girl",
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.15699_0047.jpg",
+      "imageDate": "2013-08-08T21:41:00.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.1454,
+        "blurinessLevelPenalty": 0.4226
+      },
+      "locationId": "tomorrowland_finding_nemo_submarine_voyage",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.23676_0106.jpg",
+      "imageDate": "2013-08-08T14:41:04.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0729,
+        "blurinessLevelPenalty": -0.3724
+      },
+      "locationId": "toontown_mickeys_house_and_meet_mickey",
+      "characterIds": [
+        "mickeyMouse",
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.12137_0033.jpg",
+      "imageDate": "2013-08-08T21:40:58.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4539
+      },
+      "locationId": "disneyland_park_main_entrance",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.20806_0427.jpg",
+      "imageDate": "2013-08-08T21:41:26.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3148
+      },
+      "locationId": "critter_country_hungry_bear_restaurant",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.08749_0022.jpg",
+      "imageDate": "2013-08-08T21:40:58.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.417
+      },
+      "locationId": "adventureland_jungle_cruise",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.01627_0002.jpg",
+      "imageDate": "2013-08-08T21:40:56.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0208,
+        "underExposedPenalty": -0.0004,
+        "blurinessLevelPenalty": 0.4762
+      },
+      "locationId": "disneyland_park_main_entrance",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.85509_0160.jpg",
+      "imageDate": "2013-08-08T21:41:08.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0005,
+        "underExposedPenalty": -0.0157,
+        "blurinessLevelPenalty": 0.3066
+      },
+      "locationId": "pacific_wharf_cocina_cucamonga_mexican_grill",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.91506_0526.jpg",
+      "imageDate": "2013-08-08T21:41:32.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0101,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2223
+      },
+      "locationId": "disney_california_adventure_hollywood_land_hyperion",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.17512_0063.jpg",
+      "imageDate": "2013-08-08T21:41:00.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4053
+      },
+      "locationId": "pacific_wharf_cocina_cucamonga_mexican_grill",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734800.21635_0610.jpg",
+      "imageDate": "2013-08-08T21:41:38.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0077,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4599
+      },
+      "locationId": "paradise_pier_paradise_garden_grill",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.15006_0046.jpg",
+      "imageDate": "2013-08-08T21:41:00.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0002,
+        "underExposedPenalty": -0.0148,
+        "blurinessLevelPenalty": 0.3431
+      },
+      "locationId": "tomorrowland_finding_nemo_submarine_voyage",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.16398_0058.jpg",
+      "imageDate": "2013-08-08T21:41:00.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.001,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4418
+      },
+      "locationId": "pacific_wharf_ghirardelli_soda_fountain_and_chocolate_shop",
+      "characterIds": [
+        "mother",
+        "girl",
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.01667_0003.jpg",
+      "imageDate": "2013-08-08T21:40:56.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0047,
+        "blurinessLevelPenalty": 0.4623
+      },
+      "locationId": "disneyland_park_main_entrance",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734803.12397_1065.jpg",
+      "imageDate": "2013-08-08T14:42:12.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": -0.3119
+      },
+      "locationId": "disneyland_park_castle_area_anaheim",
+      "characterIds": [
+        "mother",
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.11860_0028.jpg",
+      "imageDate": "2013-08-08T21:40:58.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3836
+      },
+      "locationId": "disneyland_park_main_entrance",
+      "characterIds": [
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734803.12376_1063.jpg",
+      "imageDate": "2013-08-08T14:42:12.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": -0.2872
+      },
+      "locationId": "disneyland_park_castle_area_anaheim",
+      "characterIds": [
+        "mother",
+        "girl",
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.23830_0113.jpg",
+      "imageDate": "2013-08-08T14:41:04.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": -0.4555
+      },
+      "locationId": "mickeys_toontown_goofys_playhouse",
+      "characterIds": [
+        "pluto",
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.24000_0127.jpg",
+      "imageDate": "2013-08-08T14:41:06.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0147,
+        "blurinessLevelPenalty": -0.4117
+      },
+      "locationId": "mickeys_toontown_donalds_boat",
+      "characterIds": [
+        "donnaldDuck",
+        "girl",
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.95032_0535.jpg",
+      "imageDate": "2013-08-08T21:41:34.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0046,
+        "blurinessLevelPenalty": 0.3729
+      },
+      "locationId": "disney_california_adventure_hollywood_land_hyperion",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.23170_0453.jpg",
+      "imageDate": "2013-08-08T21:41:28.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3422
+      },
+      "locationId": "paradise_pier_paradise_garden_grill",
+      "characterIds": [
+        "girl",
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.17690_0068.jpg",
+      "imageDate": "2013-08-08T21:41:02.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.003,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2914
+      },
+      "locationId": "pacific_wharf_cocina_cucamonga_mexican_grill",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.08300_0013.jpg",
+      "imageDate": "2013-08-08T21:40:56.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.001,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3298
+      },
+      "locationId": "paradise_pier_boardwalk_pizza__pasta",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.23694_0457.jpg",
+      "imageDate": "2013-08-08T21:41:28.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3526
+      },
+      "locationId": "critter_country_hungry_bear_restaurant",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.86825_0515.jpg",
+      "imageDate": "2013-08-08T21:41:32.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3826
+      },
+      "locationId": "critter_country_hungry_bear_restaurant",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.23634_0455.jpg",
+      "imageDate": "2013-08-08T21:41:28.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0053,
+        "blurinessLevelPenalty": 0.3559
+      },
+      "locationId": "paradise_pier_paradise_garden_grill",
+      "characterIds": [
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.12684_0035.jpg",
+      "imageDate": "2013-08-08T21:40:58.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3579
+      },
+      "locationId": "main_street_usa_main_street_cinema",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.16388_0056.jpg",
+      "imageDate": "2013-08-08T21:41:00.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3004
+      },
+      "locationId": "pacific_wharf_ghirardelli_soda_fountain_and_chocolate_shop",
+      "characterIds": [
+        "boy",
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.92266_0260.jpg",
+      "imageDate": "2013-08-08T21:41:14.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0029,
+        "underExposedPenalty": -0.0341,
+        "blurinessLevelPenalty": 0.3926
+      },
+      "locationId": "critter_country_harbour_galley",
+      "characterIds": [
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734800.30485_0676.jpg",
+      "imageDate": "2013-08-08T21:41:42.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0361,
+        "blurinessLevelPenalty": 0.5618
+      },
+      "locationId": "critter_country_hungry_bear_restaurant",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.18231_0401.jpg",
+      "imageDate": "2013-08-08T21:41:24.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2013
+      },
+      "locationId": "critter_country_hungry_bear_restaurant",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.91068_0243.jpg",
+      "imageDate": "2013-08-08T21:41:14.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.007,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3385
+      },
+      "locationId": "main_street_usa_horseless_carriage",
+      "characterIds": [
+        "mother",
+        "girl",
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734803.00139_1029.jpg",
+      "imageDate": "2013-08-08T14:42:08.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.1083,
+        "blurinessLevelPenalty": -0.4182
+      },
+      "locationId": "main_street_usa",
+      "characterIds": [
+        "princessAurora",
+        "girl",
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.23729_0458.jpg",
+      "imageDate": "2013-08-08T21:41:28.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4783
+      },
+      "locationId": "critter_country_hungry_bear_restaurant",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.86810_0511.jpg",
+      "imageDate": "2013-08-08T21:41:32.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0035,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4469
+      },
+      "locationId": "critter_country_hungry_bear_restaurant",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.12127_0031.jpg",
+      "imageDate": "2013-08-08T21:40:58.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3732
+      },
+      "locationId": "disneyland_park_main_entrance",
+      "characterIds": [
+        "mother",
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.12135_0032.jpg",
+      "imageDate": "2013-08-08T21:40:58.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.332
+      },
+      "locationId": "disneyland_park_main_entrance",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.86200_0497.jpg",
+      "imageDate": "2013-08-08T21:41:30.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0122,
+        "blurinessLevelPenalty": 0.5173
+      },
+      "locationId": "buena_vista_street_fiddler_fifer__practical_cafe",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.12706_0037.jpg",
+      "imageDate": "2013-08-08T21:40:58.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.003,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.404
+      },
+      "locationId": "main_street_usa_main_street_cinema",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.14523_0042.jpg",
+      "imageDate": "2013-08-08T21:41:00.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.1074,
+        "blurinessLevelPenalty": 0.4725
+      },
+      "locationId": "tomorrowland_finding_nemo_submarine_voyage",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.08414_0016.jpg",
+      "imageDate": "2013-08-08T21:40:58.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3215
+      },
+      "locationId": "pacific_wharf_pacific_wharf_cafe",
+      "characterIds": [
+        "girl",
+        "mother"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.09819_0024.jpg",
+      "imageDate": "2013-08-08T21:40:58.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0084,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2407
+      },
+      "locationId": "tomorrowland_disneyland_monorail",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.19471_0410.jpg",
+      "imageDate": "2013-08-08T21:41:24.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3228
+      },
+      "locationId": "critter_country_hungry_bear_restaurant",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.22110_0439.jpg",
+      "imageDate": "2013-08-08T21:41:26.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.5122
+      },
+      "locationId": "critter_country_hungry_bear_restaurant",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734804.06090_1224.jpg",
+      "imageDate": "2013-08-08T14:42:22.000Z",
+      "imageQuality": {
+        "overExposedPenalty": -0.0033,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": -0.36
+      },
+      "locationId": "main_street_usa",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.91028_0239.jpg",
+      "imageDate": "2013-08-08T21:41:12.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0056,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3364
+      },
+      "locationId": "main_street_usa_horseless_carriage",
+      "characterIds": [
+        "mother",
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.92245_0255.jpg",
+      "imageDate": "2013-08-08T21:41:14.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0226,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4152
+      },
+      "locationId": "critter_country_harbour_galley",
+      "characterIds": [
+        "boy",
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.24035_0137.jpg",
+      "imageDate": "2013-08-08T14:41:06.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": -0.3795
+      },
+      "locationId": "mickeys_toontown_donalds_boat",
+      "characterIds": [
+        "donnaldDuck",
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.86770_0503.jpg",
+      "imageDate": "2013-08-08T21:41:32.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0047,
+        "blurinessLevelPenalty": 0.4249
+      },
+      "locationId": "critter_country_hungry_bear_restaurant",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "733420.9071_250.jpg",
+      "imageDate": "2013-08-08T15:17:16.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0
+      },
+      "locationId": "main_street_usa",
+      "characterIds": [
+        "mickeyMouse",
+        "minniMouse"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.08390_0014.jpg",
+      "imageDate": "2013-08-08T21:40:56.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0001,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.264
+      },
+      "locationId": "main_street_usa_main_street_cinema",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.01727_0004.jpg",
+      "imageDate": "2013-08-08T21:40:56.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0008,
+        "blurinessLevelPenalty": 0.3969
+      },
+      "locationId": "disneyland_park_main_entrance",
+      "characterIds": [
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.08449_0019.jpg",
+      "imageDate": "2013-08-08T21:40:58.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3305
+      },
+      "locationId": "main_street_usa_main_street_cinema",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.92236_0249.jpg",
+      "imageDate": "2013-08-08T21:41:14.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0232,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4321
+      },
+      "locationId": "critter_country_harbour_galley",
+      "characterIds": [
+        "boy",
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.92243_0254.jpg",
+      "imageDate": "2013-08-08T21:41:14.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0108,
+        "underExposedPenalty": -0.0201,
+        "blurinessLevelPenalty": 0.4273
+      },
+      "locationId": "critter_country_harbour_galley",
+      "characterIds": [
+        "boy",
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.87231_0172.jpg",
+      "imageDate": "2013-08-08T14:41:08.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": -0.5199
+      },
+      "locationId": "critter_country_hungry_bear_restaurant",
+      "characterIds": [
+        "mother",
+        "winnieThePooh"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.20014_0411.jpg",
+      "imageDate": "2013-08-08T21:41:24.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0077,
+        "blurinessLevelPenalty": 0.3721
+      },
+      "locationId": "critter_country_hungry_bear_restaurant",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734800.21633_0608.jpg",
+      "imageDate": "2013-08-08T21:41:38.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0067,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4337
+      },
+      "locationId": "paradise_pier_paradise_garden_grill",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.17384_0061.jpg",
+      "imageDate": "2013-08-08T14:41:00.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0387,
+        "blurinessLevelPenalty": -0.29
+      },
+      "locationId": "main_street_usa_carnation_cafe",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734802.99458_1008.jpg",
+      "imageDate": "2013-08-08T14:42:08.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0179,
+        "blurinessLevelPenalty": -0.3949
+      },
+      "locationId": "adventureland_magic_carpet_of_aladin",
+      "characterIds": [
+        "princessJasmine",
+        "girl",
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.88324_0175.jpg",
+      "imageDate": "2013-08-08T14:41:08.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": -0.4171
+      },
+      "locationId": "fantasyland_alice_in_wonderland",
+      "characterIds": [
+        "aliceInWonderland",
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734800.21730_0622.jpg",
+      "imageDate": "2013-08-08T14:41:38.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.036,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3802
+      },
+      "locationId": "pacific_wharf_pacific_wharf_cafe",
+      "characterIds": [
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.23753_0460.jpg",
+      "imageDate": "2013-08-08T21:41:28.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.473
+      },
+      "locationId": "critter_country_hungry_bear_restaurant",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.17678_0067.jpg",
+      "imageDate": "2013-08-08T21:41:00.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4309
+      },
+      "locationId": "pacific_wharf_cocina_cucamonga_mexican_grill",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.12693_0036.jpg",
+      "imageDate": "2013-08-08T21:40:58.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0139,
+        "blurinessLevelPenalty": 0.4234
+      },
+      "locationId": "main_street_usa_main_street_cinema",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734803.11422_1060.jpg",
+      "imageDate": "2013-08-08T14:42:10.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": -0.3022
+      },
+      "locationId": "main_street_usa",
+      "characterIds": [
+        "princessTiana",
+        "girl",
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.91497_0525.jpg",
+      "imageDate": "2013-08-08T21:41:32.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0006,
+        "underExposedPenalty": -0.0032,
+        "blurinessLevelPenalty": 0.223
+      },
+      "locationId": "disney_california_adventure_hollywood_land_hyperion",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.99240_0569.jpg",
+      "imageDate": "2013-08-08T14:41:36.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": -0.3714
+      },
+      "locationId": "main_street_usa",
+      "characterIds": [
+        "mother",
+        "buzzLightYear",
+        "girl",
+        "boy",
+        "woody"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734800.21633_0607.jpg",
+      "imageDate": "2013-08-08T14:41:38.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0042,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3949
+      },
+      "locationId": "paradise_pier_paradise_garden_grill",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734802.99666_1012.jpg",
+      "imageDate": "2013-08-08T14:42:08.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0426,
+        "blurinessLevelPenalty": -0.4378
+      },
+      "locationId": "fantasyland_snow_whites_scary_adventures",
+      "characterIds": [
+        "princessSnowWhite",
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734802.99687_1014.jpg",
+      "imageDate": "2013-08-08T14:42:08.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0366,
+        "blurinessLevelPenalty": -0.4851
+      },
+      "locationId": "fantasyland_snow_whites_scary_adventures",
+      "characterIds": [
+        "princessSnowWhite",
+        "girl",
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.92241_0252.jpg",
+      "imageDate": "2013-08-08T21:41:14.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0147,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4113
+      },
+      "locationId": "critter_country_harbour_galley",
+      "characterIds": [
+        "girl",
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.93737_0332.jpg",
+      "imageDate": "2013-08-08T21:41:20.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0111,
+        "underExposedPenalty": -0.0531,
+        "blurinessLevelPenalty": 0.2964
+      },
+      "locationId": "adventureland_jungle_cruise",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734800.29137_0670.jpg",
+      "imageDate": "2013-08-08T21:41:42.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0023,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4714
+      },
+      "locationId": "critter_country_hungry_bear_restaurant",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.86782_0507.jpg",
+      "imageDate": "2013-08-08T21:41:32.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4479
+      },
+      "locationId": "critter_country_hungry_bear_restaurant",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.16378_0055.jpg",
+      "imageDate": "2013-08-08T21:41:00.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4114
+      },
+      "locationId": "pacific_wharf_ghirardelli_soda_fountain_and_chocolate_shop",
+      "characterIds": [
+        "mother",
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734800.30495_0678.jpg",
+      "imageDate": "2013-08-08T21:41:42.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0034,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3993
+      },
+      "locationId": "critter_country_hungry_bear_restaurant",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.17694_0069.jpg",
+      "imageDate": "2013-08-08T21:41:02.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0006,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.361
+      },
+      "locationId": "pacific_wharf_cocina_cucamonga_mexican_grill",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.15900_0054.jpg",
+      "imageDate": "2013-08-08T21:41:00.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0206,
+        "blurinessLevelPenalty": 0.3746
+      },
+      "locationId": "pacific_wharf_cocina_cucamonga_mexican_grill",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.08428_0018.jpg",
+      "imageDate": "2013-08-08T21:40:58.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2785
+      },
+      "locationId": "main_street_usa_main_street_cinema",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734802.89922_0978.jpg",
+      "imageDate": "2013-08-08T14:42:06.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": -0.2406
+      },
+      "locationId": "disneyland_park_castle_area_anaheim",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.20834_0432.jpg",
+      "imageDate": "2013-08-08T21:41:26.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4644
+      },
+      "locationId": "critter_country_hungry_bear_restaurant",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.23087_0447.jpg",
+      "imageDate": "2013-08-08T21:41:28.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.2947
+      },
+      "locationId": "paradise_pier_paradise_garden_grill",
+      "characterIds": [
+        "girl",
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.17701_0070.jpg",
+      "imageDate": "2013-08-08T21:41:02.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4091
+      },
+      "locationId": "pacific_wharf_cocina_cucamonga_mexican_grill",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.19867_0084.jpg",
+      "imageDate": "2013-08-08T21:41:02.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0558,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.42
+      },
+      "locationId": "pacific_wharf_cocina_cucamonga_mexican_grill",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.16440_0059.jpg",
+      "imageDate": "2013-08-08T21:41:00.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0594,
+        "blurinessLevelPenalty": 0.3219
+      },
+      "locationId": "pacific_wharf_ghirardelli_soda_fountain_and_chocolate_shop",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.94946_0530.jpg",
+      "imageDate": "2013-08-08T14:41:34.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": -0.4146
+      },
+      "locationId": "fantasyland_alice_in_wonderland",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734804.01240_1153.jpg",
+      "imageDate": "2013-08-08T14:42:18.000Z",
+      "imageQuality": {
+        "overExposedPenalty": -0.0019,
+        "underExposedPenalty": -0.0459,
+        "blurinessLevelPenalty": -0.2957
+      },
+      "locationId": "main_street_usa",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.92488_0268.jpg",
+      "imageDate": "2013-08-08T21:41:14.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0003,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3295
+      },
+      "locationId": "disneyland_park_castle_area_anaheim",
+      "characterIds": [
+        "mother",
+        "girl",
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.86216_0498.jpg",
+      "imageDate": "2013-08-08T21:41:30.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4573
+      },
+      "locationId": "buena_vista_street_fiddler_fifer__practical_cafe",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.17668_0066.jpg",
+      "imageDate": "2013-08-08T21:41:00.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0005,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4412
+      },
+      "locationId": "pacific_wharf_cocina_cucamonga_mexican_grill",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.01734_0005.jpg",
+      "imageDate": "2013-08-08T21:40:56.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0229,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4165
+      },
+      "locationId": "disneyland_park_main_entrance",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.23524_0454.jpg",
+      "imageDate": "2013-08-08T21:41:28.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0086,
+        "blurinessLevelPenalty": 0.3968
+      },
+      "locationId": "paradise_pier_paradise_garden_grill",
+      "characterIds": [
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.92248_0256.jpg",
+      "imageDate": "2013-08-08T21:41:14.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0191,
+        "underExposedPenalty": -0.0024,
+        "blurinessLevelPenalty": 0.3783
+      },
+      "locationId": "critter_country_harbour_galley",
+      "characterIds": [
+        "boy",
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.92321_0264.jpg",
+      "imageDate": "2013-08-08T21:41:14.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0002,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4246
+      },
+      "locationId": "disneyland_park_castle_area_anaheim",
+      "characterIds": [
+        "mother"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.16394_0057.jpg",
+      "imageDate": "2013-08-08T21:41:00.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4182
+      },
+      "locationId": "pacific_wharf_ghirardelli_soda_fountain_and_chocolate_shop",
+      "characterIds": [
+        "mother",
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.17499_0062.jpg",
+      "imageDate": "2013-08-08T21:41:00.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0129,
+        "blurinessLevelPenalty": 0.3003
+      },
+      "locationId": "pacific_wharf_cocina_cucamonga_mexican_grill",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.20804_0426.jpg",
+      "imageDate": "2013-08-08T21:41:26.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3011
+      },
+      "locationId": "critter_country_hungry_bear_restaurant",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734800.21727_0619.jpg",
+      "imageDate": "2013-08-08T21:41:38.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0315,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4406
+      },
+      "locationId": "pacific_wharf_pacific_wharf_cafe",
+      "characterIds": [
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734800.21637_0611.jpg",
+      "imageDate": "2013-08-08T21:41:38.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0212,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4175
+      },
+      "locationId": "pacific_wharf_pacific_wharf_cafe",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.01738_0006.jpg",
+      "imageDate": "2013-08-08T21:40:56.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0043,
+        "underExposedPenalty": -0.0289,
+        "blurinessLevelPenalty": 0.395
+      },
+      "locationId": "disneyland_park_main_entrance",
+      "characterIds": [
+        "mother"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.17662_0065.jpg",
+      "imageDate": "2013-08-08T21:41:00.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4236
+      },
+      "locationId": "pacific_wharf_cocina_cucamonga_mexican_grill",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.92237_0250.jpg",
+      "imageDate": "2013-08-08T21:41:14.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0128,
+        "underExposedPenalty": -0.0106,
+        "blurinessLevelPenalty": 0.4066
+      },
+      "locationId": "critter_country_harbour_galley",
+      "characterIds": [
+        "girl",
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.23736_0459.jpg",
+      "imageDate": "2013-08-08T21:41:28.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.5283
+      },
+      "locationId": "critter_country_hungry_bear_restaurant",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734803.08382_1055.jpg",
+      "imageDate": "2013-08-08T14:42:10.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.006,
+        "blurinessLevelPenalty": -0.3645
+      },
+      "locationId": "main_street_usa",
+      "characterIds": [
+        "girl"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.93630_0330.jpg",
+      "imageDate": "2013-08-08T21:41:18.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0001,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.3063
+      },
+      "locationId": "main_street_usa_horseless_carriage",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734800.28994_0666.jpg",
+      "imageDate": "2013-08-08T21:41:42.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0006,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4106
+      },
+      "locationId": "critter_country_hungry_bear_restaurant",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.23666_0105.jpg",
+      "imageDate": "2013-08-08T14:41:04.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0672,
+        "blurinessLevelPenalty": -0.4225
+      },
+      "locationId": "toontown_mickeys_house_and_meet_mickey",
+      "characterIds": [
+        "mickeyMouse",
+        "girl",
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734802.99741_1017.jpg",
+      "imageDate": "2013-08-08T14:42:08.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0153,
+        "blurinessLevelPenalty": -0.4558
+      },
+      "locationId": "fantasyland_snow_whites_scary_adventures",
+      "characterIds": [
+        "princessSnowWhite",
+        "girl",
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734799.86822_0514.jpg",
+      "imageDate": "2013-08-08T21:41:32.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": -0.0331,
+        "blurinessLevelPenalty": 0.4421
+      },
+      "locationId": "critter_country_hungry_bear_restaurant",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.14936_0045.jpg",
+      "imageDate": "2013-08-08T21:41:00.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.388
+      },
+      "locationId": "tomorrowland_finding_nemo_submarine_voyage",
+      "characterIds": [],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.87251_0174.jpg",
+      "imageDate": "2013-08-08T14:41:08.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": -0.4565
+      },
+      "locationId": "critter_country_hungry_bear_restaurant",
+      "characterIds": [
+        "mother",
+        "winnieThePooh",
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734800.21728_0620.jpg",
+      "imageDate": "2013-08-08T21:41:38.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.0408,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.5012
+      },
+      "locationId": "pacific_wharf_pacific_wharf_cafe",
+      "characterIds": [
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.01752_0007.jpg",
+      "imageDate": "2013-08-08T21:40:56.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0.005,
+        "underExposedPenalty": -0.0065,
+        "blurinessLevelPenalty": 0.4946
+      },
+      "locationId": "disneyland_park_main_entrance",
+      "characterIds": [
+        "mother"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "734798.87213_0170.jpg",
+      "imageDate": "2013-08-08T14:41:08.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": -0.4403
+      },
+      "locationId": "critter_country_hungry_bear_restaurant",
+      "characterIds": [
+        "winnieThePooh",
+        "girl",
+        "boy"
+      ],
+      "itemIds": [],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "__735186.01400_0057.jpg",
+      "imageDate": 1376006291000,
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0
+      },
+      "locationId": "main_street_usa",
+      "characterIds": [],
+      "itemIds": [
+        "crowd"
+      ],
+      "facesLocations": []
+    },
+    {
+      "imageFilename" : "__734798.17662_0065.jpg",
+      "imageDate": "2013-08-08T21:41:00.000Z",
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0.4236
+      },
+      "locationId": "pacific_wharf_cocina_cucamonga_mexican_grill",
+      "characterIds": [],
+      "itemIds": [ "food" ],
+      "facesLocations": []
+    },
+    {
+      "imageFilename": "riddle.png",
+      "imageDate": 1376006283000,
+      "imageQuality": {
+        "overExposedPenalty": 0,
+        "underExposedPenalty": 0,
+        "blurinessLevelPenalty": 0
+      },
+      "locationId": "unkown",
+      "characterIds": [],
+      "itemIds": [
+        "riddle"
+      ],
+      "facesLocations": []
+    }
+  ]
+}
